@@ -89,16 +89,6 @@ Barrow,2023,Natural resources and mining,7095431,111,63923.0,False
 Barrow,2023,Other services,27346003,682,40097.0,False
 Barrow,2023,Professional and business services,92512126,1930,47934.0,False
 Barrow,2023,"Trade, transportation and utilities",371891616,7355,50563.0,False
-Barrow,2024,Construction,153834667,1919,80164.0,False
-Barrow,2024,Education and health services,113148006,2184,51808.0,False
-Barrow,2024,Financial activities,31593205,476,66372.0,False
-Barrow,2024,Information,5205235,113,46064.0,False
-Barrow,2024,Leisure and hospitality,68842632,2960,23258.0,False
-Barrow,2024,Manufacturing,164075430,2394,68536.0,False
-Barrow,2024,Natural resources and mining,5766784,104,55450.0,False
-Barrow,2024,Other services,28688363,672,42691.0,False
-Barrow,2024,Professional and business services,105447016,2185,48260.0,False
-Barrow,2024,"Trade, transportation and utilities",413712858,7588,54522.0,False
 Bartow,2015,Construction,78618795,1659,47389.0,False
 Bartow,2015,Education and health services,127931582,2540,50367.0,False
 Bartow,2015,Financial activities,45961075,1021,45016.0,False
@@ -189,16 +179,6 @@ Bartow,2023,Natural resources and mining,13880504,198,70104.0,False
 Bartow,2023,Other services,51377692,1005,51122.0,False
 Bartow,2023,Professional and business services,246682190,4462,55285.0,False
 Bartow,2023,"Trade, transportation and utilities",556366031,10011,55575.0,False
-Bartow,2024,Construction,187070602,2533,73853.0,False
-Bartow,2024,Education and health services,234140436,3697,63333.0,False
-Bartow,2024,Financial activities,69399472,1094,63436.0,False
-Bartow,2024,Information,12120587,235,51577.0,False
-Bartow,2024,Leisure and hospitality,142695214,5611,25431.0,False
-Bartow,2024,Manufacturing,771699609,11456,67362.0,False
-Bartow,2024,Natural resources and mining,14424337,204,70708.0,False
-Bartow,2024,Other services,50644542,972,52103.0,False
-Bartow,2024,Professional and business services,284819223,4838,58871.0,False
-Bartow,2024,"Trade, transportation and utilities",599537067,10424,57515.0,False
 Carroll,2015,Construction,103364450,2105,49104.0,False
 Carroll,2015,Education and health services,286531114,5295,54114.0,False
 Carroll,2015,Financial activities,41681471,930,44819.0,False
@@ -289,16 +269,6 @@ Carroll,2023,Natural resources and mining,5856509,92,63658.0,False
 Carroll,2023,Other services,46127179,1109,41593.0,False
 Carroll,2023,Professional and business services,300148628,4443,67555.0,False
 Carroll,2023,"Trade, transportation and utilities",348208186,8036,43331.0,False
-Carroll,2024,Construction,264664468,3256,81285.0,False
-Carroll,2024,Education and health services,434958001,6642,65486.0,False
-Carroll,2024,Financial activities,69974337,1058,66138.0,False
-Carroll,2024,Information,35698517,524,68127.0,False
-Carroll,2024,Leisure and hospitality,106582200,5370,19848.0,False
-Carroll,2024,Manufacturing,582846007,7967,73158.0,False
-Carroll,2024,Natural resources and mining,11045517,206,53619.0,False
-Carroll,2024,Other services,41984961,1036,40526.0,False
-Carroll,2024,Professional and business services,302241156,4469,67631.0,False
-Carroll,2024,"Trade, transportation and utilities",367586253,8124,45247.0,False
 Cherokee,2015,Construction,191720125,3965,48353.0,True
 Cherokee,2015,Education and health services,288348706,6582,43809.0,True
 Cherokee,2015,Financial activities,123445043,2236,55208.0,True
@@ -389,16 +359,6 @@ Cherokee,2023,Natural resources and mining,14752912,198,74510.0,True
 Cherokee,2023,Other services,149125620,2904,51352.0,True
 Cherokee,2023,Professional and business services,462262973,7509,61561.0,True
 Cherokee,2023,"Trade, transportation and utilities",696126580,15249,45651.0,True
-Cherokee,2024,Construction,534480542,6589,81117.0,True
-Cherokee,2024,Education and health services,631234535,10705,58966.0,True
-Cherokee,2024,Financial activities,199602330,2722,73329.0,True
-Cherokee,2024,Information,72600429,666,109010.0,True
-Cherokee,2024,Leisure and hospitality,273345954,11585,23595.0,True
-Cherokee,2024,Manufacturing,396033749,6214,63732.0,True
-Cherokee,2024,Natural resources and mining,14118619,184,76732.0,True
-Cherokee,2024,Other services,123409362,2774,44488.0,True
-Cherokee,2024,Professional and business services,495789098,7669,64648.0,True
-Cherokee,2024,"Trade, transportation and utilities",732943831,15429,47504.0,True
 Clayton,2015,Construction,145747890,2743,53134.0,True
 Clayton,2015,Education and health services,392249682,8523,46022.0,True
 Clayton,2015,Financial activities,134317810,2894,46413.0,True
@@ -489,14 +449,6 @@ Clayton,2023,Natural resources and mining,7612672,128,59474.0,True
 Clayton,2023,Other services,112975904,2419,46704.0,True
 Clayton,2023,Professional and business services,460338469,9692,47497.0,True
 Clayton,2023,"Trade, transportation and utilities",6384548576,71336,89500.0,True
-Clayton,2024,Education and health services,555092181,9939,55850.0,True
-Clayton,2024,Financial activities,196735458,3000,65578.0,True
-Clayton,2024,Information,54060333,619,87335.0,True
-Clayton,2024,Leisure and hospitality,298641119,10722,27853.0,True
-Clayton,2024,Manufacturing,370569324,5408,68522.0,True
-Clayton,2024,Other services,110096173,2292,48035.0,True
-Clayton,2024,Professional and business services,451879327,9414,48001.0,True
-Clayton,2024,"Trade, transportation and utilities",6749231016,70448,95804.0,True
 Cobb,2015,Construction,1383155846,22035,62771.0,True
 Cobb,2015,Education and health services,1976890115,38554,51276.0,True
 Cobb,2015,Financial activities,1595457669,21288,74946.0,True
@@ -587,16 +539,6 @@ Cobb,2023,Natural resources and mining,13612144,204,66726.0,True
 Cobb,2023,Other services,627987944,11146,56342.0,True
 Cobb,2023,Professional and business services,7548715542,80165,94165.0,True
 Cobb,2023,"Trade, transportation and utilities",5081993170,79732,63738.0,True
-Cobb,2024,Construction,2952594457,31775,92922.0,True
-Cobb,2024,Education and health services,4049062203,54726,73988.0,True
-Cobb,2024,Financial activities,2377228748,23161,102639.0,True
-Cobb,2024,Information,1042073480,9396,110906.0,True
-Cobb,2024,Leisure and hospitality,1442753255,41254,34972.0,True
-Cobb,2024,Manufacturing,1922118516,20190,95202.0,True
-Cobb,2024,Natural resources and mining,15380433,198,77679.0,True
-Cobb,2024,Other services,583552622,10442,55885.0,True
-Cobb,2024,Professional and business services,7674977160,77338,99239.0,True
-Cobb,2024,"Trade, transportation and utilities",5301510320,80837,65583.0,True
 Coweta,2015,Construction,55735801,1220,45685.0,False
 Coweta,2015,Education and health services,296204801,5674,52204.0,False
 Coweta,2015,Financial activities,49587206,982,50496.0,False
@@ -687,16 +629,6 @@ Coweta,2023,Natural resources and mining,4814389,85,56640.0,False
 Coweta,2023,Other services,61340475,1334,45982.0,False
 Coweta,2023,Professional and business services,238930728,5433,43978.0,False
 Coweta,2023,"Trade, transportation and utilities",564284798,12167,46378.0,False
-Coweta,2024,Construction,207429739,2786,74454.0,False
-Coweta,2024,Education and health services,502113299,7462,67289.0,False
-Coweta,2024,Financial activities,121030107,1722,70285.0,False
-Coweta,2024,Information,29945938,445,67294.0,False
-Coweta,2024,Leisure and hospitality,136679317,5994,22803.0,False
-Coweta,2024,Manufacturing,401882593,6196,64862.0,False
-Coweta,2024,Natural resources and mining,5197582,80,64970.0,False
-Coweta,2024,Other services,55351846,1321,41901.0,False
-Coweta,2024,Professional and business services,257677323,5184,49706.0,False
-Coweta,2024,"Trade, transportation and utilities",585601157,11727,49936.0,False
 Dawson,2015,Construction,8690282,221,39323.0,False
 Dawson,2015,Education and health services,21825764,478,45661.0,False
 Dawson,2015,Financial activities,9772604,209,46759.0,False
@@ -787,16 +719,6 @@ Dawson,2023,Natural resources and mining,674290,22,30650.0,False
 Dawson,2023,Other services,15556758,366,42505.0,False
 Dawson,2023,Professional and business services,39469524,704,56065.0,False
 Dawson,2023,"Trade, transportation and utilities",114056062,3560,32038.0,False
-Dawson,2024,Construction,42390166,548,77354.0,False
-Dawson,2024,Education and health services,35818856,685,52290.0,False
-Dawson,2024,Financial activities,34007535,357,95259.0,False
-Dawson,2024,Information,2560246,54,47412.0,False
-Dawson,2024,Leisure and hospitality,72189930,2884,25031.0,False
-Dawson,2024,Manufacturing,57521050,977,58875.0,False
-Dawson,2024,Natural resources and mining,1708583,28,61021.0,False
-Dawson,2024,Other services,13845816,330,41957.0,False
-Dawson,2024,Professional and business services,42873299,744,57625.0,False
-Dawson,2024,"Trade, transportation and utilities",119587395,3509,34080.0,False
 DeKalb,2015,Construction,588618573,10032,58674.0,True
 DeKalb,2015,Education and health services,3465896276,58988,58756.0,True
 DeKalb,2015,Financial activities,1033020875,15799,65385.0,True
@@ -887,16 +809,6 @@ DeKalb,2023,Natural resources and mining,18233661,182,100185.0,True
 DeKalb,2023,Other services,586182901,10360,56581.0,True
 DeKalb,2023,Professional and business services,4345630558,48253,90059.0,True
 DeKalb,2023,"Trade, transportation and utilities",3547532124,58227,60926.0,True
-DeKalb,2024,Construction,857993968,9804,87515.0,True
-DeKalb,2024,Education and health services,5978196152,70389,84931.0,True
-DeKalb,2024,Financial activities,1834922842,21886,83840.0,True
-DeKalb,2024,Information,1107417876,8271,133892.0,True
-DeKalb,2024,Leisure and hospitality,791257333,26790,29536.0,True
-DeKalb,2024,Manufacturing,974659331,13200,73838.0,True
-DeKalb,2024,Natural resources and mining,28059769,263,106691.0,True
-DeKalb,2024,Other services,487930007,8717,55975.0,True
-DeKalb,2024,Professional and business services,4414977931,46661,94618.0,True
-DeKalb,2024,"Trade, transportation and utilities",3663723564,58612,62508.0,True
 Douglas,2015,Construction,79914947,1855,43081.0,True
 Douglas,2015,Education and health services,188079229,4588,40994.0,True
 Douglas,2015,Financial activities,72117578,1524,47321.0,True
@@ -987,16 +899,6 @@ Douglas,2023,Natural resources and mining,4918694,66,74526.0,True
 Douglas,2023,Other services,62863398,1290,48731.0,True
 Douglas,2023,Professional and business services,317528315,6368,49863.0,True
 Douglas,2023,"Trade, transportation and utilities",1055313147,18794,56152.0,True
-Douglas,2024,Construction,206526270,2697,76576.0,True
-Douglas,2024,Education and health services,343452611,5559,61783.0,True
-Douglas,2024,Financial activities,79688279,1134,70272.0,True
-Douglas,2024,Information,56389103,382,147615.0,True
-Douglas,2024,Leisure and hospitality,123847089,5249,23594.0,True
-Douglas,2024,Manufacturing,230979303,3196,72271.0,True
-Douglas,2024,Natural resources and mining,5526898,71,77844.0,True
-Douglas,2024,Other services,64732464,1325,48855.0,True
-Douglas,2024,Professional and business services,355105473,6390,55572.0,True
-Douglas,2024,"Trade, transportation and utilities",1138766122,19254,59144.0,True
 Fayette,2015,Construction,158865179,2846,55821.0,True
 Fayette,2015,Education and health services,292005290,6467,45153.0,True
 Fayette,2015,Financial activities,70386824,1302,54061.0,True
@@ -1087,16 +989,6 @@ Fayette,2023,Natural resources and mining,6854848,111,61755.0,True
 Fayette,2023,Other services,106282099,2220,47875.0,True
 Fayette,2023,Professional and business services,311959294,4606,67729.0,True
 Fayette,2023,"Trade, transportation and utilities",569144481,11117,51196.0,True
-Fayette,2024,Construction,244563654,3008,81304.0,True
-Fayette,2024,Education and health services,402823211,7214,55839.0,True
-Fayette,2024,Financial activities,142302216,1794,79321.0,True
-Fayette,2024,Information,27159208,352,77157.0,True
-Fayette,2024,Leisure and hospitality,230219686,7925,29050.0,True
-Fayette,2024,Manufacturing,437592377,5384,81276.0,True
-Fayette,2024,Natural resources and mining,7857029,123,63878.0,True
-Fayette,2024,Other services,106085176,2150,49342.0,True
-Fayette,2024,Professional and business services,331410013,4570,72519.0,True
-Fayette,2024,"Trade, transportation and utilities",581426201,11224,51802.0,True
 Forsyth,2015,Construction,314942754,5832,54003.0,True
 Forsyth,2015,Education and health services,367323189,8331,44091.0,True
 Forsyth,2015,Financial activities,133572524,2133,62622.0,True
@@ -1187,16 +1079,6 @@ Forsyth,2023,Natural resources and mining,8213185,156,52649.0,True
 Forsyth,2023,Other services,146827833,2677,54848.0,True
 Forsyth,2023,Professional and business services,962923330,12562,76654.0,True
 Forsyth,2023,"Trade, transportation and utilities",1110811109,18793,59108.0,True
-Forsyth,2024,Construction,610002642,7343,83073.0,True
-Forsyth,2024,Education and health services,985542453,15066,65415.0,True
-Forsyth,2024,Financial activities,271434021,3131,86692.0,True
-Forsyth,2024,Information,117998723,1042,113243.0,True
-Forsyth,2024,Leisure and hospitality,301452015,9575,31483.0,True
-Forsyth,2024,Manufacturing,573212960,8160,70247.0,True
-Forsyth,2024,Natural resources and mining,11076323,198,55941.0,True
-Forsyth,2024,Other services,124340987,2448,50793.0,True
-Forsyth,2024,Professional and business services,1029004970,13081,78664.0,True
-Forsyth,2024,"Trade, transportation and utilities",1161832502,19196,60525.0,True
 Fulton,2015,Construction,1144412046,16705,68507.0,True
 Fulton,2015,Education and health services,5471108039,96423,56741.0,True
 Fulton,2015,Financial activities,7903186230,69755,113299.0,True
@@ -1287,16 +1169,6 @@ Fulton,2023,Natural resources and mining,65707854,658,99860.0,True
 Fulton,2023,Other services,1938668660,29530,65651.0,True
 Fulton,2023,Professional and business services,29289246580,235108,124578.0,True
 Fulton,2023,"Trade, transportation and utilities",11019018634,156138,70572.0,True
-Fulton,2024,Construction,2465653677,23589,104526.0,True
-Fulton,2024,Education and health services,10390534624,131186,79205.0,True
-Fulton,2024,Financial activities,13514937995,89212,151492.0,True
-Fulton,2024,Information,9640239076,55318,174269.0,True
-Fulton,2024,Leisure and hospitality,4002058052,100709,39739.0,True
-Fulton,2024,Manufacturing,2682313345,28005,95780.0,True
-Fulton,2024,Natural resources and mining,69804431,690,101166.0,True
-Fulton,2024,Other services,1952926408,29513,66172.0,True
-Fulton,2024,Professional and business services,30418423003,230737,131832.0,True
-Fulton,2024,"Trade, transportation and utilities",11351660249,152295,74537.0,True
 Gwinnett,2015,Construction,1059126109,18124,58438.0,True
 Gwinnett,2015,Education and health services,1443467972,31429,45928.0,True
 Gwinnett,2015,Financial activities,1481244762,22777,65032.0,True
@@ -1387,16 +1259,6 @@ Gwinnett,2023,Natural resources and mining,38938904,617,63110.0,True
 Gwinnett,2023,Other services,708610356,12878,55025.0,True
 Gwinnett,2023,Professional and business services,5630190184,70199,80203.0,True
 Gwinnett,2023,"Trade, transportation and utilities",5915603742,94353,62697.0,True
-Gwinnett,2024,Construction,2260380703,27114,83366.0,True
-Gwinnett,2024,Education and health services,2782993673,50363,55259.0,True
-Gwinnett,2024,Financial activities,1595091583,18489,86272.0,True
-Gwinnett,2024,Information,759430905,6430,118107.0,True
-Gwinnett,2024,Leisure and hospitality,1025240370,38880,26369.0,True
-Gwinnett,2024,Manufacturing,2176694338,27503,79144.0,True
-Gwinnett,2024,Natural resources and mining,36940167,466,79271.0,True
-Gwinnett,2024,Other services,657539864,11684,56277.0,True
-Gwinnett,2024,Professional and business services,5748168508,69780,82376.0,True
-Gwinnett,2024,"Trade, transportation and utilities",5995154257,93825,63897.0,True
 Hall,2015,Construction,152938460,3336,45845.0,False
 Hall,2015,Education and health services,670269023,13028,51448.0,False
 Hall,2015,Financial activities,159851758,2599,61505.0,False
@@ -1487,16 +1349,6 @@ Hall,2023,Natural resources and mining,16109949,264,61023.0,False
 Hall,2023,Other services,104643500,2214,47264.0,False
 Hall,2023,Professional and business services,643084806,10927,58853.0,False
 Hall,2023,"Trade, transportation and utilities",1058285745,18616,56848.0,False
-Hall,2024,Construction,362063643,5010,72268.0,False
-Hall,2024,Education and health services,1335929383,17180,77761.0,False
-Hall,2024,Financial activities,222222780,2705,82153.0,False
-Hall,2024,Information,59217601,624,94900.0,False
-Hall,2024,Leisure and hospitality,563882924,8751,64436.0,False
-Hall,2024,Manufacturing,1505329479,25074,60035.0,False
-Hall,2024,Natural resources and mining,18217356,314,58017.0,False
-Hall,2024,Other services,105641757,2159,48931.0,False
-Hall,2024,Professional and business services,649704561,10180,63822.0,False
-Hall,2024,"Trade, transportation and utilities",1079364231,18762,57529.0,False
 Henry,2015,Construction,83711833,1805,46378.0,True
 Henry,2015,Education and health services,285966806,6760,42303.0,True
 Henry,2015,Financial activities,79091696,1740,45455.0,True
@@ -1587,16 +1439,6 @@ Henry,2023,Natural resources and mining,8868619,184,48199.0,True
 Henry,2023,Other services,90034129,1938,46457.0,True
 Henry,2023,Professional and business services,388760866,8017,48492.0,True
 Henry,2023,"Trade, transportation and utilities",1035448427,23372,44303.0,True
-Henry,2024,Construction,163937442,2181,75166.0,True
-Henry,2024,Education and health services,634549976,10572,60022.0,True
-Henry,2024,Financial activities,332726805,4940,67354.0,True
-Henry,2024,Information,62985666,804,78340.0,True
-Henry,2024,Leisure and hospitality,246171354,10938,22506.0,True
-Henry,2024,Manufacturing,272193571,3893,69919.0,True
-Henry,2024,Natural resources and mining,8921355,164,54399.0,True
-Henry,2024,Other services,96721640,1904,50799.0,True
-Henry,2024,Professional and business services,374527681,7260,51588.0,True
-Henry,2024,"Trade, transportation and utilities",1133147231,23970,47274.0,True
 Newton,2015,Construction,58504443,1306,44797.0,False
 Newton,2015,Education and health services,87420542,2398,36456.0,False
 Newton,2015,Financial activities,20162378,463,43547.0,False
@@ -1687,16 +1529,6 @@ Newton,2023,Natural resources and mining,2270958,53,42848.0,False
 Newton,2023,Other services,29279633,677,43249.0,False
 Newton,2023,Professional and business services,114603177,2284,50177.0,False
 Newton,2023,"Trade, transportation and utilities",197111868,4456,44235.0,False
-Newton,2024,Construction,138367715,1933,71582.0,False
-Newton,2024,Education and health services,189296551,3777,50118.0,False
-Newton,2024,Financial activities,53743874,740,72627.0,False
-Newton,2024,Information,24535879,365,67222.0,False
-Newton,2024,Leisure and hospitality,68571886,3121,21971.0,False
-Newton,2024,Manufacturing,310758086,4389,70804.0,False
-Newton,2024,Natural resources and mining,2535150,52,48753.0,False
-Newton,2024,Other services,25512366,703,36291.0,False
-Newton,2024,Professional and business services,136411187,2497,54630.0,False
-Newton,2024,"Trade, transportation and utilities",301820687,5463,55248.0,False
 Paulding,2015,Construction,87640791,1950,44944.0,False
 Paulding,2015,Education and health services,88232671,2300,38362.0,False
 Paulding,2015,Financial activities,30559649,552,55362.0,False
@@ -1787,16 +1619,6 @@ Paulding,2023,Natural resources and mining,3301478,39,84653.0,False
 Paulding,2023,Other services,50178814,1143,43901.0,False
 Paulding,2023,Professional and business services,119330284,2253,52965.0,False
 Paulding,2023,"Trade, transportation and utilities",232346079,6147,37798.0,False
-Paulding,2024,Construction,161950895,2512,64471.0,False
-Paulding,2024,Education and health services,276676025,4664,59322.0,False
-Paulding,2024,Financial activities,46320615,815,56835.0,False
-Paulding,2024,Information,13403451,208,64440.0,False
-Paulding,2024,Leisure and hospitality,91238038,4295,21243.0,False
-Paulding,2024,Manufacturing,88991702,1380,64487.0,False
-Paulding,2024,Natural resources and mining,3462969,40,86574.0,False
-Paulding,2024,Other services,48869143,1139,42905.0,False
-Paulding,2024,Professional and business services,128750981,2450,52551.0,False
-Paulding,2024,"Trade, transportation and utilities",237406792,6170,38478.0,False
 Rockdale,2015,Construction,155658177,2924,53235.0,True
 Rockdale,2015,Education and health services,176325899,4054,43494.0,True
 Rockdale,2015,Financial activities,75013051,1289,58195.0,True
@@ -1877,16 +1699,6 @@ Rockdale,2023,Manufacturing,401140862,5464,73415.0,True
 Rockdale,2023,Other services,46834949,1032,45383.0,True
 Rockdale,2023,Professional and business services,223519335,3339,66942.0,True
 Rockdale,2023,"Trade, transportation and utilities",365813308,7531,48574.0,True
-Rockdale,2024,Construction,298132668,3485,85547.0,True
-Rockdale,2024,Education and health services,290518203,4849,59913.0,True
-Rockdale,2024,Financial activities,105981764,1315,80594.0,True
-Rockdale,2024,Information,52744824,518,101824.0,True
-Rockdale,2024,Leisure and hospitality,73869951,3539,20873.0,True
-Rockdale,2024,Manufacturing,446576377,5538,80639.0,True
-Rockdale,2024,Natural resources and mining,2407593,27,89170.0,True
-Rockdale,2024,Other services,42773822,976,43826.0,True
-Rockdale,2024,Professional and business services,243692227,3420,71255.0,True
-Rockdale,2024,"Trade, transportation and utilities",358771986,7276,49309.0,True
 Spalding,2015,Construction,18270044,469,38955.0,False
 Spalding,2015,Education and health services,129134663,4076,31682.0,False
 Spalding,2015,Financial activities,25429026,592,42954.0,False
@@ -1977,16 +1789,6 @@ Spalding,2023,Natural resources and mining,1124117,26,43235.0,False
 Spalding,2023,Other services,29565132,596,49606.0,False
 Spalding,2023,Professional and business services,127037942,3025,41996.0,False
 Spalding,2023,"Trade, transportation and utilities",163096763,4024,40531.0,False
-Spalding,2024,Construction,43392004,717,60519.0,False
-Spalding,2024,Education and health services,222321712,4292,51799.0,False
-Spalding,2024,Financial activities,31393054,492,63807.0,False
-Spalding,2024,Information,4076279,73,55839.0,False
-Spalding,2024,Leisure and hospitality,44033116,2094,21028.0,False
-Spalding,2024,Manufacturing,217710684,3104,70139.0,False
-Spalding,2024,Natural resources and mining,1404866,30,46829.0,False
-Spalding,2024,Other services,26072909,503,51835.0,False
-Spalding,2024,Professional and business services,124630544,2731,45635.0,False
-Spalding,2024,"Trade, transportation and utilities",190609936,4356,43758.0,False
 Walton,2015,Construction,114188334,2393,47718.0,False
 Walton,2015,Education and health services,75394379,2203,34224.0,False
 Walton,2015,Financial activities,20628791,526,39218.0,False
@@ -2077,13 +1879,3 @@ Walton,2023,Natural resources and mining,7041270,147,47900.0,False
 Walton,2023,Other services,35627035,726,49073.0,False
 Walton,2023,Professional and business services,108709480,2035,53420.0,False
 Walton,2023,"Trade, transportation and utilities",349555046,6447,54220.0,False
-Walton,2024,Construction,259520277,3429,75684.0,False
-Walton,2024,Education and health services,190305275,3585,53084.0,False
-Walton,2024,Financial activities,52902569,764,69244.0,False
-Walton,2024,Information,8616423,134,64302.0,False
-Walton,2024,Leisure and hospitality,65160973,3110,20952.0,False
-Walton,2024,Manufacturing,203241171,3019,67321.0,False
-Walton,2024,Natural resources and mining,6639024,127,52276.0,False
-Walton,2024,Other services,35413954,699,50664.0,False
-Walton,2024,Professional and business services,104903704,1882,55741.0,False
-Walton,2024,"Trade, transportation and utilities",270909939,5656,47898.0,False
