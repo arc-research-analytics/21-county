@@ -43,6 +43,16 @@ jobs:
           git diff --staged --quiet || git commit -m "chore: update data $(date +%Y-%m)"
           git push
 
+      - name: Build notification message
+        id: notify
+        if: always()
+        run: |
+          if [ "${{ job.status }}" = "success" ]; then
+            echo "body=BRO! 21-county pipeline run was successful. Crushing lyfe." >> $GITHUB_OUTPUT
+          else
+            echo "body=bro... the pipeline failed. Somewhere out there, a county is crying. Check the logs and fix it before anyone notices." >> $GITHUB_OUTPUT
+          fi
+
       - name: Send notification
         if: always()
         uses: dawidd6/action-send-mail@v3
@@ -55,4 +65,7 @@ jobs:
           to: ${{ secrets.NOTIFY_EMAIL }}
           from: ARC Dashboard Pipeline <${{ secrets.GMAIL_USERNAME }}>
           subject: "ARC data update ${{ job.status == 'success' && '✓' || '✗' }} — ${{ steps.ts.outputs.label }}"
-          body: ${{ job.status == 'success' && format('BRO! 21-county pipeline run was successful. Crushing lyfe.\n\nView logs: {0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id) || format('bro... the pipeline failed. Somewhere out there, a county is crying. Check the logs and fix it before anyone notices.\n\nView logs: {0}/{1}/actions/runs/{2}', github.server_url, github.repository, github.run_id) }}
+          body: |
+            ${{ steps.notify.outputs.body }}
+
+            View logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
