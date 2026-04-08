@@ -1,0 +1,60 @@
+name: Update dashboard data
+
+on:
+  schedule:
+    - cron: '0 8 1 * *'  # 8am UTC on the 1st of each month
+  workflow_dispatch:       # manual trigger for testing
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write      # needed to push data/output back to repo
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: conda-incubator/setup-miniconda@v3
+        with:
+          environment-file: environment.yml
+          activate-environment: research
+          auto-activate-base: false
+
+      - name: Install Playwright browsers
+        shell: bash -el {0}
+        run: playwright install chromium --with-deps
+
+      - name: Run pipeline
+        shell: bash -el {0}
+        env:
+          CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
+          BEA_API_KEY: ${{ secrets.BEA_API_KEY }}
+        run: python pipeline/run_pipeline.py
+
+      - name: Commit updated output
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/output/
+          git diff --staged --quiet || git commit -m "chore: update data $(date +%Y-%m)"
+          git push
+
+      - name: Send notification
+        if: always()
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.GMAIL_USERNAME }}
+          password: ${{ secrets.GMAIL_APP_PASSWORD }}
+          to: ${{ secrets.NOTIFY_EMAIL }}
+          from: ARC Dashboard Pipeline <${{ secrets.GMAIL_USERNAME }}>
+          subject: "ARC data update ${{ job.status == 'success' && '✓' || '✗' }} — ${{ github.run_id }}"
+          body: |
+            Pipeline finished with status: ${{ job.status }}
+
+            Run date: ${{ github.run_id }}
+            Triggered by: ${{ github.event_name }}
+
+            View logs: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

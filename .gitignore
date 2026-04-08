@@ -1,0 +1,10 @@
+.env
+.DS_Store
+.claude/
+__pycache__/
+*.pyc
+data/raw/
+# Forecast Excel files are committed — ARC publishes a new series every few years,
+# so these are stable enough to track in git and ensure CI never hits a dead URL.
+!data/raw/forecasts/
+data/processed/

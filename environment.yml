@@ -1,0 +1,13 @@
+name: research
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pandas=2.2.*
+  - requests=2.32.*
+  - openpyxl=3.1.*
+  - pip
+  - pip:
+      - python-dotenv==1.0.1
+      - playwright==1.51.0
