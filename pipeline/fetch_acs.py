@@ -77,30 +77,34 @@ HOUSING_VARS = {
 }
 
 # B27001: Health Insurance Coverage Status (civilian noninstitutionalized pop)
-# Uninsured = sum of all "no health insurance" cells across sex × age groups
-# Each age group is a triplet: [group total, with insurance, no insurance]
-# Male uninsured cells: 005, 008, 011, 014, 017, 020, 023, 026
-# Female uninsured cells: 030, 033, 036, 039, 042, 045, 048, 051
-# (Female section starts at 027=total, 028=age-group; no-insurance is the 3rd
-#  element of each triplet, i.e. even-numbered cells starting at 030.)
+# Uninsured = sum of all "no health insurance" cells across sex × age groups.
+# B27001 has 9 age groups per sex. Each group is a triplet:
+#   [age-group total, with insurance, no insurance]
+# Male section: 002 (male total) + 9 triplets → cells 003–029; no-ins = 005,008,...,029
+# Female section: 030 (female total) + 9 triplets → cells 031–059; no-ins = 033,036,...,057
+# Verified against Census API for ACS 2023 1-year.
 HEALTH_VARS = {
     "pop_total":         "B27001_001E",
-    "m_unins_u19":       "B27001_005E",
-    "m_unins_19_25":     "B27001_008E",
-    "m_unins_26_34":     "B27001_011E",
-    "m_unins_35_44":     "B27001_014E",
-    "m_unins_45_54":     "B27001_017E",
-    "m_unins_55_64":     "B27001_020E",
-    "m_unins_65_74":     "B27001_023E",
-    "m_unins_75p":       "B27001_026E",
-    "f_unins_u19":       "B27001_030E",
-    "f_unins_19_25":     "B27001_033E",
-    "f_unins_26_34":     "B27001_036E",
-    "f_unins_35_44":     "B27001_039E",
-    "f_unins_45_54":     "B27001_042E",
-    "f_unins_55_64":     "B27001_045E",
-    "f_unins_65_74":     "B27001_048E",
-    "f_unins_75p":       "B27001_051E",
+    # Male no-insurance (9 age groups: <6, 6-17, 19-25, 26-34, 35-44, 45-54, 55-64, 65-74, 75+)
+    "m_unins_u6":        "B27001_005E",
+    "m_unins_6_17":      "B27001_008E",
+    "m_unins_19_25":     "B27001_011E",
+    "m_unins_26_34":     "B27001_014E",
+    "m_unins_35_44":     "B27001_017E",
+    "m_unins_45_54":     "B27001_020E",
+    "m_unins_55_64":     "B27001_023E",
+    "m_unins_65_74":     "B27001_026E",
+    "m_unins_75p":       "B27001_029E",
+    # Female no-insurance (9 age groups; female total = 030, first triplet starts at 031)
+    "f_unins_u6":        "B27001_033E",
+    "f_unins_6_17":      "B27001_036E",
+    "f_unins_19_25":     "B27001_039E",
+    "f_unins_26_34":     "B27001_042E",
+    "f_unins_35_44":     "B27001_045E",
+    "f_unins_45_54":     "B27001_048E",
+    "f_unins_55_64":     "B27001_051E",
+    "f_unins_65_74":     "B27001_054E",
+    "f_unins_75p":       "B27001_057E",
 }
 
 # B19013: Median Household Income
