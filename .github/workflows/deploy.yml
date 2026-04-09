@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare deploy directory
+        run: |
+          mkdir -p _deploy
+
+          # Copy all frontend source files to deploy root
+          cp -r frontend/. _deploy/
+
+          # Copy data pipeline outputs so the frontend can fetch them at runtime
+          mkdir -p _deploy/data/output
+          cp -r data/output/. _deploy/data/output/
+
+          # Copy font/static assets
+          cp -r assets/. _deploy/assets/
+
+          # Fix relative paths that shift when frontend/ becomes the site root:
+          #   js/data.js uses ../../data/output/ (two levels up from frontend/js/)
+          #   → on gh-pages js/data.js is one level from root, so ../data/output/
+          sed -i "s|../../data/output/|../data/output/|g" _deploy/js/data.js
+
+          #   css/theme.css font-face paths use ../../assets/fonts/
+          #   → on gh-pages css/theme.css is one level from root, so ../assets/fonts/
+          sed -i "s|../../assets/fonts/|../assets/fonts/|g" _deploy/css/theme.css
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_deploy

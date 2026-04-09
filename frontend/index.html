@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARC 21-County Dashboard</title>
+
+    <!-- ── Favicon ───────────────────────────────────────────────────────── -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>"
+    />
+
+    <!-- ── Fonts: DINPro (local) ─────────────────────────────────────────── -->
+    <!-- DINPro @font-face rules are defined in css/theme.css -->
+
+    <!-- ── Tailwind CSS (layout utilities) ───────────────────────────────── -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: ["selector", '[data-theme="dark"]'],
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["DINPro", "sans-serif"],
+              headline: ["DINPro", "sans-serif"],
+              body: ["DINPro", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- ── Web Awesome UI components ─────────────────────────────────────── -->
+    <link
+      rel="stylesheet"
+      href="https://early.webawesome.com/webawesome@3.0.0-beta.5/dist/styles/webawesome.css"
+    />
+    <script
+      type="module"
+      src="https://early.webawesome.com/webawesome@3.0.0-beta.5/dist/webawesome.loader.js"
+    ></script>
+
+    <!-- ── Mapbox GL JS ──────────────────────────────────────────────────── -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mapbox-gl@3/dist/mapbox-gl.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mapbox-gl@3/dist/mapbox-gl.js"></script>
+
+    <!-- ── Highcharts (via jsDelivr — avoids CDN restrictions) ──────────── -->
+    <script src="https://cdn.jsdelivr.net/npm/highcharts@11/highcharts.js"></script>
+
+    <!-- ── Papa Parse (CSV) ──────────────────────────────────────────────── -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+
+    <!-- ── Dashboard theme + component styles ────────────────────────────── -->
+    <link rel="stylesheet" href="css/theme.css" />
+  </head>
+
+  <body style="font-family: &quot;DINPro&quot;, sans-serif">
+    <div class="flex h-screen overflow-hidden">
+      <!-- ════════════════════════════════════════════════════════════════════
+       SIDEBAR
+       ════════════════════════════════════════════════════════════════════ -->
+      <aside
+        id="sidebar"
+        class="fixed inset-y-0 left-0 z-20 flex flex-col"
+        style="width: 220px"
+      >
+        <!-- Branding -->
+        <div class="pt-5 pb-4 flex flex-col items-center text-center">
+          <img
+            src="../assets/arc_logo-small.png"
+            alt="Atlanta Regional Commission"
+            style="
+              width: 76px;
+              height: auto;
+              display: block;
+              margin-bottom: 0.625rem;
+            "
+          />
+          <p
+            style="
+              font-size: 0.6375rem;
+              font-weight: 500;
+              letter-spacing: 0.07em;
+              color: var(--on-surface-variant);
+              font-family: &quot;DINPro&quot;, sans-serif;
+              text-transform: uppercase;
+            "
+          >
+            21-County Dashboard
+          </p>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="flex-1 px-3 pb-2 space-y-0.5 overflow-y-auto">
+          <button class="nav-item active" data-tab="population">
+            <wa-icon name="users" class="nav-icon"></wa-icon>
+            Population
+          </button>
+          <button class="nav-item" data-tab="employment">
+            <wa-icon name="briefcase" class="nav-icon"></wa-icon>
+            Employment
+          </button>
+          <button class="nav-item" data-tab="economy">
+            <wa-icon name="arrow-trend-up" class="nav-icon"></wa-icon>
+            Economy
+          </button>
+          <button class="nav-item" data-tab="housing">
+            <wa-icon name="house" class="nav-icon"></wa-icon>
+            Housing
+          </button>
+          <button class="nav-item" data-tab="education">
+            <wa-icon name="graduation-cap" class="nav-icon"></wa-icon>
+            Education
+          </button>
+          <button class="nav-item" data-tab="health">
+            <wa-icon name="heart" class="nav-icon"></wa-icon>
+            Health
+          </button>
+          <button class="nav-item" data-tab="income">
+            <wa-icon name="dollar-sign" class="nav-icon"></wa-icon>
+            Income
+          </button>
+          <button class="nav-item" data-tab="forecast">
+            <wa-icon name="chart-line" class="nav-icon"></wa-icon>
+            2050 Forecast
+          </button>
+
+          <div class="nav-divider"></div>
+
+          <button class="nav-item" data-tab="about">
+            <wa-icon name="circle-info" class="nav-icon"></wa-icon>
+            About
+          </button>
+        </nav>
+
+        <!-- Dark mode toggle (icon-only, centered) -->
+        <div
+          class="pb-5 pt-3 flex justify-center"
+          style="border-top: 1px solid rgba(195, 198, 208, 0.25)"
+        >
+          <button
+            id="dark-mode-toggle"
+            aria-label="Toggle dark mode"
+            style="
+              background: none;
+              border: none;
+              cursor: pointer;
+              padding: 0.5rem;
+              border-radius: 0.5rem;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: var(--on-surface-variant);
+              transition:
+                background 150ms,
+                color 150ms;
+            "
+          >
+            <wa-icon
+              name="moon"
+              id="dark-mode-icon"
+              style="font-size: 20px"
+            ></wa-icon>
+          </button>
+        </div>
+      </aside>
+
+      <!-- ════════════════════════════════════════════════════════════════════
+       MAIN CONTENT
+       ════════════════════════════════════════════════════════════════════ -->
+      <main
+        class="flex flex-col min-h-screen overflow-auto"
+        style="margin-left: 220px; flex: 1"
+      >
+        <!-- ── Top bar ──────────────────────────────────────────────────────── -->
+        <header
+          id="top-bar"
+          class="sticky top-0 z-10 flex items-center gap-3 px-6 py-3"
+        >
+          <!-- Tab title -->
+          <h1
+            id="tab-title"
+            class="font-headline font-semibold flex-shrink-0"
+            style="
+              font-size: 0.9375rem;
+              color: var(--color-primary);
+              min-width: 120px;
+            "
+          >
+            Population
+          </h1>
+
+          <!-- Separator -->
+          <div
+            class="flex-shrink-0 w-px h-5"
+            style="background: var(--outline-variant)"
+          ></div>
+
+          <!-- County multi-select -->
+          <wa-select
+            id="county-select"
+            multiple
+            size="small"
+            placeholder="Select counties…"
+            with-clear
+          >
+            <wa-option value="Barrow">Barrow</wa-option>
+            <wa-option value="Bartow">Bartow</wa-option>
+            <wa-option value="Carroll">Carroll</wa-option>
+            <wa-option value="Cherokee">Cherokee</wa-option>
+            <wa-option value="Clayton">Clayton</wa-option>
+            <wa-option value="Cobb">Cobb</wa-option>
+            <wa-option value="Coweta">Coweta</wa-option>
+            <wa-option value="Dawson">Dawson</wa-option>
+            <wa-option value="DeKalb">DeKalb</wa-option>
+            <wa-option value="Douglas">Douglas</wa-option>
+            <wa-option value="Fayette">Fayette</wa-option>
+            <wa-option value="Forsyth">Forsyth</wa-option>
+            <wa-option value="Fulton">Fulton</wa-option>
+            <wa-option value="Gwinnett">Gwinnett</wa-option>
+            <wa-option value="Hall">Hall</wa-option>
+            <wa-option value="Henry">Henry</wa-option>
+            <wa-option value="Newton">Newton</wa-option>
+            <wa-option value="Paulding">Paulding</wa-option>
+            <wa-option value="Rockdale">Rockdale</wa-option>
+            <wa-option value="Spalding">Spalding</wa-option>
+            <wa-option value="Walton">Walton</wa-option>
+          </wa-select>
+
+          <!-- Preset buttons -->
+          <wa-button id="btn-21county" size="small" variant="brand"
+            >21-County</wa-button
+          >
+          <wa-button id="btn-core11" size="small" variant="neutral" outline
+            >11-County Core</wa-button
+          >
+
+          <div class="flex-1"></div>
+
+          <!-- Data vintage badge -->
+          <div id="vintage-badge">Loading…</div>
+        </header>
+
+        <!-- ── Tab panels ────────────────────────────────────────────────────── -->
+        <div class="flex-1 px-6 pb-8 pt-5">
+          <!-- ── Population ───────────────────────────────────────────────── -->
+          <section id="panel-population" class="tab-panel">
+            <!-- KPI + map row — 3 equal columns -->
+            <div class="grid gap-4 mb-5" style="grid-template-columns: repeat(3, 1fr);">
+              <div class="kpi-card">
+                <p class="kpi-label">Total Population</p>
+                <p class="kpi-value" id="kpi-pop-value">—</p>
+                <p class="kpi-sub" id="kpi-pop-sub">Loading…</p>
+              </div>
+              <div class="kpi-card">
+                <p class="kpi-label">Growth Since 2010</p>
+                <p class="kpi-value" id="kpi-growth-value">—</p>
+                <p class="kpi-sub" id="kpi-growth-sub">—</p>
+              </div>
+              <!-- County selection map -->
+              <div class="kpi-card" style="padding: 0; overflow: hidden;">
+                <div id="map-counties" style="width: 100%; height: 160px;"></div>
+              </div>
+            </div>
+
+            <!-- Trend line chart -->
+            <div class="chart-card mb-4">
+              <h3 class="chart-title">Population Trend, 2000–Present</h3>
+              <div id="chart-pop-trend" style="height: 300px"></div>
+            </div>
+
+            <!-- Race donut + Age bar -->
+            <div class="grid gap-4" style="grid-template-columns: 2fr 3fr">
+              <div class="chart-card">
+                <h3 class="chart-title">Race &amp; Ethnicity</h3>
+                <p class="chart-sub" id="race-vintage-label">
+                  Latest ACS estimate
+                </p>
+                <div id="chart-race" style="height: 270px"></div>
+              </div>
+              <div class="chart-card">
+                <h3 class="chart-title">Age Profile</h3>
+                <p class="chart-sub" id="age-vintage-label">
+                  Latest ACS estimate
+                </p>
+                <div id="chart-age" style="height: 270px"></div>
+              </div>
+            </div>
+          </section>
+
+          <!-- ── Employment (Phase 2 placeholder) ─────────────────────────── -->
+          <section id="panel-employment" class="tab-panel hidden">
+            <div class="coming-soon">Employment — coming in Phase 2</div>
+          </section>
+
+          <!-- ── Economy (Phase 2 placeholder) ────────────────────────────── -->
+          <section id="panel-economy" class="tab-panel hidden">
+            <div class="coming-soon">Economy — coming in Phase 2</div>
+          </section>
+
+          <!-- ── Housing (Phase 3 placeholder) ────────────────────────────── -->
+          <section id="panel-housing" class="tab-panel hidden">
+            <div class="coming-soon">Housing — coming in Phase 3</div>
+          </section>
+
+          <!-- ── Education (Phase 4 placeholder) ─────────────────────────── -->
+          <section id="panel-education" class="tab-panel hidden">
+            <div class="coming-soon">Education — coming in Phase 4</div>
+          </section>
+
+          <!-- ── Health (Phase 4 placeholder) ─────────────────────────────── -->
+          <section id="panel-health" class="tab-panel hidden">
+            <div class="coming-soon">Health — coming in Phase 4</div>
+          </section>
+
+          <!-- ── Income (Phase 3 placeholder) ─────────────────────────────── -->
+          <section id="panel-income" class="tab-panel hidden">
+            <div class="coming-soon">Income — coming in Phase 3</div>
+          </section>
+
+          <!-- ── Forecast (Phase 5 placeholder) ───────────────────────────── -->
+          <section id="panel-forecast" class="tab-panel hidden">
+            <div class="coming-soon">2050 Forecast — coming in Phase 5</div>
+          </section>
+
+          <!-- ── About (Phase 5 placeholder) ─────────────────────────────── -->
+          <section id="panel-about" class="tab-panel hidden">
+            <div class="coming-soon">About — coming in Phase 5</div>
+          </section>
+        </div>
+        <!-- /tab panels -->
+      </main>
+    </div>
+    <!-- /flex wrapper -->
+
+    <!-- App entry point (ES module, deferred by default) -->
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

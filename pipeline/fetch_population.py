@@ -2,20 +2,25 @@
 Fetch Census Population Estimates Program (PEP) data.
 
 Pulls:
-  1. Total population 2000–2023 (annual, per county) — time series
-  2. 2023 race/ethnicity breakdown (per county) — snapshot
-  3. 2023 age group breakdown (per county) — snapshot
+  1. Total population 2000–present (annual, per county) — time series
 
 Sources:
-  - 2020–2023: Census PEP vintage 2023, pep/population + pep/charagegroups
-  - 2010–2019: Census PEP vintage 2019, pep/population + pep/charagegroups
-  - 2000–2009: Census intercensal estimates (downloaded CSV)
+  - 2020–present: Census PEP charv API endpoint, latest available vintage
+                  (tries PEP_END_YEAR first, walks back up to 4 years on 404).
+                  Falls back to direct CSV file download from census.gov if all
+                  charv vintages return 404 (API often lags behind file releases).
+  - 2010–2019:    Census PEP vintage 2019, pep/population API
+  - 2000–2009:    Census intercensal estimates (downloaded CSV)
+
+Note: race/ethnicity and age breakdowns are fetched from ACS in fetch_acs.py,
+not from PEP. The charv endpoint is queried with AGE=0000 & SEX=0 for total
+population only.
 
 Outputs:
   data/processed/population_timeseries.csv  (county × year, total population)
-  data/processed/population_profile.csv     (county, race pct, age group pct for 2023)
 """
 
+import io
 import requests
 import pandas as pd
 import sys
@@ -47,17 +52,66 @@ def _county_name(series: pd.Series) -> pd.Series:
     return series.str.replace(" County, Georgia", "", regex=False).str.strip()
 
 
+def _fetch_pop_2020_from_file(vintage: int) -> pd.DataFrame | None:
+    """
+    Fallback: download the county-totals CSV directly from census.gov.
+    Census publishes bulk files before the charv API endpoint goes live.
+    File is cached in data/raw/census/ after first download.
+    Returns None if the file doesn't exist for this vintage.
+    """
+    filename = f"co-est{vintage}-alldata.csv"
+    cache_path = DATA_RAW / "census" / filename
+    url = (
+        f"https://www2.census.gov/programs-surveys/popest/datasets/"
+        f"2020-{vintage}/counties/totals/{filename}"
+    )
+
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    if not cache_path.exists():
+        print(f"    Downloading county totals file for vintage {vintage}...")
+        r = requests.get(url, timeout=120)
+        if r.status_code == 404:
+            return None
+        r.raise_for_status()
+        cache_path.write_bytes(r.content)
+
+    df = pd.read_csv(cache_path, encoding="latin-1")
+
+    # Filter to Georgia ARC counties
+    df = df[(df["STATE"] == int(STATE_FIPS)) &
+            (df["COUNTY"].astype(str).str.zfill(3).isin(ARC_COUNTY_FIPS))].copy()
+
+    df["county_fips"] = STATE_FIPS + df["COUNTY"].astype(str).str.zfill(3)
+    df["county_name"] = df["CTYNAME"].str.replace(" County", "", regex=False).str.strip()
+
+    # Wide-format: POPESTIMATE2020, POPESTIMATE2021, … POPESTIMATE{vintage}
+    pop_cols = [c for c in df.columns if c.startswith("POPESTIMATE") and c[11:].isdigit()]
+    if not pop_cols:
+        return None
+
+    records = []
+    for _, row in df.iterrows():
+        for col in pop_cols:
+            records.append({
+                "county_fips": row["county_fips"],
+                "county_name":  row["county_name"],
+                "year":         int(col[11:]),
+                "population":   row[col],
+            })
+
+    return pd.DataFrame(records)[["county_fips", "county_name", "year", "population"]]
+
+
 # ── Total population time series ───────────────────────────────────────────────
 
 def fetch_pop_2020_current() -> pd.DataFrame:
     """
     Returns long-format df: county_fips, county_name, year, population.
 
-    Tries PEP_END_YEAR vintage first; walks back up to 4 years until the
-    charv endpoint responds (PEP typically publishes in December for the prior year).
-    AGE=0000 + SEX=0 gives the all-ages total. 2020 has two rows (April 1
-    census base and July 1 estimate); we take the max per county-year to
-    keep the July 1 estimate consistently with the 2010-2019 series.
+    Strategy:
+    1. Try charv API (PEP_END_YEAR vintage, walking back up to 4 years on 404).
+    2. If all charv vintages return 404, fall back to direct CSV download from
+       census.gov (Census publishes bulk files before API endpoints go live).
     """
     params = {
         "get": "NAME,POP,YEAR",
@@ -70,41 +124,60 @@ def fetch_pop_2020_current() -> pd.DataFrame:
     resp = None
     found_vintage = None
     for vintage in range(PEP_END_YEAR, PEP_END_YEAR - 5, -1):
-        print(f"  Fetching PEP 2020–{vintage} (vintage {vintage})...")
+        print(f"  Fetching PEP 2020–{vintage} (vintage {vintage}) via charv API...")
         url = f"https://api.census.gov/data/{vintage}/pep/charv"
         r = requests.get(url, params=params, timeout=60)
         if r.status_code == 404:
-            print(f"    PEP vintage {vintage} not available, trying {vintage - 1}...")
+            print(f"    charv vintage {vintage} not available, trying {vintage - 1}...")
             continue
         r.raise_for_status()
         resp = r
         found_vintage = vintage
         break
 
-    if resp is None:
-        raise RuntimeError(
-            f"PEP charv endpoint not available for vintages "
-            f"{PEP_END_YEAR} through {PEP_END_YEAR - 4}"
+    if resp is not None:
+        if found_vintage != PEP_END_YEAR:
+            print(f"  charv API only has through vintage {found_vintage}; "
+                  f"checking census.gov files for newer vintages...")
+            # charv is behind — try direct file download for more recent vintages
+            for vintage in range(PEP_END_YEAR, found_vintage, -1):
+                file_df = _fetch_pop_2020_from_file(vintage)
+                if file_df is not None:
+                    print(f"  Using county-totals file for vintage {vintage} "
+                          f"(more recent than charv API).")
+                    return file_df
+            print(f"  No newer file found; using charv vintage {found_vintage}.")
+
+        data = resp.json()
+        df = pd.DataFrame(data[1:], columns=data[0])
+        df = _filter_arc(df)
+
+        df["county_fips"] = STATE_FIPS + df["county"]
+        df["county_name"] = _county_name(df["NAME"])
+        df["year"] = pd.to_numeric(df["YEAR"], errors="coerce").astype(int)
+        df["population"] = pd.to_numeric(df["POP"], errors="coerce")
+
+        # 2020 has two rows (April 1 census + July 1 estimate); keep the max (July 1)
+        df = (
+            df.groupby(["county_fips", "county_name", "year"])["population"]
+            .max()
+            .reset_index()
         )
-    if found_vintage != PEP_END_YEAR:
-        print(f"  Using PEP vintage {found_vintage} (latest available)")
+        return df[["county_fips", "county_name", "year", "population"]]
 
-    data = resp.json()
-    df = pd.DataFrame(data[1:], columns=data[0])
-    df = _filter_arc(df)
+    # ── All charv vintages 404 — fall back to direct file download ────────────
+    print(f"  charv API returned 404 for all vintages {PEP_END_YEAR}–{PEP_END_YEAR - 4}.")
+    print(f"  Falling back to direct census.gov file download...")
+    for vintage in range(PEP_END_YEAR, PEP_END_YEAR - 5, -1):
+        file_df = _fetch_pop_2020_from_file(vintage)
+        if file_df is not None:
+            print(f"  Using county-totals file for vintage {vintage}.")
+            return file_df
 
-    df["county_fips"] = STATE_FIPS + df["county"]
-    df["county_name"] = _county_name(df["NAME"])
-    df["year"] = pd.to_numeric(df["YEAR"], errors="coerce").astype(int)
-    df["population"] = pd.to_numeric(df["POP"], errors="coerce")
-
-    # 2020 has two rows (April 1 census + July 1 estimate); keep the max (July 1)
-    df = (
-        df.groupby(["county_fips", "county_name", "year"])["population"]
-        .max()
-        .reset_index()
+    raise RuntimeError(
+        f"PEP data not available via charv API or direct file download "
+        f"for vintages {PEP_END_YEAR} through {PEP_END_YEAR - 4}."
     )
-    return df[["county_fips", "county_name", "year", "population"]]
 
 
 def fetch_pop_2010_2019() -> pd.DataFrame:

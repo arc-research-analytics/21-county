@@ -427,6 +427,10 @@ def fetch_acs():
     out_path = DATA_PROCESSED / "acs_snapshot.csv"
     df.to_csv(out_path, index=False)
     print(f"  Saved {len(df)} counties → {out_path}")
+
+    # Persist the actual fetched year so process.py can write accurate vintages.json
+    (DATA_PROCESSED / "acs_year.txt").write_text(str(acs_year))
+
     return df
 
 

@@ -313,9 +313,13 @@ def _generate_vintages() -> dict:
     """
     meta: dict = {"generated": str(date.today())}
 
-    # ACS snapshot vintage year (housing, income, education, health)
-    # acs_vintage column contains "1yr"/"5yr" (estimate type); year comes from config.
-    meta["acs_vintage"] = ACS_YEAR
+    # ACS snapshot vintage year — read the year fetch_acs actually used.
+    # fetch_acs._discover_acs_year() may fall back one year if the target vintage
+    # isn't published yet (e.g. ACS 2025 isn't available until September 2026).
+    acs_year_file = DATA_PROCESSED / "acs_year.txt"
+    meta["acs_vintage"] = (
+        int(acs_year_file.read_text().strip()) if acs_year_file.exists() else ACS_YEAR
+    )
 
     # Time series latest years
     for key, filename, col in [
