@@ -1,0 +1,841 @@
+county_name,year,supersector,employment
+Barrow,2020,Construction,2072
+Barrow,2020,Education and health services,4091
+Barrow,2020,Financial activities,1739
+Barrow,2020,Information,162
+Barrow,2020,Leisure and hospitality,2181
+Barrow,2020,Natural resources and mining,108
+Barrow,2020,Other services,891
+Barrow,2020,Professional and business services,2603
+Barrow,2020,Public administration,986
+Barrow,2020,"Trade, transportation and utilities",1562
+Barrow,2030,Construction,2208
+Barrow,2030,Education and health services,4863
+Barrow,2030,Financial activities,1887
+Barrow,2030,Information,167
+Barrow,2030,Leisure and hospitality,2684
+Barrow,2030,Natural resources and mining,80
+Barrow,2030,Other services,1167
+Barrow,2030,Professional and business services,3016
+Barrow,2030,Public administration,1161
+Barrow,2030,"Trade, transportation and utilities",1656
+Barrow,2040,Construction,2437
+Barrow,2040,Education and health services,5133
+Barrow,2040,Financial activities,1945
+Barrow,2040,Information,168
+Barrow,2040,Leisure and hospitality,2796
+Barrow,2040,Natural resources and mining,77
+Barrow,2040,Other services,1185
+Barrow,2040,Professional and business services,3226
+Barrow,2040,Public administration,1191
+Barrow,2040,"Trade, transportation and utilities",1713
+Barrow,2050,Construction,2561
+Barrow,2050,Education and health services,5325
+Barrow,2050,Financial activities,1749
+Barrow,2050,Information,168
+Barrow,2050,Leisure and hospitality,2738
+Barrow,2050,Natural resources and mining,68
+Barrow,2050,Other services,1121
+Barrow,2050,Professional and business services,3419
+Barrow,2050,Public administration,1306
+Barrow,2050,"Trade, transportation and utilities",1670
+Bartow,2020,Construction,2053
+Bartow,2020,Education and health services,7226
+Bartow,2020,Financial activities,2828
+Bartow,2020,Information,304
+Bartow,2020,Leisure and hospitality,3881
+Bartow,2020,Natural resources and mining,263
+Bartow,2020,Other services,867
+Bartow,2020,Professional and business services,6306
+Bartow,2020,Public administration,1799
+Bartow,2020,"Trade, transportation and utilities",2030
+Bartow,2030,Construction,2920
+Bartow,2030,Education and health services,7976
+Bartow,2030,Financial activities,4496
+Bartow,2030,Information,351
+Bartow,2030,Leisure and hospitality,5360
+Bartow,2030,Natural resources and mining,229
+Bartow,2030,Other services,1287
+Bartow,2030,Professional and business services,8425
+Bartow,2030,Public administration,1616
+Bartow,2030,"Trade, transportation and utilities",2138
+Bartow,2040,Construction,2800
+Bartow,2040,Education and health services,8333
+Bartow,2040,Financial activities,4544
+Bartow,2040,Information,361
+Bartow,2040,Leisure and hospitality,5391
+Bartow,2040,Natural resources and mining,203
+Bartow,2040,Other services,1197
+Bartow,2040,Professional and business services,9249
+Bartow,2040,Public administration,1655
+Bartow,2040,"Trade, transportation and utilities",2108
+Bartow,2050,Construction,2847
+Bartow,2050,Education and health services,9072
+Bartow,2050,Financial activities,4246
+Bartow,2050,Information,405
+Bartow,2050,Leisure and hospitality,5351
+Bartow,2050,Natural resources and mining,182
+Bartow,2050,Other services,1109
+Bartow,2050,Professional and business services,10230
+Bartow,2050,Public administration,1920
+Bartow,2050,"Trade, transportation and utilities",2271
+Carroll,2020,Construction,3312
+Carroll,2020,Education and health services,14178
+Carroll,2020,Financial activities,3188
+Carroll,2020,Information,697
+Carroll,2020,Leisure and hospitality,4184
+Carroll,2020,Natural resources and mining,237
+Carroll,2020,Other services,1332
+Carroll,2020,Professional and business services,5014
+Carroll,2020,Public administration,1665
+Carroll,2020,"Trade, transportation and utilities",1654
+Carroll,2030,Construction,3705
+Carroll,2030,Education and health services,17074
+Carroll,2030,Financial activities,3205
+Carroll,2030,Information,730
+Carroll,2030,Leisure and hospitality,4511
+Carroll,2030,Natural resources and mining,269
+Carroll,2030,Other services,1672
+Carroll,2030,Professional and business services,5812
+Carroll,2030,Public administration,1881
+Carroll,2030,"Trade, transportation and utilities",2494
+Carroll,2040,Construction,3463
+Carroll,2040,Education and health services,17859
+Carroll,2040,Financial activities,3298
+Carroll,2040,Information,743
+Carroll,2040,Leisure and hospitality,4309
+Carroll,2040,Natural resources and mining,297
+Carroll,2040,Other services,1506
+Carroll,2040,Professional and business services,6318
+Carroll,2040,Public administration,1980
+Carroll,2040,"Trade, transportation and utilities",2685
+Carroll,2050,Construction,3225
+Carroll,2050,Education and health services,18568
+Carroll,2050,Financial activities,3275
+Carroll,2050,Information,822
+Carroll,2050,Leisure and hospitality,4249
+Carroll,2050,Natural resources and mining,331
+Carroll,2050,Other services,1340
+Carroll,2050,Professional and business services,6977
+Carroll,2050,Public administration,2044
+Carroll,2050,"Trade, transportation and utilities",2631
+Cherokee,2020,Construction,5479
+Cherokee,2020,Education and health services,14463
+Cherokee,2020,Financial activities,6541
+Cherokee,2020,Information,861
+Cherokee,2020,Leisure and hospitality,8751
+Cherokee,2020,Natural resources and mining,198
+Cherokee,2020,Other services,3305
+Cherokee,2020,Professional and business services,12010
+Cherokee,2020,Public administration,3813
+Cherokee,2020,"Trade, transportation and utilities",2240
+Cherokee,2030,Construction,4253
+Cherokee,2030,Education and health services,15496
+Cherokee,2030,Financial activities,11194
+Cherokee,2030,Information,1073
+Cherokee,2030,Leisure and hospitality,11633
+Cherokee,2030,Natural resources and mining,214
+Cherokee,2030,Other services,4806
+Cherokee,2030,Professional and business services,15778
+Cherokee,2030,Public administration,3727
+Cherokee,2030,"Trade, transportation and utilities",2635
+Cherokee,2040,Construction,3944
+Cherokee,2040,Education and health services,16380
+Cherokee,2040,Financial activities,11544
+Cherokee,2040,Information,1073
+Cherokee,2040,Leisure and hospitality,12402
+Cherokee,2040,Natural resources and mining,197
+Cherokee,2040,Other services,4962
+Cherokee,2040,Professional and business services,17045
+Cherokee,2040,Public administration,4345
+Cherokee,2040,"Trade, transportation and utilities",2737
+Cherokee,2050,Construction,3676
+Cherokee,2050,Education and health services,18252
+Cherokee,2050,Financial activities,10764
+Cherokee,2050,Information,1149
+Cherokee,2050,Leisure and hospitality,12568
+Cherokee,2050,Natural resources and mining,168
+Cherokee,2050,Other services,4818
+Cherokee,2050,Professional and business services,19847
+Cherokee,2050,Public administration,4730
+Cherokee,2050,"Trade, transportation and utilities",2877
+Clayton,2020,Construction,3777
+Clayton,2020,Education and health services,21918
+Clayton,2020,Financial activities,7378
+Clayton,2020,Information,1381
+Clayton,2020,Leisure and hospitality,11296
+Clayton,2020,Natural resources and mining,191
+Clayton,2020,Other services,2038
+Clayton,2020,Professional and business services,15529
+Clayton,2020,Public administration,9461
+Clayton,2020,"Trade, transportation and utilities",6702
+Clayton,2030,Construction,3830
+Clayton,2030,Education and health services,25387
+Clayton,2030,Financial activities,7990
+Clayton,2030,Information,1426
+Clayton,2030,Leisure and hospitality,13522
+Clayton,2030,Natural resources and mining,176
+Clayton,2030,Other services,2570
+Clayton,2030,Professional and business services,17959
+Clayton,2030,Public administration,10846
+Clayton,2030,"Trade, transportation and utilities",7091
+Clayton,2040,Construction,3578
+Clayton,2040,Education and health services,26522
+Clayton,2040,Financial activities,8174
+Clayton,2040,Information,1453
+Clayton,2040,Leisure and hospitality,13291
+Clayton,2040,Natural resources and mining,150
+Clayton,2040,Other services,2480
+Clayton,2040,Professional and business services,19467
+Clayton,2040,Public administration,11534
+Clayton,2040,"Trade, transportation and utilities",6947
+Clayton,2050,Construction,3334
+Clayton,2050,Education and health services,26997
+Clayton,2050,Financial activities,8758
+Clayton,2050,Information,1715
+Clayton,2050,Leisure and hospitality,13280
+Clayton,2050,Natural resources and mining,138
+Clayton,2050,Other services,2374
+Clayton,2050,Professional and business services,20869
+Clayton,2050,Public administration,11174
+Clayton,2050,"Trade, transportation and utilities",6678
+Cobb,2020,Construction,28593
+Cobb,2020,Education and health services,73916
+Cobb,2020,Financial activities,37360
+Cobb,2020,Information,12979
+Cobb,2020,Leisure and hospitality,37281
+Cobb,2020,Natural resources and mining,154
+Cobb,2020,Other services,11799
+Cobb,2020,Professional and business services,97046
+Cobb,2020,Public administration,13225
+Cobb,2020,"Trade, transportation and utilities",24790
+Cobb,2030,Construction,33574
+Cobb,2030,Education and health services,82747
+Cobb,2030,Financial activities,46634
+Cobb,2030,Information,13399
+Cobb,2030,Leisure and hospitality,45726
+Cobb,2030,Natural resources and mining,128
+Cobb,2030,Other services,16003
+Cobb,2030,Professional and business services,110040
+Cobb,2030,Public administration,13374
+Cobb,2030,"Trade, transportation and utilities",23123
+Cobb,2040,Construction,33191
+Cobb,2040,Education and health services,88870
+Cobb,2040,Financial activities,47122
+Cobb,2040,Information,13385
+Cobb,2040,Leisure and hospitality,47389
+Cobb,2040,Natural resources and mining,118
+Cobb,2040,Other services,15933
+Cobb,2040,Professional and business services,115232
+Cobb,2040,Public administration,13895
+Cobb,2040,"Trade, transportation and utilities",22371
+Cobb,2050,Construction,32216
+Cobb,2050,Education and health services,93425
+Cobb,2050,Financial activities,46458
+Cobb,2050,Information,14261
+Cobb,2050,Leisure and hospitality,46682
+Cobb,2050,Natural resources and mining,110
+Cobb,2050,Other services,15245
+Cobb,2050,Professional and business services,124337
+Cobb,2050,Public administration,14687
+Cobb,2050,"Trade, transportation and utilities",22151
+Coweta,2020,Construction,2548
+Coweta,2020,Education and health services,8711
+Coweta,2020,Financial activities,2765
+Coweta,2020,Information,754
+Coweta,2020,Leisure and hospitality,6428
+Coweta,2020,Natural resources and mining,106
+Coweta,2020,Other services,1814
+Coweta,2020,Professional and business services,6005
+Coweta,2020,Public administration,2518
+Coweta,2020,"Trade, transportation and utilities",1559
+Coweta,2030,Construction,2574
+Coweta,2030,Education and health services,11779
+Coweta,2030,Financial activities,2984
+Coweta,2030,Information,764
+Coweta,2030,Leisure and hospitality,8140
+Coweta,2030,Natural resources and mining,97
+Coweta,2030,Other services,2353
+Coweta,2030,Professional and business services,7361
+Coweta,2030,Public administration,2432
+Coweta,2030,"Trade, transportation and utilities",1696
+Coweta,2040,Construction,2605
+Coweta,2040,Education and health services,14604
+Coweta,2040,Financial activities,3048
+Coweta,2040,Information,761
+Coweta,2040,Leisure and hospitality,8583
+Coweta,2040,Natural resources and mining,89
+Coweta,2040,Other services,2362
+Coweta,2040,Professional and business services,7774
+Coweta,2040,Public administration,2447
+Coweta,2040,"Trade, transportation and utilities",1696
+Coweta,2050,Construction,2776
+Coweta,2050,Education and health services,16233
+Coweta,2050,Financial activities,2992
+Coweta,2050,Information,842
+Coweta,2050,Leisure and hospitality,8647
+Coweta,2050,Natural resources and mining,80
+Coweta,2050,Other services,2327
+Coweta,2050,Professional and business services,8350
+Coweta,2050,Public administration,2338
+Coweta,2050,"Trade, transportation and utilities",1634
+Dawson,2020,Construction,545
+Dawson,2020,Education and health services,575
+Dawson,2020,Financial activities,1097
+Dawson,2020,Information,91
+Dawson,2020,Leisure and hospitality,1197
+Dawson,2020,Natural resources and mining,120
+Dawson,2020,Other services,419
+Dawson,2020,Professional and business services,677
+Dawson,2020,Public administration,634
+Dawson,2020,"Trade, transportation and utilities",508
+Dawson,2030,Construction,625
+Dawson,2030,Education and health services,658
+Dawson,2030,Financial activities,1141
+Dawson,2030,Information,93
+Dawson,2030,Leisure and hospitality,1375
+Dawson,2030,Natural resources and mining,118
+Dawson,2030,Other services,533
+Dawson,2030,Professional and business services,772
+Dawson,2030,Public administration,664
+Dawson,2030,"Trade, transportation and utilities",660
+Dawson,2040,Construction,581
+Dawson,2040,Education and health services,717
+Dawson,2040,Financial activities,1084
+Dawson,2040,Information,93
+Dawson,2040,Leisure and hospitality,1369
+Dawson,2040,Natural resources and mining,117
+Dawson,2040,Other services,534
+Dawson,2040,Professional and business services,826
+Dawson,2040,Public administration,689
+Dawson,2040,"Trade, transportation and utilities",798
+Dawson,2050,Construction,536
+Dawson,2050,Education and health services,759
+Dawson,2050,Financial activities,1004
+Dawson,2050,Information,99
+Dawson,2050,Leisure and hospitality,1327
+Dawson,2050,Natural resources and mining,115
+Dawson,2050,Other services,522
+Dawson,2050,Professional and business services,861
+Dawson,2050,Public administration,716
+Dawson,2050,"Trade, transportation and utilities",929
+DeKalb,2020,Construction,14847
+DeKalb,2020,Education and health services,97271
+DeKalb,2020,Financial activities,30431
+DeKalb,2020,Information,14500
+DeKalb,2020,Leisure and hospitality,25500
+DeKalb,2020,Natural resources and mining,279
+DeKalb,2020,Other services,14460
+DeKalb,2020,Professional and business services,67605
+DeKalb,2020,Public administration,26930
+DeKalb,2020,"Trade, transportation and utilities",15880
+DeKalb,2030,Construction,27654
+DeKalb,2030,Education and health services,114223
+DeKalb,2030,Financial activities,29989
+DeKalb,2030,Information,14914
+DeKalb,2030,Leisure and hospitality,28335
+DeKalb,2030,Natural resources and mining,306
+DeKalb,2030,Other services,17445
+DeKalb,2030,Professional and business services,73609
+DeKalb,2030,Public administration,28487
+DeKalb,2030,"Trade, transportation and utilities",15346
+DeKalb,2040,Construction,26725
+DeKalb,2040,Education and health services,122767
+DeKalb,2040,Financial activities,30214
+DeKalb,2040,Information,14842
+DeKalb,2040,Leisure and hospitality,28049
+DeKalb,2040,Natural resources and mining,368
+DeKalb,2040,Other services,16644
+DeKalb,2040,Professional and business services,79725
+DeKalb,2040,Public administration,29264
+DeKalb,2040,"Trade, transportation and utilities",16013
+DeKalb,2050,Construction,25341
+DeKalb,2050,Education and health services,125931
+DeKalb,2050,Financial activities,31718
+DeKalb,2050,Information,15824
+DeKalb,2050,Leisure and hospitality,28002
+DeKalb,2050,Natural resources and mining,350
+DeKalb,2050,Other services,16065
+DeKalb,2050,Professional and business services,86083
+DeKalb,2050,Public administration,29276
+DeKalb,2050,"Trade, transportation and utilities",16210
+Douglas,2020,Construction,3708
+Douglas,2020,Education and health services,11719
+Douglas,2020,Financial activities,3621
+Douglas,2020,Information,471
+Douglas,2020,Leisure and hospitality,5248
+Douglas,2020,Natural resources and mining,29
+Douglas,2020,Other services,1685
+Douglas,2020,Professional and business services,7083
+Douglas,2020,Public administration,2310
+Douglas,2020,"Trade, transportation and utilities",2138
+Douglas,2030,Construction,3189
+Douglas,2030,Education and health services,14220
+Douglas,2030,Financial activities,3966
+Douglas,2030,Information,444
+Douglas,2030,Leisure and hospitality,6884
+Douglas,2030,Natural resources and mining,21
+Douglas,2030,Other services,2398
+Douglas,2030,Professional and business services,8690
+Douglas,2030,Public administration,2457
+Douglas,2030,"Trade, transportation and utilities",2334
+Douglas,2040,Construction,4638
+Douglas,2040,Education and health services,16613
+Douglas,2040,Financial activities,3998
+Douglas,2040,Information,423
+Douglas,2040,Leisure and hospitality,7222
+Douglas,2040,Natural resources and mining,22
+Douglas,2040,Other services,2416
+Douglas,2040,Professional and business services,8948
+Douglas,2040,Public administration,2179
+Douglas,2040,"Trade, transportation and utilities",2272
+Douglas,2050,Construction,5674
+Douglas,2050,Education and health services,18254
+Douglas,2050,Financial activities,3994
+Douglas,2050,Information,428
+Douglas,2050,Leisure and hospitality,6988
+Douglas,2050,Natural resources and mining,17
+Douglas,2050,Other services,2282
+Douglas,2050,Professional and business services,9082
+Douglas,2050,Public administration,2173
+Douglas,2050,"Trade, transportation and utilities",2025
+Fayette,2020,Construction,3593
+Fayette,2020,Education and health services,12430
+Fayette,2020,Financial activities,3585
+Fayette,2020,Information,806
+Fayette,2020,Leisure and hospitality,6035
+Fayette,2020,Natural resources and mining,163
+Fayette,2020,Other services,2600
+Fayette,2020,Professional and business services,6464
+Fayette,2020,Public administration,1981
+Fayette,2020,"Trade, transportation and utilities",2315
+Fayette,2030,Construction,4101
+Fayette,2030,Education and health services,15277
+Fayette,2030,Financial activities,4025
+Fayette,2030,Information,660
+Fayette,2030,Leisure and hospitality,7171
+Fayette,2030,Natural resources and mining,171
+Fayette,2030,Other services,3264
+Fayette,2030,Professional and business services,7868
+Fayette,2030,Public administration,2149
+Fayette,2030,"Trade, transportation and utilities",2827
+Fayette,2040,Construction,3755
+Fayette,2040,Education and health services,16909
+Fayette,2040,Financial activities,3977
+Fayette,2040,Information,670
+Fayette,2040,Leisure and hospitality,6718
+Fayette,2040,Natural resources and mining,197
+Fayette,2040,Other services,3028
+Fayette,2040,Professional and business services,8729
+Fayette,2040,Public administration,2212
+Fayette,2040,"Trade, transportation and utilities",3162
+Fayette,2050,Construction,3619
+Fayette,2050,Education and health services,18037
+Fayette,2050,Financial activities,3950
+Fayette,2050,Information,730
+Fayette,2050,Leisure and hospitality,6444
+Fayette,2050,Natural resources and mining,241
+Fayette,2050,Other services,2696
+Fayette,2050,Professional and business services,10186
+Fayette,2050,Public administration,2411
+Fayette,2050,"Trade, transportation and utilities",3197
+Forsyth,2020,Construction,7509
+Forsyth,2020,Education and health services,13736
+Forsyth,2020,Financial activities,6603
+Forsyth,2020,Information,1080
+Forsyth,2020,Leisure and hospitality,7374
+Forsyth,2020,Natural resources and mining,276
+Forsyth,2020,Other services,2734
+Forsyth,2020,Professional and business services,20408
+Forsyth,2020,Public administration,1840
+Forsyth,2020,"Trade, transportation and utilities",6647
+Forsyth,2030,Construction,10952
+Forsyth,2030,Education and health services,15735
+Forsyth,2030,Financial activities,6138
+Forsyth,2030,Information,954
+Forsyth,2030,Leisure and hospitality,9009
+Forsyth,2030,Natural resources and mining,282
+Forsyth,2030,Other services,3585
+Forsyth,2030,Professional and business services,22382
+Forsyth,2030,Public administration,2239
+Forsyth,2030,"Trade, transportation and utilities",7425
+Forsyth,2040,Construction,9682
+Forsyth,2040,Education and health services,16630
+Forsyth,2040,Financial activities,6304
+Forsyth,2040,Information,951
+Forsyth,2040,Leisure and hospitality,9361
+Forsyth,2040,Natural resources and mining,259
+Forsyth,2040,Other services,3647
+Forsyth,2040,Professional and business services,23618
+Forsyth,2040,Public administration,2398
+Forsyth,2040,"Trade, transportation and utilities",7654
+Forsyth,2050,Construction,8485
+Forsyth,2050,Education and health services,17955
+Forsyth,2050,Financial activities,7220
+Forsyth,2050,Information,1112
+Forsyth,2050,Leisure and hospitality,10182
+Forsyth,2050,Natural resources and mining,270
+Forsyth,2050,Other services,4004
+Forsyth,2050,Professional and business services,26927
+Forsyth,2050,Public administration,2506
+Forsyth,2050,"Trade, transportation and utilities",7480
+Fulton,2020,Construction,23833
+Fulton,2020,Education and health services,158293
+Fulton,2020,Financial activities,113494
+Fulton,2020,Information,54547
+Fulton,2020,Leisure and hospitality,88624
+Fulton,2020,Natural resources and mining,597
+Fulton,2020,Other services,28059
+Fulton,2020,Professional and business services,204216
+Fulton,2020,Public administration,53058
+Fulton,2020,"Trade, transportation and utilities",47826
+Fulton,2030,Construction,24908
+Fulton,2030,Education and health services,188984
+Fulton,2030,Financial activities,117856
+Fulton,2030,Information,54768
+Fulton,2030,Leisure and hospitality,113123
+Fulton,2030,Natural resources and mining,646
+Fulton,2030,Other services,39177
+Fulton,2030,Professional and business services,235013
+Fulton,2030,Public administration,59451
+Fulton,2030,"Trade, transportation and utilities",48572
+Fulton,2040,Construction,25668
+Fulton,2040,Education and health services,203216
+Fulton,2040,Financial activities,118420
+Fulton,2040,Information,55335
+Fulton,2040,Leisure and hospitality,120635
+Fulton,2040,Natural resources and mining,604
+Fulton,2040,Other services,41085
+Fulton,2040,Professional and business services,254092
+Fulton,2040,Public administration,62278
+Fulton,2040,"Trade, transportation and utilities",43473
+Fulton,2050,Construction,25443
+Fulton,2050,Education and health services,212868
+Fulton,2050,Financial activities,119309
+Fulton,2050,Information,58678
+Fulton,2050,Leisure and hospitality,123087
+Fulton,2050,Natural resources and mining,585
+Fulton,2050,Other services,41807
+Fulton,2050,Professional and business services,266009
+Fulton,2050,Public administration,62667
+Fulton,2050,"Trade, transportation and utilities",42941
+Gwinnett,2020,Construction,25536
+Gwinnett,2020,Education and health services,66268
+Gwinnett,2020,Financial activities,42824
+Gwinnett,2020,Information,12578
+Gwinnett,2020,Leisure and hospitality,32507
+Gwinnett,2020,Natural resources and mining,365
+Gwinnett,2020,Other services,12571
+Gwinnett,2020,Professional and business services,87006
+Gwinnett,2020,Public administration,8145
+Gwinnett,2020,"Trade, transportation and utilities",31932
+Gwinnett,2030,Construction,24828
+Gwinnett,2030,Education and health services,78125
+Gwinnett,2030,Financial activities,43441
+Gwinnett,2030,Information,12615
+Gwinnett,2030,Leisure and hospitality,38758
+Gwinnett,2030,Natural resources and mining,440
+Gwinnett,2030,Other services,16430
+Gwinnett,2030,Professional and business services,106443
+Gwinnett,2030,Public administration,10090
+Gwinnett,2030,"Trade, transportation and utilities",36702
+Gwinnett,2040,Construction,28672
+Gwinnett,2040,Education and health services,84082
+Gwinnett,2040,Financial activities,43252
+Gwinnett,2040,Information,12480
+Gwinnett,2040,Leisure and hospitality,37537
+Gwinnett,2040,Natural resources and mining,494
+Gwinnett,2040,Other services,15722
+Gwinnett,2040,Professional and business services,111871
+Gwinnett,2040,Public administration,10258
+Gwinnett,2040,"Trade, transportation and utilities",38776
+Gwinnett,2050,Construction,31780
+Gwinnett,2050,Education and health services,89614
+Gwinnett,2050,Financial activities,39925
+Gwinnett,2050,Information,13585
+Gwinnett,2050,Leisure and hospitality,36149
+Gwinnett,2050,Natural resources and mining,537
+Gwinnett,2050,Other services,14836
+Gwinnett,2050,Professional and business services,121292
+Gwinnett,2050,Public administration,11120
+Gwinnett,2050,"Trade, transportation and utilities",39993
+Hall,2020,Construction,5420
+Hall,2020,Education and health services,21034
+Hall,2020,Financial activities,7051
+Hall,2020,Information,992
+Hall,2020,Leisure and hospitality,6445
+Hall,2020,Natural resources and mining,423
+Hall,2020,Other services,3353
+Hall,2020,Professional and business services,11717
+Hall,2020,Public administration,4418
+Hall,2020,"Trade, transportation and utilities",4631
+Hall,2030,Construction,6436
+Hall,2030,Education and health services,24127
+Hall,2030,Financial activities,6961
+Hall,2030,Information,965
+Hall,2030,Leisure and hospitality,7818
+Hall,2030,Natural resources and mining,441
+Hall,2030,Other services,4346
+Hall,2030,Professional and business services,14106
+Hall,2030,Public administration,4955
+Hall,2030,"Trade, transportation and utilities",5124
+Hall,2040,Construction,6808
+Hall,2040,Education and health services,25364
+Hall,2040,Financial activities,6892
+Hall,2040,Information,974
+Hall,2040,Leisure and hospitality,7375
+Hall,2040,Natural resources and mining,437
+Hall,2040,Other services,4045
+Hall,2040,Professional and business services,15576
+Hall,2040,Public administration,5097
+Hall,2040,"Trade, transportation and utilities",5200
+Hall,2050,Construction,7033
+Hall,2050,Education and health services,27238
+Hall,2050,Financial activities,6769
+Hall,2050,Information,998
+Hall,2050,Leisure and hospitality,7132
+Hall,2050,Natural resources and mining,452
+Hall,2050,Other services,3805
+Hall,2050,Professional and business services,16536
+Hall,2050,Public administration,5335
+Hall,2050,"Trade, transportation and utilities",5175
+Henry,2020,Construction,3116
+Henry,2020,Education and health services,14262
+Henry,2020,Financial activities,6005
+Henry,2020,Information,655
+Henry,2020,Leisure and hospitality,8644
+Henry,2020,Natural resources and mining,122
+Henry,2020,Other services,2882
+Henry,2020,Professional and business services,11833
+Henry,2020,Public administration,4527
+Henry,2020,"Trade, transportation and utilities",2979
+Henry,2030,Construction,2172
+Henry,2030,Education and health services,15393
+Henry,2030,Financial activities,8964
+Henry,2030,Information,672
+Henry,2030,Leisure and hospitality,11346
+Henry,2030,Natural resources and mining,117
+Henry,2030,Other services,4008
+Henry,2030,Professional and business services,14956
+Henry,2030,Public administration,4376
+Henry,2030,"Trade, transportation and utilities",2837
+Henry,2040,Construction,2280
+Henry,2040,Education and health services,16913
+Henry,2040,Financial activities,9376
+Henry,2040,Information,718
+Henry,2040,Leisure and hospitality,11724
+Henry,2040,Natural resources and mining,106
+Henry,2040,Other services,3959
+Henry,2040,Professional and business services,16656
+Henry,2040,Public administration,5012
+Henry,2040,"Trade, transportation and utilities",2528
+Henry,2050,Construction,2330
+Henry,2050,Education and health services,18241
+Henry,2050,Financial activities,8187
+Henry,2050,Information,917
+Henry,2050,Leisure and hospitality,11574
+Henry,2050,Natural resources and mining,98
+Henry,2050,Other services,3831
+Henry,2050,Professional and business services,18729
+Henry,2050,Public administration,6234
+Henry,2050,"Trade, transportation and utilities",2350
+Newton,2020,Construction,2082
+Newton,2020,Education and health services,7419
+Newton,2020,Financial activities,1719
+Newton,2020,Information,510
+Newton,2020,Leisure and hospitality,2866
+Newton,2020,Natural resources and mining,82
+Newton,2020,Other services,835
+Newton,2020,Professional and business services,2554
+Newton,2020,Public administration,1526
+Newton,2020,"Trade, transportation and utilities",1111
+Newton,2030,Construction,2384
+Newton,2030,Education and health services,8365
+Newton,2030,Financial activities,1872
+Newton,2030,Information,524
+Newton,2030,Leisure and hospitality,3653
+Newton,2030,Natural resources and mining,456
+Newton,2030,Other services,1137
+Newton,2030,Professional and business services,3038
+Newton,2030,Public administration,1592
+Newton,2030,"Trade, transportation and utilities",1613
+Newton,2040,Construction,2291
+Newton,2040,Education and health services,8386
+Newton,2040,Financial activities,1995
+Newton,2040,Information,563
+Newton,2040,Leisure and hospitality,3644
+Newton,2040,Natural resources and mining,471
+Newton,2040,Other services,1078
+Newton,2040,Professional and business services,3464
+Newton,2040,Public administration,1634
+Newton,2040,"Trade, transportation and utilities",1766
+Newton,2050,Construction,2179
+Newton,2050,Education and health services,8532
+Newton,2050,Financial activities,2471
+Newton,2050,Information,639
+Newton,2050,Leisure and hospitality,4137
+Newton,2050,Natural resources and mining,517
+Newton,2050,Other services,1204
+Newton,2050,Professional and business services,4289
+Newton,2050,Public administration,1562
+Newton,2050,"Trade, transportation and utilities",1818
+Paulding,2020,Construction,3330
+Paulding,2020,Education and health services,8399
+Paulding,2020,Financial activities,2981
+Paulding,2020,Information,348
+Paulding,2020,Leisure and hospitality,5012
+Paulding,2020,Natural resources and mining,32
+Paulding,2020,Other services,1120
+Paulding,2020,Professional and business services,3986
+Paulding,2020,Public administration,1113
+Paulding,2020,"Trade, transportation and utilities",518
+Paulding,2030,Construction,2642
+Paulding,2030,Education and health services,10143
+Paulding,2030,Financial activities,3756
+Paulding,2030,Information,387
+Paulding,2030,Leisure and hospitality,6431
+Paulding,2030,Natural resources and mining,33
+Paulding,2030,Other services,1549
+Paulding,2030,Professional and business services,5134
+Paulding,2030,Public administration,1195
+Paulding,2030,"Trade, transportation and utilities",755
+Paulding,2040,Construction,2107
+Paulding,2040,Education and health services,11305
+Paulding,2040,Financial activities,3840
+Paulding,2040,Information,382
+Paulding,2040,Leisure and hospitality,6687
+Paulding,2040,Natural resources and mining,30
+Paulding,2040,Other services,1575
+Paulding,2040,Professional and business services,5495
+Paulding,2040,Public administration,1225
+Paulding,2040,"Trade, transportation and utilities",831
+Paulding,2050,Construction,1804
+Paulding,2050,Education and health services,12406
+Paulding,2050,Financial activities,3415
+Paulding,2050,Information,392
+Paulding,2050,Leisure and hospitality,6532
+Paulding,2050,Natural resources and mining,31
+Paulding,2050,Other services,1487
+Paulding,2050,Professional and business services,5906
+Paulding,2050,Public administration,1383
+Paulding,2050,"Trade, transportation and utilities",922
+Rockdale,2020,Construction,3242
+Rockdale,2020,Education and health services,8263
+Rockdale,2020,Financial activities,3524
+Rockdale,2020,Information,1033
+Rockdale,2020,Leisure and hospitality,4120
+Rockdale,2020,Natural resources and mining,104
+Rockdale,2020,Other services,1275
+Rockdale,2020,Professional and business services,5539
+Rockdale,2020,Public administration,1851
+Rockdale,2020,"Trade, transportation and utilities",1749
+Rockdale,2030,Construction,2789
+Rockdale,2030,Education and health services,10117
+Rockdale,2030,Financial activities,3830
+Rockdale,2030,Information,1057
+Rockdale,2030,Leisure and hospitality,5164
+Rockdale,2030,Natural resources and mining,103
+Rockdale,2030,Other services,1764
+Rockdale,2030,Professional and business services,6565
+Rockdale,2030,Public administration,2079
+Rockdale,2030,"Trade, transportation and utilities",2030
+Rockdale,2040,Construction,3096
+Rockdale,2040,Education and health services,11191
+Rockdale,2040,Financial activities,3872
+Rockdale,2040,Information,1041
+Rockdale,2040,Leisure and hospitality,5382
+Rockdale,2040,Natural resources and mining,94
+Rockdale,2040,Other services,1852
+Rockdale,2040,Professional and business services,6898
+Rockdale,2040,Public administration,2058
+Rockdale,2040,"Trade, transportation and utilities",1974
+Rockdale,2050,Construction,3311
+Rockdale,2050,Education and health services,13036
+Rockdale,2050,Financial activities,4380
+Rockdale,2050,Information,1059
+Rockdale,2050,Leisure and hospitality,5334
+Rockdale,2050,Natural resources and mining,83
+Rockdale,2050,Other services,1868
+Rockdale,2050,Professional and business services,6848
+Rockdale,2050,Public administration,1774
+Rockdale,2050,"Trade, transportation and utilities",1717
+Spalding,2020,Construction,870
+Spalding,2020,Education and health services,8507
+Spalding,2020,Financial activities,1692
+Spalding,2020,Information,434
+Spalding,2020,Leisure and hospitality,2543
+Spalding,2020,Natural resources and mining,73
+Spalding,2020,Other services,1168
+Spalding,2020,Professional and business services,3701
+Spalding,2020,Public administration,1633
+Spalding,2020,"Trade, transportation and utilities",850
+Spalding,2030,Construction,1528
+Spalding,2030,Education and health services,10564
+Spalding,2030,Financial activities,2347
+Spalding,2030,Information,494
+Spalding,2030,Leisure and hospitality,3431
+Spalding,2030,Natural resources and mining,54
+Spalding,2030,Other services,1603
+Spalding,2030,Professional and business services,4588
+Spalding,2030,Public administration,1534
+Spalding,2030,"Trade, transportation and utilities",987
+Spalding,2040,Construction,1527
+Spalding,2040,Education and health services,11431
+Spalding,2040,Financial activities,2433
+Spalding,2040,Information,502
+Spalding,2040,Leisure and hospitality,3416
+Spalding,2040,Natural resources and mining,59
+Spalding,2040,Other services,1653
+Spalding,2040,Professional and business services,5073
+Spalding,2040,Public administration,1616
+Spalding,2040,"Trade, transportation and utilities",1153
+Spalding,2050,Construction,1506
+Spalding,2050,Education and health services,12480
+Spalding,2050,Financial activities,2408
+Spalding,2050,Information,562
+Spalding,2050,Leisure and hospitality,3298
+Spalding,2050,Natural resources and mining,55
+Spalding,2050,Other services,1714
+Spalding,2050,Professional and business services,5739
+Spalding,2050,Public administration,1808
+Spalding,2050,"Trade, transportation and utilities",1149
+Walton,2020,Construction,2879
+Walton,2020,Education and health services,6002
+Walton,2020,Financial activities,1906
+Walton,2020,Information,239
+Walton,2020,Leisure and hospitality,2147
+Walton,2020,Natural resources and mining,284
+Walton,2020,Other services,740
+Walton,2020,Professional and business services,2994
+Walton,2020,Public administration,1781
+Walton,2020,"Trade, transportation and utilities",1282
+Walton,2030,Construction,3044
+Walton,2030,Education and health services,6966
+Walton,2030,Financial activities,2105
+Walton,2030,Information,286
+Walton,2030,Leisure and hospitality,2770
+Walton,2030,Natural resources and mining,364
+Walton,2030,Other services,991
+Walton,2030,Professional and business services,3650
+Walton,2030,Public administration,1923
+Walton,2030,"Trade, transportation and utilities",1338
+Walton,2040,Construction,3264
+Walton,2040,Education and health services,7010
+Walton,2040,Financial activities,2171
+Walton,2040,Information,289
+Walton,2040,Leisure and hospitality,2692
+Walton,2040,Natural resources and mining,401
+Walton,2040,Other services,940
+Walton,2040,Professional and business services,4048
+Walton,2040,Public administration,1989
+Walton,2040,"Trade, transportation and utilities",1276
+Walton,2050,Construction,3342
+Walton,2050,Education and health services,7159
+Walton,2050,Financial activities,2195
+Walton,2050,Information,285
+Walton,2050,Leisure and hospitality,2702
+Walton,2050,Natural resources and mining,424
+Walton,2050,Other services,924
+Walton,2050,Professional and business services,4383
+Walton,2050,Public administration,2043
+Walton,2050,"Trade, transportation and utilities",1469

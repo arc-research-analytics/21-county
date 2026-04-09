@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Atlanta Regional Commission | Population Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Public+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#002c53",
+                        "on-secondary-container": "#007165",
+                        "inverse-primary": "#a5c9fd",
+                        "tertiary-container": "#7b2000",
+                        "surface-container-high": "#d5ecf8",
+                        "on-tertiary-fixed": "#3a0a00",
+                        "on-background": "#071e27",
+                        "surface-dim": "#c7dde9",
+                        "outline": "#737780",
+                        "on-primary-container": "#8cafe1",
+                        "surface-container-highest": "#cfe6f2",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#006b5f",
+                        "primary-container": "#1a426e",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#071e27",
+                        "on-tertiary-container": "#ff8e6b",
+                        "inverse-on-surface": "#dff4ff",
+                        "secondary-fixed-dim": "#70d8c8",
+                        "surface-variant": "#cfe6f2",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb59f",
+                        "outline-variant": "#c3c6d0",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed": "#00201c",
+                        "on-primary-fixed": "#001c39",
+                        "secondary-fixed": "#8df5e4",
+                        "surface-tint": "#3c608e",
+                        "on-primary": "#ffffff",
+                        "background": "#f3faff",
+                        "error-container": "#ffdad6",
+                        "on-tertiary-fixed-variant": "#852300",
+                        "primary-fixed-dim": "#a5c9fd",
+                        "on-primary-fixed-variant": "#214874",
+                        "primary-fixed": "#d3e3ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#005048",
+                        "surface-bright": "#f3faff",
+                        "inverse-surface": "#1e333c",
+                        "on-error-container": "#93000a",
+                        "surface": "#f3faff",
+                        "tertiary": "#551300",
+                        "surface-container": "#dbf1fe",
+                        "secondary-container": "#8df5e4",
+                        "surface-container-low": "#e6f6ff",
+                        "on-surface-variant": "#43474f",
+                        "tertiary-fixed": "#ffdbd0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Public Sans"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body overflow-x-hidden">
+<!-- SideNavBar -->
+<aside class="h-screen w-72 fixed left-0 top-0 bg-slate-100 dark:bg-slate-900 flex flex-col py-8 px-6 space-y-2 z-50">
+<div class="mb-10 px-4">
+<h1 class="text-xl font-black tracking-tighter text-sky-900 dark:text-sky-50">Atlanta Insight</h1>
+<p class="text-xs font-['Inter'] font-medium tracking-tight text-slate-500">The Analytical Lens</p>
+</div>
+<div class="px-2 pb-6">
+<button class="w-full flex items-center justify-between bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 shadow-sm hover:bg-surface-container transition-all group">
+<span class="font-label font-semibold text-sm text-primary">Select County</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-y-0.5 transition-transform">expand_more</span>
+</button>
+</div>
+<nav class="flex-1 space-y-1">
+<a class="flex items-center space-x-3 bg-sky-900 text-white dark:bg-sky-200 dark:text-sky-950 rounded-full font-bold px-4 py-2" href="#">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+<span class="font-['Inter'] font-medium tracking-tight text-sm">Population</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 px-4 py-2 transition-colors scale-95 duration-200 ease-in-out hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="work">work</span>
+<span class="font-['Inter'] font-medium tracking-tight text-sm">Employment</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 px-4 py-2 transition-colors scale-95 duration-200 ease-in-out hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Inter'] font-medium tracking-tight text-sm">Housing</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 px-4 py-2 transition-colors scale-95 duration-200 ease-in-out hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="school">school</span>
+<span class="font-['Inter'] font-medium tracking-tight text-sm">Education</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 px-4 py-2 transition-colors scale-95 duration-200 ease-in-out hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="medical_services">medical_services</span>
+<span class="font-['Inter'] font-medium tracking-tight text-sm">Health</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 px-4 py-2 transition-colors scale-95 duration-200 ease-in-out hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="payments">payments</span>
+<span class="font-['Inter'] font-medium tracking-tight text-sm">Income</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 px-4 py-2 transition-colors scale-95 duration-200 ease-in-out hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="timeline">timeline</span>
+<span class="font-['Inter'] font-medium tracking-tight text-sm">2050 Forecast</span>
+</a>
+<a class="flex items-center space-x-3 text-slate-600 dark:text-slate-400 hover:text-sky-800 dark:hover:text-sky-200 px-4 py-2 transition-colors scale-95 duration-200 ease-in-out hover:bg-slate-200/50 dark:hover:bg-slate-800/50 rounded-full" href="#">
+<span class="material-symbols-outlined" data-icon="info">info</span>
+<span class="font-['Inter'] font-medium tracking-tight text-sm">About</span>
+</a>
+</nav>
+<div class="mt-auto pt-8 border-t border-slate-200/50">
+<div class="flex items-center space-x-3 px-4">
+<img alt="Atlanta Regional Commission Logo" class="h-10 w-10 object-contain rounded-lg" data-alt="Atlanta Regional Commission Logo with clean geometric blue icon and professional typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzdwtBJC5W598BZhYNdtwHNH1BSVPQz2LDHzeAdxtIFJiEHzkdz5KoW6n_nJV46Z_jkXm_Gganq8mB8Yh4Ry_Wr1M6XufTp6ugr8jDQooa7lrGNDyXITF9CLpiEirXUmrHo9RCa6uLBvweEoanu3y-bIxGE6Qn572UWGQ9qJ426xG6SsLBnH2tr-BuL8nGszbmO4uCPkevpz_FrIdGkdA2L7Zp6Ye2JLt3i9r4YN1Wm36ir_FZf4p2G-azEVz-aFgx5ZjW7Z__7iRV"/>
+<div class="flex flex-col">
+<span class="text-xs font-bold text-sky-950">ARC Dashboard</span>
+<span class="text-[10px] text-slate-500 font-label">v2.4.0 Final Release</span>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area -->
+<main class="ml-72 min-h-screen">
+<!-- TopNavBar -->
+<header class="w-full h-20 sticky top-0 z-40 flex items-center justify-between px-12 backdrop-blur-md">
+<div class="flex items-center space-x-8">
+<span class="text-lg font-bold text-sky-950 dark:text-sky-50">Regional Data Dashboard</span>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border-none rounded-full text-sm font-label focus:ring-2 focus:ring-primary/20 w-64" placeholder="Search metrics..." type="text"/>
+</div>
+</div>
+<div class="flex items-center space-x-6">
+<div class="flex space-x-4">
+<button class="material-symbols-outlined text-slate-500 hover:text-sky-700 transition-all">notifications</button>
+<button class="material-symbols-outlined text-slate-500 hover:text-sky-700 transition-all">settings</button>
+</div>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-surface-container-highest">
+<img alt="Administrator Profile" class="w-full h-full object-cover" data-alt="Close-up professional headshot of a male administrator in a grey suit, soft office lighting background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-dQCYdSuyWhkskw6c7TisUdUwya_HZjON5abrqpAaMGJzot-VLfzSsD9kXwqExAGS91B0fnLGTWW3-yWzhTo1sw1gnNgfdY2rlpBBLW5ZVQXv6c_TzZTE7PlmnEzYaA5y0hwN687A6VLNZVSez8U8ZrN0YCUeVFO_jhouzWT0WTESP9L7iqBIe2akMYQOMDvrU-lmqfEAcjZKq5uSWKmycRqmngwQPvJvz0WCm3JQDv9Ha7r591U3-nEbV3Lf4V5h1CRV9rirPG6X"/>
+</div>
+</div>
+</header>
+<div class="px-12 py-10">
+<!-- Header Section -->
+<section class="mb-12">
+<h2 class="text-5xl font-black font-headline tracking-tighter text-primary mb-4">Population Overview</h2>
+<p class="text-lg text-on-surface-variant max-w-3xl font-label leading-relaxed">
+                    Analyzing demographic shifts across the 11-county Atlanta region. This data informs regional planning, infrastructure investment, and community development strategies for the next quarter-century.
+                </p>
+</section>
+<!-- Hero Stats Bento -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+<div class="bg-primary text-on-primary p-8 rounded-xl relative overflow-hidden shadow-xl hover:scale-[1.02] transition-transform duration-300">
+<div class="relative z-10">
+<span class="font-label text-xs uppercase tracking-widest opacity-70">Total Regional Population</span>
+<div class="text-6xl font-black font-headline mt-2 mb-1">5.1M</div>
+<div class="flex items-center text-sm font-label text-secondary-fixed">
+<span class="material-symbols-outlined text-sm mr-1">trending_up</span>
+                            +68,000 since 2022
+                        </div>
+</div>
+<div class="absolute -right-10 -bottom-10 opacity-10">
+<span class="material-symbols-outlined text-[160px]" style="font-variation-settings: 'FILL' 1;">groups</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-all group">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Annual Growth Rate</span>
+<div class="text-5xl font-black font-headline text-primary mt-2 mb-1">1.4%</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden mt-4">
+<div class="h-full bg-secondary w-3/4 rounded-full group-hover:w-[85%] transition-all duration-700"></div>
+</div>
+<p class="text-xs text-on-surface-variant mt-3 font-label">Outpacing national average by 0.9%</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm hover:shadow-md transition-all group">
+<span class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Median Age</span>
+<div class="text-5xl font-black font-headline text-primary mt-2 mb-1">36.8</div>
+<div class="flex items-center space-x-2 mt-4">
+<div class="h-8 w-1 bg-tertiary-container rounded-full opacity-30"></div>
+<p class="text-sm font-label text-on-surface leading-tight">Trending younger in urban core counties</p>
+</div>
+</div>
+</section>
+<!-- Main Data Visualizations Grid -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-12">
+<!-- Population by County (Horizontal Bar) -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<div class="flex justify-between items-start mb-10">
+<div>
+<h3 class="text-xl font-bold text-primary">Population by County</h3>
+<p class="text-sm text-on-surface-variant font-label">Top 5 Regional Entities</p>
+</div>
+<button class="text-xs font-bold text-primary hover:underline font-label">EXPORT DATA</button>
+</div>
+<div class="space-y-6">
+<!-- Fulton -->
+<div class="space-y-2">
+<div class="flex justify-between text-sm font-semibold text-on-surface">
+<span>Fulton</span>
+<span>1,085,000</span>
+</div>
+<div class="h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-full"></div>
+</div>
+</div>
+<!-- Gwinnett -->
+<div class="space-y-2">
+<div class="flex justify-between text-sm font-semibold text-on-surface">
+<span>Gwinnett</span>
+<span>985,000</span>
+</div>
+<div class="h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[91%]"></div>
+</div>
+</div>
+<!-- Cobb -->
+<div class="space-y-2">
+<div class="flex justify-between text-sm font-semibold text-on-surface">
+<span>Cobb</span>
+<span>775,000</span>
+</div>
+<div class="h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[72%]"></div>
+</div>
+</div>
+<!-- DeKalb -->
+<div class="space-y-2">
+<div class="flex justify-between text-sm font-semibold text-on-surface">
+<span>DeKalb</span>
+<span>765,000</span>
+</div>
+<div class="h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[70%]"></div>
+</div>
+</div>
+<!-- Clayton -->
+<div class="space-y-2">
+<div class="flex justify-between text-sm font-semibold text-on-surface">
+<span>Clayton</span>
+<span>297,000</span>
+</div>
+<div class="h-3 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container w-[28%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Race Profile (Pie Chart) -->
+<div class="lg:col-span-5 bg-surface-container-lowest p-8 rounded-xl shadow-sm flex flex-col items-center">
+<div class="w-full text-left mb-6">
+<h3 class="text-xl font-bold text-primary">Race Profile</h3>
+<p class="text-sm text-on-surface-variant font-label">Diversity Index: 72%</p>
+</div>
+<div class="relative w-48 h-48 mb-8">
+<svg class="w-full h-full transform rotate-[-90deg]" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="transparent" r="16" stroke="#cfe6f2" stroke-width="4"></circle>
+<circle cx="18" cy="18" fill="transparent" r="16" stroke="#002c53" stroke-dasharray="45 100" stroke-width="4"></circle>
+<circle cx="18" cy="18" fill="transparent" r="16" stroke="#006b5f" stroke-dasharray="30 100" stroke-dashoffset="-45" stroke-width="4"></circle>
+<circle cx="18" cy="18" fill="transparent" r="16" stroke="#852300" stroke-dasharray="15 100" stroke-dashoffset="-75" stroke-width="4"></circle>
+<circle cx="18" cy="18" fill="transparent" r="16" stroke="#8df5e4" stroke-dasharray="10 100" stroke-dashoffset="-90" stroke-width="4"></circle>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center flex-col">
+<span class="text-2xl font-black text-primary">5.1M</span>
+<span class="text-[10px] text-on-surface-variant font-label uppercase">Total</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 w-full">
+<div class="flex items-center space-x-2">
+<div class="w-3 h-3 rounded-full bg-primary"></div>
+<span class="text-xs font-label">White (45%)</span>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-3 h-3 rounded-full bg-secondary"></div>
+<span class="text-xs font-label">Black (30%)</span>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-3 h-3 rounded-full bg-on-tertiary-fixed-variant"></div>
+<span class="text-xs font-label">Hispanic (15%)</span>
+</div>
+<div class="flex items-center space-x-2">
+<div class="w-3 h-3 rounded-full bg-secondary-fixed"></div>
+<span class="text-xs font-label">Asian (10%)</span>
+</div>
+</div>
+</div>
+<!-- Age Profile (Stacked Bar) -->
+<div class="lg:col-span-12 bg-surface-container-lowest p-8 rounded-xl shadow-sm">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-4">
+<div>
+<h3 class="text-xl font-bold text-primary">Age Profile Comparison</h3>
+<p class="text-sm text-on-surface-variant font-label">Generational distribution by core counties</p>
+</div>
+<div class="flex space-x-4">
+<div class="flex items-center space-x-2"><div class="w-3 h-3 bg-primary rounded-sm"></div><span class="text-xs font-label">0-17</span></div>
+<div class="flex items-center space-x-2"><div class="w-3 h-3 bg-secondary rounded-sm"></div><span class="text-xs font-label">18-34</span></div>
+<div class="flex items-center space-x-2"><div class="w-3 h-3 bg-secondary-fixed-dim rounded-sm"></div><span class="text-xs font-label">35-64</span></div>
+<div class="flex items-center space-x-2"><div class="w-3 h-3 bg-surface-container-highest rounded-sm"></div><span class="text-xs font-label">65+</span></div>
+</div>
+</div>
+<div class="space-y-8">
+<div class="grid grid-cols-12 gap-4 items-center">
+<div class="col-span-2 text-sm font-semibold text-primary">Fulton</div>
+<div class="col-span-10 flex h-8 rounded-full overflow-hidden shadow-inner">
+<div class="bg-primary w-[22%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-secondary w-[28%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-secondary-fixed-dim w-[35%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-surface-container-highest w-[15%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 items-center">
+<div class="col-span-2 text-sm font-semibold text-primary">Gwinnett</div>
+<div class="col-span-10 flex h-8 rounded-full overflow-hidden shadow-inner">
+<div class="bg-primary w-[25%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-secondary w-[24%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-secondary-fixed-dim w-[38%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-surface-container-highest w-[13%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+</div>
+</div>
+<div class="grid grid-cols-12 gap-4 items-center">
+<div class="col-span-2 text-sm font-semibold text-primary">Cobb</div>
+<div class="col-span-10 flex h-8 rounded-full overflow-hidden shadow-inner">
+<div class="bg-primary w-[20%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-secondary w-[23%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-secondary-fixed-dim w-[40%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+<div class="bg-surface-container-highest w-[17%] hover:opacity-80 transition-opacity cursor-pointer"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Growth Trends (Line/Area Chart) -->
+<section class="bg-surface-container-lowest p-10 rounded-xl shadow-sm mb-12">
+<div class="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
+<div>
+<h3 class="text-3xl font-black text-primary font-headline">Growth Trends</h3>
+<p class="text-on-surface-variant font-label mt-1">Population Change from 2000 to 2023</p>
+</div>
+<div class="flex bg-surface-container rounded-lg p-1">
+<button class="px-4 py-1.5 bg-white text-primary text-xs font-bold rounded-md shadow-sm">YEARLY</button>
+<button class="px-4 py-1.5 text-on-surface-variant text-xs font-bold hover:text-primary transition-colors">DECADAL</button>
+</div>
+</div>
+<div class="relative h-80 w-full mb-8">
+<!-- Grid Lines -->
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none opacity-10">
+<div class="border-b border-primary w-full"></div>
+<div class="border-b border-primary w-full"></div>
+<div class="border-b border-primary w-full"></div>
+<div class="border-b border-primary w-full"></div>
+<div class="border-b border-primary w-full"></div>
+</div>
+<!-- Decorative Chart Logic -->
+<div class="absolute bottom-0 inset-x-0 h-full flex items-end">
+<svg class="w-full h-full" preserveaspectratio="none" viewbox="0 0 1000 100">
+<defs>
+<lineargradient id="gradient-area" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#002c53" stop-opacity="0.2"></stop>
+<stop offset="100%" stop-color="#002c53" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<path d="M0,80 Q100,75 200,65 T400,50 T600,40 T800,25 T1000,10 L1000,100 L0,100 Z" fill="url(#gradient-area)"></path>
+<path d="M0,80 Q100,75 200,65 T400,50 T600,40 T800,25 T1000,10" fill="none" stroke="#002c53" stroke-linecap="round" stroke-width="4"></path>
+<!-- Key Data Points -->
+<circle class="hover:r-7 transition-all cursor-pointer" cx="0" cy="80" fill="#002c53" r="5"></circle>
+<circle class="hover:r-7 transition-all cursor-pointer" cx="400" cy="50" fill="#002c53" r="5"></circle>
+<circle class="hover:r-7 transition-all cursor-pointer" cx="1000" cy="10" fill="#002c53" r="5"></circle>
+</svg>
+</div>
+<!-- Interactivity / Hover States Overlay -->
+<div class="absolute left-[40%] top-[40%] group">
+<div class="opacity-0 group-hover:opacity-100 transition-opacity bg-primary text-on-primary px-3 py-1.5 rounded-lg text-xs font-bold -translate-y-full mb-2 shadow-lg">
+                            2010: 4.1M (+12%)
+                        </div>
+<div class="w-0.5 h-full bg-primary/20 absolute left-1/2 -translate-x-1/2 -z-10 group-hover:bg-primary/40"></div>
+</div>
+</div>
+<div class="flex justify-between text-[10px] font-bold text-on-surface-variant font-label px-2">
+<span>2000</span>
+<span>2005</span>
+<span>2010</span>
+<span>2015</span>
+<span>2020</span>
+<span>2023</span>
+</div>
+</section>
+<!-- Map CTA Contextual Section -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-8 pb-20">
+<div class="relative rounded-xl overflow-hidden h-64 group">
+<img alt="Regional Map Background" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Abstract aerial urban map pattern with intricate street webs and glowing architectural highlights in deep blues" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7kCKbYMFiAaCm3s01K4s-lttkYeKb8qSCdIZ8Bfqur4oBJw3TM5A8myL5qbG280mc_rarAARwRLZa-LHZNvRWg08DE0A-_M3OQuKirYxoy18JRCWBEC6W7Bvb67OJChhRPMuWkNUvhQ2wgsJEt6KGVpZRAu-au0XThXoJW03-B2X69OnlC6g62-k4pUiSzpf6zjblGaMLycyiGu5ge_sg9LmJyzdmC4PbJLJC__ppB9RGzguy2BXU1ae8XQwQwa83-BLAujUUULC4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary to-transparent opacity-80"></div>
+<div class="absolute bottom-6 left-6 text-white">
+<h4 class="text-xl font-bold mb-1">Interactive Web Map</h4>
+<p class="text-sm opacity-80 font-label mb-4">Drill down into neighborhood-level census tracts.</p>
+<button class="bg-secondary text-on-secondary px-5 py-2 rounded-full text-xs font-black shadow-lg hover:bg-secondary-fixed transition-colors">LAUNCH EXPLORER</button>
+</div>
+</div>
+<div class="bg-surface-container p-8 rounded-xl flex flex-col justify-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">download_for_offline</span>
+<h4 class="text-xl font-bold text-primary mb-2">Regional Forecast Series</h4>
+<p class="text-on-surface-variant font-label text-sm leading-relaxed mb-6">Download the comprehensive 2023 Population &amp; Housing Report in PDF or XLSX format.</p>
+<div class="flex space-x-3">
+<button class="bg-primary text-white px-4 py-2 rounded-lg text-xs font-bold">PDF Report</button>
+<button class="bg-surface-container-highest text-primary px-4 py-2 rounded-lg text-xs font-bold">Raw Data</button>
+</div>
+</div>
+</section>
+</div>
+</main>
+</body></html>
