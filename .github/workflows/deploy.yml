@@ -38,6 +38,10 @@ jobs:
           #   → on gh-pages css/theme.css is one level from root, so ../assets/fonts/
           sed -i "s|../../assets/fonts/|../assets/fonts/|g" _deploy/css/theme.css
 
+          #   index.html logo uses ../assets/ (one level up from frontend/)
+          #   → on gh-pages index.html is at root, so assets/ is a sibling
+          sed -i "s|../assets/|assets/|g" _deploy/index.html
+
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v4
         with:
