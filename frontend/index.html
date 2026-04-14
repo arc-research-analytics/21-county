@@ -42,7 +42,10 @@
     ></script>
 
     <!-- ── Mapbox GL JS ──────────────────────────────────────────────────── -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mapbox-gl@3/dist/mapbox-gl.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/mapbox-gl@3/dist/mapbox-gl.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/mapbox-gl@3/dist/mapbox-gl.js"></script>
 
     <!-- ── Highcharts (via jsDelivr — avoids CDN restrictions) ──────────── -->
@@ -181,11 +184,12 @@
           <!-- Tab title -->
           <h1
             id="tab-title"
-            class="font-headline font-semibold flex-shrink-0"
+            class="font-headline font-semibold"
             style="
               font-size: 0.9375rem;
               color: var(--color-primary);
-              min-width: 120px;
+              flex: 1;
+              text-align: center;
             "
           >
             Population
@@ -233,7 +237,7 @@
             >21-County</wa-button
           >
           <wa-button id="btn-core11" size="small" variant="neutral" outline
-            >11-County Core</wa-button
+            >11-County</wa-button
           >
 
           <div class="flex-1"></div>
@@ -242,56 +246,123 @@
           <div id="vintage-badge">Loading…</div>
         </header>
 
+        <!-- ── Shared KPI + Map row (always visible, updated per tab) ────────── -->
+        <div
+          class="grid gap-4 px-6 pt-5 mb-4"
+          style="grid-template-columns: repeat(3, 1fr)"
+        >
+          <div class="kpi-card">
+            <p class="kpi-label" id="kpi-1-label">—</p>
+            <p class="kpi-value" id="kpi-1-value">—</p>
+            <p class="kpi-sub" id="kpi-1-sub">Loading…</p>
+          </div>
+          <div class="kpi-card">
+            <p class="kpi-label" id="kpi-2-label">—</p>
+            <p class="kpi-value" id="kpi-2-value">—</p>
+            <p class="kpi-sub" id="kpi-2-sub">—</p>
+          </div>
+          <div class="kpi-card" style="padding: 0; overflow: hidden">
+            <div id="map-counties" style="width: 100%; height: 160px"></div>
+          </div>
+        </div>
+
         <!-- ── Tab panels ────────────────────────────────────────────────────── -->
-        <div class="flex-1 px-6 pb-8 pt-5">
+        <div class="flex-1 px-6 pb-8">
           <!-- ── Population ───────────────────────────────────────────────── -->
           <section id="panel-population" class="tab-panel">
-            <!-- KPI + map row — 3 equal columns -->
-            <div class="grid gap-4 mb-5" style="grid-template-columns: repeat(3, 1fr);">
-              <div class="kpi-card">
-                <p class="kpi-label">Total Population</p>
-                <p class="kpi-value" id="kpi-pop-value">—</p>
-                <p class="kpi-sub" id="kpi-pop-sub">Loading…</p>
+            <!-- 2-column chart area: trend left, donut + bar stacked right -->
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                gap: 1rem;
+                height: calc(100vh - 305px);
+              "
+            >
+              <!-- Left: population trend (full height) -->
+              <div
+                class="chart-card"
+                style="display: flex; flex-direction: column; min-height: 0"
+              >
+                <h3 class="chart-title">Population Trend, 2000–Present</h3>
+                <div id="chart-pop-trend" style="flex: 1; min-height: 0"></div>
               </div>
-              <div class="kpi-card">
-                <p class="kpi-label">Growth Since 2010</p>
-                <p class="kpi-value" id="kpi-growth-value">—</p>
-                <p class="kpi-sub" id="kpi-growth-sub">—</p>
-              </div>
-              <!-- County selection map -->
-              <div class="kpi-card" style="padding: 0; overflow: hidden;">
-                <div id="map-counties" style="width: 100%; height: 160px;"></div>
-              </div>
-            </div>
 
-            <!-- Trend line chart -->
-            <div class="chart-card mb-4">
-              <h3 class="chart-title">Population Trend, 2000–Present</h3>
-              <div id="chart-pop-trend" style="height: 300px"></div>
-            </div>
-
-            <!-- Race donut + Age bar -->
-            <div class="grid gap-4" style="grid-template-columns: 2fr 3fr">
-              <div class="chart-card">
-                <h3 class="chart-title">Race &amp; Ethnicity</h3>
-                <p class="chart-sub" id="race-vintage-label">
-                  Latest ACS estimate
-                </p>
-                <div id="chart-race" style="height: 270px"></div>
-              </div>
-              <div class="chart-card">
-                <h3 class="chart-title">Age Profile</h3>
-                <p class="chart-sub" id="age-vintage-label">
-                  Latest ACS estimate
-                </p>
-                <div id="chart-age" style="height: 270px"></div>
+              <!-- Right: race donut + age bar stacked -->
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1rem;
+                  min-height: 0;
+                "
+              >
+                <div
+                  class="chart-card"
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 0;
+                  "
+                >
+                  <h3 class="chart-title">Race &amp; Ethnicity</h3>
+                  <p class="chart-sub" id="race-vintage-label">
+                    Latest ACS estimate
+                  </p>
+                  <div id="chart-race" style="flex: 1; min-height: 0"></div>
+                </div>
+                <div
+                  class="chart-card"
+                  style="
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 0;
+                  "
+                >
+                  <h3 class="chart-title">Age Profile</h3>
+                  <p class="chart-sub" id="age-vintage-label">
+                    Latest ACS estimate
+                  </p>
+                  <div id="chart-age" style="flex: 1; min-height: 0"></div>
+                </div>
               </div>
             </div>
           </section>
 
-          <!-- ── Employment (Phase 2 placeholder) ─────────────────────────── -->
+          <!-- ── Employment ───────────────────────────────────────────────── -->
           <section id="panel-employment" class="tab-panel hidden">
-            <div class="coming-soon">Employment — coming in Phase 2</div>
+            <!-- 2-column layout: trend left, industry mix right -->
+            <div
+              style="
+                display: grid;
+                grid-template-columns: 2fr 3fr;
+                gap: 1rem;
+                height: calc(100vh - 305px);
+              "
+            >
+              <div
+                class="chart-card"
+                style="display: flex; flex-direction: column; min-height: 0"
+              >
+                <h3 class="chart-title">Employment Trend, 2000–Present</h3>
+                <div id="chart-emp-trend" style="flex: 1; min-height: 0"></div>
+              </div>
+              <div
+                class="chart-card"
+                style="display: flex; flex-direction: column; min-height: 0"
+              >
+                <h3 class="chart-title">Industry Mix</h3>
+                <p class="chart-sub" id="emp-industry-sub">
+                  Latest year · share of total employment by sector
+                </p>
+                <div
+                  id="chart-emp-industry"
+                  style="flex: 1; min-height: 0"
+                ></div>
+              </div>
+            </div>
           </section>
 
           <!-- ── Economy (Phase 2 placeholder) ────────────────────────────── -->
@@ -314,9 +385,56 @@
             <div class="coming-soon">Health — coming in Phase 4</div>
           </section>
 
-          <!-- ── Income (Phase 3 placeholder) ─────────────────────────────── -->
+          <!-- ── Income ────────────────────────────────────────────────────── -->
           <section id="panel-income" class="tab-panel hidden">
-            <div class="coming-soon">Income — coming in Phase 3</div>
+            <div
+              id="income-grid"
+              style="
+                display: grid;
+                grid-template-columns: 3fr 2fr;
+                gap: 1rem;
+                height: calc(100vh - 305px);
+              "
+            >
+              <!-- Left: Median HH Income by county (hidden for single-county) -->
+              <div
+                id="income-bar-card"
+                class="chart-card"
+                style="display: flex; flex-direction: column; min-height: 0"
+              >
+                <h3 class="chart-title">Median Household Income by County</h3>
+                <p class="chart-sub" id="income-chart-sub">Latest ACS estimate</p>
+                <div id="chart-income-county" style="flex: 1; min-height: 0"></div>
+              </div>
+
+              <!-- Right: Poverty table + distribution stacked -->
+              <div
+                id="income-right-col"
+                style="display: flex; flex-direction: column; gap: 1rem; min-height: 0"
+              >
+                <!-- Top: Poverty Rate heat-map table (hidden for single-county) -->
+                <div
+                  id="income-poverty-card"
+                  class="chart-card"
+                  style="flex: 1; display: flex; flex-direction: column; min-height: 0"
+                >
+                  <h3 class="chart-title">Poverty Rate by County</h3>
+                  <p class="chart-sub" id="poverty-chart-sub">Latest ACS estimate</p>
+                  <div id="chart-poverty-county" style="flex: 1; min-height: 0"></div>
+                </div>
+
+                <!-- Bottom: Income bracket distribution (always shown) -->
+                <div
+                  id="income-dist-card"
+                  class="chart-card"
+                  style="flex: 1; display: flex; flex-direction: column; min-height: 0"
+                >
+                  <h3 class="chart-title">Household Income Distribution</h3>
+                  <p class="chart-sub" id="income-dist-sub">Latest ACS estimate</p>
+                  <div id="chart-income-dist" style="flex: 1; min-height: 0"></div>
+                </div>
+              </div>
+            </div>
           </section>
 
           <!-- ── Forecast (Phase 5 placeholder) ───────────────────────────── -->

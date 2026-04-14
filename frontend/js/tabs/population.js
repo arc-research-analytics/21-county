@@ -66,19 +66,30 @@ export function render(selectedCounties) {
 
   if (!trendChart) return;
 
-  // Update ACS vintage labels from pipeline metadata
-  const acsYear = Data.getVintages().acs_vintage;
-  const acsLabel = acsYear ? `ACS ${acsYear} estimate` : 'Latest ACS estimate';
+  // Update ACS vintage labels — include county scope so aggregated charts
+  // are unambiguous when a subset of counties is selected.
+  const acsYear   = Data.getVintages().acs_vintage;
+  const acsPrefix = acsYear ? `ACS ${acsYear} estimate` : 'Latest ACS estimate';
+  const scopeTag  = selected.length === 0          ? '' :
+                    selected.length <= 3            ? ` · ${selected.join(', ')}` :
+                    isPresetRegionalSelection(selected) && selected.length === COUNTIES_21.length
+                                                    ? ' · 21-county region' :
+                    isPresetRegionalSelection(selected) ? ' · 11-county core' :
+                                                      ` · ${selected.length} counties`;
+  const acsLabel  = acsPrefix + scopeTag;
   document.getElementById('race-vintage-label').textContent = acsLabel;
   document.getElementById('age-vintage-label').textContent  = acsLabel;
 
+  document.getElementById('kpi-1-label').textContent = 'Total Population';
+  document.getElementById('kpi-2-label').textContent = 'Growth Since 2000';
+
   if (!selected.length) {
-    document.getElementById('kpi-pop-value').textContent = '—';
-    document.getElementById('kpi-pop-sub').textContent   = 'No counties selected';
-    const growthEl = document.getElementById('kpi-growth-value');
+    document.getElementById('kpi-1-value').textContent = '—';
+    document.getElementById('kpi-1-sub').textContent   = 'No counties selected';
+    const growthEl = document.getElementById('kpi-2-value');
     growthEl.textContent = '—';
     growthEl.className   = 'kpi-value';
-    document.getElementById('kpi-growth-sub').textContent = '';
+    document.getElementById('kpi-2-sub').textContent = '';
 
     while (trendChart.series.length > 0) trendChart.series[0].remove(false);
     trendChart.redraw();
@@ -94,19 +105,25 @@ export function render(selectedCounties) {
   const latestYear = years[years.length - 1];
 
   const latestRows = rows.filter(r => r.year === latestYear && selected.includes(r.county_name));
-  const rows2010   = rows.filter(r => r.year === 2010       && selected.includes(r.county_name));
+  const rows2000   = rows.filter(r => r.year === 2000        && selected.includes(r.county_name));
 
   // ── KPI 1: Total population ──────────────────────────────────────────────
   const totalPop = sumCol(latestRows, 'population');
-  const pop2010  = sumCol(rows2010,   'population');
-  const growth   = pop2010 > 0 ? ((totalPop - pop2010) / pop2010) * 100 : null;
+  const pop2000  = sumCol(rows2000,   'population');
+  const growth   = pop2000 > 0 ? ((totalPop - pop2000) / pop2000) * 100 : null;
 
-  document.getElementById('kpi-pop-value').textContent = fmtPop(totalPop);
-  document.getElementById('kpi-pop-sub').textContent   =
-    `${latestYear} estimate · ${selected.length} ${selected.length === 1 ? 'county' : 'counties'}`;
+  const countySub = selected.length === 1 ? `${selected[0]} County`
+    : selected.length <= 3                ? selected.join(', ')
+    : selected.length === COUNTIES_21.length && isPresetRegionalSelection(selected)
+                                          ? '21-county region'
+    : isPresetRegionalSelection(selected) ? '11-county core'
+    :                                       `${selected.length} counties`;
 
-  // ── KPI 2: Growth since 2010 ─────────────────────────────────────────────
-  const growthEl = document.getElementById('kpi-growth-value');
+  document.getElementById('kpi-1-value').textContent = fmtPop(totalPop);
+  document.getElementById('kpi-1-sub').textContent   = `${latestYear} estimate · ${countySub}`;
+
+  // ── KPI 2: Growth since 2000 ─────────────────────────────────────────────
+  const growthEl = document.getElementById('kpi-2-value');
   if (growth !== null) {
     growthEl.textContent = fmtPct(growth);
     growthEl.className   = `kpi-value ${growth >= 0 ? 'positive' : 'negative'}`;
@@ -114,8 +131,8 @@ export function render(selectedCounties) {
     growthEl.textContent = '—';
     growthEl.className   = 'kpi-value';
   }
-  document.getElementById('kpi-growth-sub').textContent =
-    pop2010 > 0 ? `${fmtPop(pop2010)} in 2010 → ${fmtPop(totalPop)} in ${latestYear}` : '';
+  document.getElementById('kpi-2-sub').textContent =
+    pop2000 > 0 ? `${fmtPop(pop2000)} in 2000 → ${fmtPop(totalPop)} in ${latestYear}` : '';
 
   // ── Trend line chart ──────────────────────────────────────────────────────
   // Regional total series (always shown)
@@ -134,6 +151,7 @@ export function render(selectedCounties) {
   if (selected.length <= 6) {
     // Show only individual county lines (no combined total line).
     selected.forEach((name, i) => {
+      const lineColor = TREND_LINE_COLORS[i % TREND_LINE_COLORS.length];
       trendSeries.push({
         name,
         type: 'line',
@@ -142,10 +160,36 @@ export function render(selectedCounties) {
           return r ? [yr, r.population] : [yr, null];
         }),
         lineWidth: selected.length === 1 ? 2.5 : 2,
-        color: TREND_LINE_COLORS[i % TREND_LINE_COLORS.length],
+        color: lineColor,
         marker: { enabled: false },
         showInLegend: true,
         enableMouseTracking: true,
+        dataLabels: {
+          enabled: selected.length > 1,
+          allowOverlap: false,
+          crop: false,
+          align: 'right',
+          x: -8,
+          style: {
+            color: lineColor,
+            fontFamily: "'DINPro', sans-serif",
+            fontSize: '11px',
+            fontWeight: '600',
+            textOutline: 'none',
+          },
+          formatter() {
+            const data = this.series.options.data || [];
+            for (let idx = data.length - 1; idx >= 0; idx -= 1) {
+              const point = data[idx];
+              const x = Array.isArray(point) ? point[0] : point?.x;
+              const y = Array.isArray(point) ? point[1] : point?.y;
+              if (y !== null && y !== undefined) {
+                return this.x === x ? this.series.name : null;
+              }
+            }
+            return null;
+          },
+        },
       });
     });
   } else {
@@ -199,6 +243,7 @@ export function render(selectedCounties) {
 
 function buildTrendOptions() {
   const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  const axisLine = isDark ? 'rgba(195,198,208,0.20)' : 'rgba(195,198,208,0.55)';
 
   return {
     chart: {
@@ -221,6 +266,9 @@ function buildTrendOptions() {
     },
     yAxis: {
       title: { text: '' },
+      min: 0,
+      lineWidth: 1,
+      lineColor: axisLine,
       labels: {
         formatter() {
           const v = this.value;
@@ -240,14 +288,18 @@ function buildTrendOptions() {
         const fmtVal = (value) => Math.round(value).toLocaleString();
 
         if (this.points?.length) {
-          const lines = this.points
+          const points = this.points
             .filter(p => p.y !== null && p.y !== undefined)
-            .map(p => `${p.series.name}: <b>${fmtVal(p.y)}</b>`);
-          if (this.points.length > 1) {
-            const total = this.points
-              .filter(p => p.y !== null && p.y !== undefined)
-              .reduce((acc, p) => acc + p.y, 0);
-            lines.push(`Selected total: <b>${fmtVal(total)}</b>`);
+            .sort((a, b) => b.y - a.y);
+
+          const lines = points
+            .map(p =>
+              `<span style="color:${p.color}; font-weight:600">${p.series.name}</span>: <b>${fmtVal(p.y)}</b>`
+            );
+
+          if (points.length > 1) {
+            const total = points.reduce((acc, p) => acc + p.y, 0);
+            lines.push(`${isPresetRegionalSelection([...getSelected()]) ? 'Regional Total' : 'Selected total'}: <b>${fmtVal(total)}</b>`);
           }
           return `<b>${this.x}</b><br/>${lines.join('<br/>')}`;
         }
@@ -261,6 +313,8 @@ function buildTrendOptions() {
 }
 
 function buildRaceOptions() {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
   return {
     chart: {
       type:   'pie',
@@ -275,7 +329,8 @@ function buildRaceOptions() {
     plotOptions: {
       pie: {
         innerSize: '56%',
-        borderWidth: 0,
+        borderWidth: 2,
+        borderColor: isDark ? '#0d2535' : '#ffffff',
         dataLabels: {
           enabled:  true,
           distance: 14,
