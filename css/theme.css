@@ -58,6 +58,10 @@
   --on-surface-variant: #43474f;
   --outline-variant:    #c3c6d0;
 
+  --card-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.08),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+
   /* Trend indicator colors */
   --trend-positive: #1AAFA6;  /* ARC Teal */
   --trend-negative: #EE575D;  /* ARC Coral */
@@ -91,6 +95,10 @@
   --on-surface:         #dff4ff;
   --on-surface-variant: #c3c6d0;
   --outline-variant:    rgba(195, 198, 208, 0.18);
+
+  --card-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 2px 6px rgba(0, 0, 0, 0.35);
 
   --trend-positive: #42ADD3;  /* ARC Sky Blue */
   --trend-negative: #EE575D;  /* ARC Coral */
@@ -224,7 +232,13 @@ body {
   background: var(--surface-container-lowest);
   border-radius: 0.75rem;
   padding: 1.5rem 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
   text-align: center;
+  box-shadow: var(--card-shadow);
 }
 
 /* ── Mapbox attribution ──────────────────────────────────────────────────── */
@@ -232,12 +246,14 @@ body {
 
 .kpi-label {
   font-family: 'DINPro', sans-serif;
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   color: var(--on-surface-variant);
-  margin-bottom: 0.625rem;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 .kpi-value {
@@ -246,7 +262,8 @@ body {
   font-weight: 700;
   line-height: 1;
   color: var(--on-surface);
-  margin-bottom: 0.4rem;
+  margin: 0;
+  padding: 0;
   transition: color 200ms ease;
 }
 
@@ -255,9 +272,11 @@ body {
 
 .kpi-sub {
   font-family: 'DINPro', sans-serif;
-  font-size: 0.8125rem;
+  font-size: 0.875rem;
   color: var(--on-surface-variant);
-  line-height: 1.4;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
 }
 
 /* ── Chart cards ─────────────────────────────────────────────────────────── */
@@ -265,6 +284,7 @@ body {
   background: var(--surface-container-lowest);
   border-radius: 0.75rem;
   padding: 1.125rem 1.375rem 0.75rem;
+  box-shadow: var(--card-shadow);
 }
 
 .chart-title {
@@ -303,6 +323,7 @@ body {
   font-family: 'DINPro', sans-serif;
   font-size: 0.9375rem;
   color: var(--on-surface-variant);
+  box-shadow: var(--card-shadow);
 }
 
 /* ── Highcharts adjustments ──────────────────────────────────────────────── */

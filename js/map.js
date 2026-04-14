@@ -89,7 +89,7 @@ function _fillColor(isDark, sel) {
   return ['case',
     ['in', ['get', 'county_name'], ['literal', sel]],
     '#1270B3',
-    isDark ? 'rgba(122,184,228,0.07)' : 'rgba(18,112,179,0.07)',
+    isDark ? '#c0c0c0' : '#787878',
   ];
 }
 
@@ -97,7 +97,7 @@ function _lineColor(isDark, sel) {
   return ['case',
     ['in', ['get', 'county_name'], ['literal', sel]],
     '#1270B3',
-    isDark ? 'rgba(122,184,228,0.28)' : 'rgba(18,112,179,0.22)',
+    isDark ? 'rgba(180,180,180,0.65)' : 'rgba(100,100,100,0.7)',
   ];
 }
 

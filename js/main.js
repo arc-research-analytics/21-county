@@ -4,7 +4,9 @@
 import { loadAll, getVintages } from './data.js';
 import { initFilter, getSelected } from './filter.js';
 import { applyTheme } from './charts/theme.js';
-import * as PopTab from './tabs/population.js';
+import * as PopTab    from './tabs/population.js';
+import * as EmpTab    from './tabs/employment.js';
+import * as IncomeTab from './tabs/income.js';
 import * as MapMod from './map.js';
 
 // ── Tab registry ──────────────────────────────────────────────────────────
@@ -23,6 +25,8 @@ const TAB_TITLES = {
 // Map tab id → module. Add new modules here in later phases.
 const TAB_MODULES = {
   population: PopTab,
+  employment: EmpTab,
+  income:     IncomeTab,
 };
 
 // Tracks which tabs have already been initialized (charts created)
@@ -77,8 +81,9 @@ function switchTab(tabId) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.add('hidden'));
   document.getElementById(`panel-${tabId}`)?.classList.remove('hidden');
 
-  // Update top-bar title
+  // Update top-bar title and vintage badge
   document.getElementById('tab-title').textContent = TAB_TITLES[tabId] ?? tabId;
+  renderVintageBadge(tabId);
 
   _activeTab = tabId;
 
@@ -94,15 +99,32 @@ function switchTab(tabId) {
   }
 }
 
-// ── Vintage badge ─────────────────────────────────────────────────────────
-function renderVintageBadge() {
-  const v = getVintages();
-  const parts = [];
-  if (v.acs_vintage)            parts.push(`ACS ${v.acs_vintage}`);
-  if (v.population_latest_year) parts.push(`Pop ${v.population_latest_year}`);
-  if (v.employment_latest_year) parts.push(`Emp ${v.employment_latest_year}`);
+// ── Vintage badge — tab-specific so only relevant vintages are shown ───────
+function renderVintageBadge(tabId = _activeTab) {
+  const v     = getVintages();
+  const acs   = v.acs_vintage;
+  const pop   = v.population_latest_year;
+  const emp   = v.employment_latest_year;
+  const wages = v.wages_latest_year;
+  const gdp   = v.gdp_latest_year;
+  const prm   = v.permits_latest_year;
+  const gosa  = v.gosa_latest_year;
+
+  const BADGE = {
+    population: [pop   && `Pop ${pop}`],
+    employment: [emp   && `Emp ${emp}`],
+    economy:    [gdp   && `GDP ${gdp}`,   wages && `Wages ${wages}`],
+    housing:    [acs   && `ACS ${acs}`,   prm   && `Permits ${prm}`],
+    education:  [acs   && `ACS ${acs}`,   gosa  && `GOSA ${gosa}`],
+    health:     [acs   && `ACS ${acs}`],
+    income:     [acs   && `ACS ${acs}`],
+    forecast:   ['ARC 2050 Forecast'],
+    about:      [],
+  };
+
+  const parts = (BADGE[tabId] ?? []).filter(Boolean);
   document.getElementById('vintage-badge').textContent =
-    parts.length ? parts.join(' · ') : 'Data loaded';
+    parts.length ? parts.join(' · ') : '';
 }
 
 // ── Bootstrap ─────────────────────────────────────────────────────────────
@@ -117,7 +139,7 @@ async function main() {
   // Fetch all CSVs
   await loadAll();
 
-  renderVintageBadge();
+  // Badge will be set correctly by switchTab('population') below;
 
   // Wire up the county filter (awaits WA custom element registration internally)
   await initFilter();
