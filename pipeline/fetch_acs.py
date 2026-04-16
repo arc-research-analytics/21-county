@@ -10,6 +10,7 @@ Output: data/processed/acs_snapshot.csv  (one row per county)
 import requests
 import pandas as pd
 import sys
+import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -24,6 +25,10 @@ def _discover_acs_year(start_year: int) -> int:
     ACS 1-year releases each September for the prior calendar year, so
     current_year - 1 may not be available if the pipeline runs before September.
     Walks back up to 2 years from start_year before raising.
+
+    Validates both the HTTP status AND the response body — the Census API
+    occasionally returns HTTP 200 with a JSON error payload for unreleased
+    vintages, which a status-only check would incorrectly accept.
     """
     for year in range(start_year, start_year - 3, -1):
         url = f"{ACS_API_BASE}/{year}/acs/acs1"
@@ -33,11 +38,22 @@ def _discover_acs_year(start_year: int) -> int:
                 params={"get": "NAME", "for": f"state:{STATE_FIPS}", "key": CENSUS_API_KEY},
                 timeout=15,
             )
-            if r.status_code == 200:
+            if r.status_code != 200:
+                continue
+            # Confirm the body is a real data table: a list of lists with at least
+            # one header row and one data row.  Error responses from the Census API
+            # are not structured this way.
+            payload = r.json()
+            if (
+                isinstance(payload, list)
+                and len(payload) >= 2
+                and isinstance(payload[0], list)
+                and isinstance(payload[1], list)
+            ):
                 if year != start_year:
                     print(f"  ACS {start_year} not yet published — using {year} instead")
                 return year
-        except requests.RequestException:
+        except (requests.RequestException, ValueError):
             continue
     raise RuntimeError(
         f"No ACS 1-year data found for years {start_year} through {start_year - 2}. "
@@ -227,10 +243,23 @@ def _call_acs(base_url: str, var_codes: list[str]) -> pd.DataFrame:
         "in": f"state:{STATE_FIPS}",
         "key": CENSUS_API_KEY,
     }
-    resp = requests.get(base_url, params=params, timeout=60)
-    resp.raise_for_status()
-    data = resp.json()
-    return pd.DataFrame(data[1:], columns=data[0])
+    # Retry transient network drops; HTTP errors propagate.
+    last_exc = None
+    for attempt in range(3):
+        try:
+            resp = requests.get(base_url, params=params, timeout=60)
+            resp.raise_for_status()
+            data = resp.json()
+            return pd.DataFrame(data[1:], columns=data[0])
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.Timeout,
+                requests.exceptions.ChunkedEncodingError) as e:
+            last_exc = e
+            if attempt < 2:
+                wait = 2.0 ** attempt
+                print(f"    ACS chunk: transient network error ({type(e).__name__}); retrying in {wait:.1f}s...")
+                time.sleep(wait)
+    raise last_exc
 
 
 def fetch_acs_for_counties(base_url: str) -> pd.DataFrame:

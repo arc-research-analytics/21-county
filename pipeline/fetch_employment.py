@@ -14,6 +14,7 @@ Outputs:
   data/processed/employment_by_industry.csv (county × industry, 2023 snapshot)
 """
 
+import json
 import requests
 import pandas as pd
 import time
@@ -74,19 +75,39 @@ def _qwi_url(industry: str, start: int, end: int, ind_level: str = "S") -> str:
     )
 
 
+def _get_with_retry(url: str, attempts: int = 3, backoff: float = 2.0):
+    """
+    GET with retry on transient network errors (connection resets, timeouts).
+    Census endpoints occasionally drop long requests; a short retry loop clears it.
+    """
+    last_exc = None
+    for i in range(attempts):
+        try:
+            return requests.get(url, timeout=300)
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.Timeout,
+                requests.exceptions.ChunkedEncodingError) as e:
+            last_exc = e
+            if i < attempts - 1:
+                wait = backoff ** i
+                print(f"    Transient network error ({type(e).__name__}); retrying in {wait:.1f}s...")
+                time.sleep(wait)
+    raise last_exc
+
+
 def _fetch_qwi_industry(industry: str, ind_level: str = "S") -> pd.DataFrame:
     """
     Fetch QWI data for a single NAICS code, all years, all ARC counties.
     If END_YEAR data isn't available yet (204 or empty), retries with END_YEAR-1.
     """
     url = _qwi_url(industry, START_YEAR, END_YEAR, ind_level=ind_level)
-    resp = requests.get(url, timeout=300)
+    resp = _get_with_retry(url)
 
     # QWI returns 204 (no content) when the requested time range has no data yet.
     if resp.status_code == 204 and END_YEAR > START_YEAR:
         print(f"    QWI {END_YEAR} not available for NAICS {industry}, trying {END_YEAR-1}...")
         url = _qwi_url(industry, START_YEAR, END_YEAR - 1, ind_level=ind_level)
-        resp = requests.get(url, timeout=300)
+        resp = _get_with_retry(url)
 
     resp.raise_for_status()
     data = resp.json()
@@ -112,10 +133,35 @@ def fetch_employment():
     print(f"  Fetching all-industry totals ({START_YEAR}–{END_YEAR})...")
     df_total = _fetch_qwi_industry("00", ind_level="A")
 
+    # ── Latest-year quarter completeness ─────────────────────────────────────
+    # QWI publishes quarterly; if only Q1 of the latest year is out, the
+    # "annual average" would be a single quarter masquerading as a year.
+    # Drop latest year when only one quarter is available; otherwise record
+    # how many quarters fed the average so the frontend can label it.
+    latest_year  = int(df_total["year"].max())
+    qs_in_latest = sorted(df_total.loc[df_total["year"] == latest_year, "quarter"].unique())
+    dropped_year = None
+    if len(qs_in_latest) < 2:
+        dropped_year = latest_year
+        print(f"  Latest year {latest_year} has only Q{qs_in_latest[0]}; dropping until Q2 is available.")
+        df_total = df_total[df_total["year"] != latest_year].copy()
+        latest_year  = int(df_total["year"].max())
+        qs_in_latest = sorted(df_total.loc[df_total["year"] == latest_year, "quarter"].unique())
+
+    max_q_latest = int(max(qs_in_latest))
+    meta = {
+        "year":        latest_year,
+        "max_quarter": max_q_latest,
+        "complete":    max_q_latest == 4,
+    }
+    DATA_PROCESSED.mkdir(parents=True, exist_ok=True)
+    (DATA_PROCESSED / "employment_quarters.json").write_text(json.dumps(meta))
+    print(f"  Latest year {latest_year}: Q1–Q{max_q_latest} ({'complete' if meta['complete'] else 'partial'})")
+
     ts = (
         df_total
         .groupby(["county_fips", "year"])["Emp"]
-        .mean()                    # average of 4 quarters = annual average
+        .mean()                    # average of available quarters
         .round(0)
         .astype("Int64")           # nullable integer
         .reset_index()
@@ -148,6 +194,11 @@ def fetch_employment():
         time.sleep(0.3)  # gentle rate limiting
 
     all_industries = pd.concat(industry_dfs, ignore_index=True)
+
+    # Drop the latest year from industry data too if it was dropped above
+    # (single-quarter years get hidden from the frontend entirely).
+    if dropped_year is not None:
+        all_industries = all_industries[all_industries["year"] != dropped_year].copy()
 
     # Map NAICS → supersector label
     all_industries["supersector"] = all_industries["industry"].map(NAICS_TO_SUPERSECTOR)

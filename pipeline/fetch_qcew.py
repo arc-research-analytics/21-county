@@ -22,6 +22,7 @@ Outputs:
 """
 
 import io
+import time
 import zipfile
 import requests
 import pandas as pd
@@ -34,7 +35,7 @@ from config import COUNTIES, STATE_FIPS, DATA_RAW, DATA_PROCESSED
 
 QCEW_BASE  = "https://data.bls.gov/cew/data/files"
 QCEW_CACHE = DATA_RAW / "qcew"
-SERIES_YEARS = 10
+SERIES_YEARS = 15
 
 ARC_FIPS_5   = {STATE_FIPS + v for v in COUNTIES.values()}
 FIPS_TO_NAME = {STATE_FIPS + v: k for k, v in COUNTIES.items()}
@@ -96,17 +97,31 @@ def _download_year(year: int) -> Path:
         return cache_path
     url = f"{QCEW_BASE}/{year}/csv/{year}_annual_singlefile.zip"
     print(f"    {year}: downloading from BLS...")
-    resp = requests.get(url, headers=HEADERS, timeout=300)
-    resp.raise_for_status()
-    QCEW_CACHE.mkdir(parents=True, exist_ok=True)
-    cache_path.write_bytes(resp.content)
-    return cache_path
+    # Retry transient network drops; HTTP errors (404, etc.) raise immediately.
+    last_exc = None
+    for attempt in range(3):
+        try:
+            resp = requests.get(url, headers=HEADERS, timeout=300)
+            resp.raise_for_status()
+            QCEW_CACHE.mkdir(parents=True, exist_ok=True)
+            cache_path.write_bytes(resp.content)
+            return cache_path
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.Timeout,
+                requests.exceptions.ChunkedEncodingError) as e:
+            last_exc = e
+            if attempt < 2:
+                wait = 2.0 ** attempt
+                print(f"    {year}: transient network error ({type(e).__name__}); retrying in {wait:.1f}s...")
+                time.sleep(wait)
+    raise last_exc
 
 
 def _read_arc_rows(zip_path: Path) -> pd.DataFrame:
     """
     Stream the singlefile ZIP in 50K-row chunks, returning only the ARC county
-    rows for agglvl_code 70 (county total) and 72 (county by supersector).
+    rows for agglvl_code 70 (county total), 71 (county by ownership), and
+    73 (county by supersector within ownership).
     Suppressed rows (disclosure_code == 'N') are dropped.
     """
     str_cols = {"area_fips", "own_code", "industry_code", "agglvl_code",
@@ -120,7 +135,7 @@ def _read_arc_rows(zip_path: Path) -> pd.DataFrame:
             for chunk in pd.read_csv(f, dtype=dtype, chunksize=50_000, low_memory=False):
                 filtered = chunk[
                     chunk["area_fips"].isin(ARC_FIPS_5) &
-                    chunk["agglvl_code"].isin(["70", "73"]) &
+                    chunk["agglvl_code"].isin(["70", "71", "73"]) &
                     (chunk["disclosure_code"].isna() | (chunk["disclosure_code"] != "N"))
                 ]
                 if not filtered.empty:
@@ -192,8 +207,35 @@ def fetch_qcew():
     sector_agg["avg_annual_pay"] = (
         sector_agg["total_annual_wages"] / sector_agg["annual_avg_emplvl"]
     ).round(0)
+
+    # ── Public-sector aggregate (federal + state + local) ────────────────────
+    # QCEW splits government wages across own_codes 1, 2, 3. We fold them into
+    # a single "Public sector" bar so the Economy tab can show it alongside the
+    # 11 private supersectors without mixing ownership types within a sector.
+    # Source: agglvl_code 71 = county total by ownership; one row per own_code.
+    pub = df[(df["agglvl_code"] == "71") & (df["own_code"].isin(["1", "2", "3"]))].copy()
+    pub["total_annual_wages"] = pd.to_numeric(pub["total_annual_wages"], errors="coerce")
+    pub["annual_avg_emplvl"]  = pd.to_numeric(pub["annual_avg_emplvl"],  errors="coerce")
+    pub = pub[pub["total_annual_wages"].notna() & (pub["annual_avg_emplvl"] > 0)]
+
+    pub_agg = (
+        pub
+        .groupby(["county_name", "year"])
+        .agg(
+            total_annual_wages=("total_annual_wages", "sum"),
+            annual_avg_emplvl=("annual_avg_emplvl",   "sum"),
+        )
+        .reset_index()
+    )
+    pub_agg["supersector"]    = "Public sector"
+    pub_agg["avg_annual_pay"] = (
+        pub_agg["total_annual_wages"] / pub_agg["annual_avg_emplvl"]
+    ).round(0)
+
     sector_wages = (
-        sector_agg
+        pd.concat([sector_agg, pub_agg], ignore_index=True)
+        [["county_name", "year", "supersector", "total_annual_wages",
+          "annual_avg_emplvl", "avg_annual_pay"]]
         .sort_values(["county_name", "year", "supersector"])
         .reset_index(drop=True)
     )

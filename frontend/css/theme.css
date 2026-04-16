@@ -190,9 +190,9 @@ body {
 
 /* Keep county multi-select to a single visual row (no vertical growth). */
 #county-select {
-  width: 420px;
-  min-width: 420px;
-  max-width: 420px;
+  width: 500px;
+  min-width: 500px;
+  max-width: 500px;
   height: 44px;
   flex-shrink: 0;
   overflow: hidden;
@@ -305,6 +305,10 @@ body {
 /* ── Tab panels ──────────────────────────────────────────────────────────── */
 .tab-panel {
   animation: panelFadeIn 180ms ease;
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes panelFadeIn {

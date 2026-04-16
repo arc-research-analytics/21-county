@@ -127,7 +127,7 @@ export function render(selectedCounties) {
 
   if (!incomeChart) return;
 
-  document.getElementById('kpi-1-label').textContent = 'Regional Median Income';
+  document.getElementById('kpi-1-label').textContent = 'Median Income';
   document.getElementById('kpi-2-label').textContent = 'Poverty Rate';
 
   // ── Vintage / scope subtitles ─────────────────────────────────────────────
@@ -297,9 +297,12 @@ function applyIncomeLayout(countyCount) {
     povCard.style.display  = 'none';
     setTimeout(() => distChart?.reflow(), 0);
   } else {
+    // Restore to 'flex' (not '') — the cards rely on the inline display:flex
+    // from the HTML; clearing it lets them fall back to block and collapses
+    // the flex:1 chain that sizes the poverty table.
     grid.style.gridTemplateColumns = '3fr 2fr';
-    barCard.style.display  = '';
-    povCard.style.display  = '';
+    barCard.style.display  = 'flex';
+    povCard.style.display  = 'flex';
     setTimeout(() => { incomeChart?.reflow(); distChart?.reflow(); }, 0);
   }
 }
@@ -322,9 +325,17 @@ function renderPovertyTable(rows, acsPrefix, scopeTag) {
     .filter(r => r.poverty_rate_pct != null)
     .sort((a, b) => b.poverty_rate_pct - a.poverty_rate_pct);
 
-  // ── Outer wrapper fills the flex-1 container ──────────────────────────────
+  // ── Outer wrapper: absolute-positioned flex column so it has guaranteed ──
+  // bounds relative to #chart-poverty-county (position:relative), then flex:1
+  // on the rows container scrolls reliably without a height measurement hack.
   const wrapper = document.createElement('div');
-  wrapper.style.cssText = 'height:100%;display:flex;flex-direction:column;padding-top:10px;';
+  wrapper.style.cssText = [
+    'position:absolute',
+    'inset:0',
+    'display:flex',
+    'flex-direction:column',
+    'padding-top:10px',
+  ].join(';');
 
   // ── Column header ─────────────────────────────────────────────────────────
   const header = document.createElement('div');
@@ -339,21 +350,21 @@ function renderPovertyTable(rows, acsPrefix, scopeTag) {
     'text-transform:uppercase',
     'letter-spacing:0.05em',
     'border-bottom:1.5px solid var(--outline-variant)',
-    'flex-shrink:0',
+    'flex:0 0 auto',
   ].join(';');
   header.innerHTML = '<span>County</span><span>Poverty Rate</span>';
   wrapper.appendChild(header);
 
-  // ── Rows container: flex column, distributes height evenly (no scroll) ────
+  // ── Rows container: flex:1 of wrapper → bounded height, own scrollbar ─────
   const rowsContainer = document.createElement('div');
   rowsContainer.style.cssText = [
-    'flex:1',
+    'flex:1 1 0',
     'min-height:0',
-    'display:flex',
-    'flex-direction:column',
-    'gap:2px',
     'padding-top:6px',
     'overflow-y:auto',
+    'overscroll-behavior:contain',
+    'scrollbar-gutter:stable both-edges',
+    '-webkit-overflow-scrolling:touch',
   ].join(';');
 
   sorted.forEach(r => {
@@ -363,14 +374,15 @@ function renderPovertyTable(rows, acsPrefix, scopeTag) {
     const row = document.createElement('div');
     row.dataset.county = r.county_name;
     row.style.cssText = [
-      'flex:1',
-      'min-height:14px',
+      'flex:0 0 auto',
+      'min-height:24px',
       `background:${bg}`,
       'border-radius:3px',
       'display:flex',
       'justify-content:space-between',
       'align-items:center',
       'padding:0 10px 0 8px',
+      'margin-bottom:2px',
       'cursor:default',
       'transition:filter 80ms',
     ].join(';');
@@ -442,6 +454,7 @@ function buildIncomeOptions() {
       bar: {
         borderWidth:  0,
         borderRadius: 2,
+        pointWidth:   16,
         color:        C_BLUE,
         // ── Cross-highlight: hovering a bar highlights the poverty table row ─
         point: {

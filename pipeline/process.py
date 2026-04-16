@@ -333,6 +333,12 @@ def _generate_vintages() -> dict:
         if not df.empty and col in df.columns:
             meta[key] = int(df[col].max())
 
+    # Employment: how many QWI quarters fed the latest-year average
+    emp_q_file = DATA_PROCESSED / "employment_quarters.json"
+    if emp_q_file.exists():
+        emp_q = json.loads(emp_q_file.read_text())
+        meta["employment_latest_quarter"] = emp_q["max_quarter"]
+
     # GOSA graduation rates school year
     gosa = _load("graduation_rates.csv")
     if not gosa.empty:

@@ -16,6 +16,7 @@ import io
 import requests
 import pandas as pd
 import sys
+import time
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -53,12 +54,26 @@ def _fetch_month(month_dt: datetime) -> pd.DataFrame | None:
         raw = cache_path.read_text()
     else:
         url = f"{BPS_BASE}/co{yymm}c.txt"
-        try:
-            resp = requests.get(url, timeout=30)
-            resp.raise_for_status()
-        except requests.RequestException:
+        raw = None
+        # Retry transient network drops; 404 (month genuinely not published)
+        # falls through to return None on the last attempt.
+        for attempt in range(3):
+            try:
+                resp = requests.get(url, timeout=30)
+                resp.raise_for_status()
+                raw = resp.text
+                break
+            except (requests.exceptions.ConnectionError,
+                    requests.exceptions.Timeout,
+                    requests.exceptions.ChunkedEncodingError) as e:
+                if attempt < 2:
+                    time.sleep(2.0 ** attempt)
+                    continue
+                return None
+            except requests.RequestException:
+                return None
+        if raw is None:
             return None
-        raw = resp.text
         BPS_CACHE.mkdir(parents=True, exist_ok=True)
         cache_path.write_text(raw)
 

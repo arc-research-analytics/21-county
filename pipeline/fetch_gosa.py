@@ -18,6 +18,7 @@ import io
 import requests
 import pandas as pd
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 
@@ -86,11 +87,21 @@ def _find_file_url(year: int) -> str | None:
     Returns None if the directory is unreachable or no matching file is found.
     """
     dir_url = f"{GOSA_BASE}/{year}/"
-    try:
-        resp = requests.get(dir_url, timeout=15)
-    except requests.RequestException:
-        return None
-    if resp.status_code != 200:
+    resp = None
+    for attempt in range(3):
+        try:
+            resp = requests.get(dir_url, timeout=15)
+            break
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.Timeout,
+                requests.exceptions.ChunkedEncodingError):
+            if attempt < 2:
+                time.sleep(2.0 ** attempt)
+                continue
+            return None
+        except requests.RequestException:
+            return None
+    if resp is None or resp.status_code != 200:
         return None
 
     # Parse all href links matching Graduation_Rate_*.csv (not 5-Year_*)
@@ -108,9 +119,19 @@ def _find_file_url(year: int) -> str | None:
 
 def _download(url: str) -> pd.DataFrame:
     """Stream a CSV directly from URL into a DataFrame."""
-    resp = requests.get(url, timeout=120)
-    resp.raise_for_status()
-    return pd.read_csv(io.StringIO(resp.text), low_memory=False)
+    last_exc = None
+    for attempt in range(3):
+        try:
+            resp = requests.get(url, timeout=120)
+            resp.raise_for_status()
+            return pd.read_csv(io.StringIO(resp.text), low_memory=False)
+        except (requests.exceptions.ConnectionError,
+                requests.exceptions.Timeout,
+                requests.exceptions.ChunkedEncodingError) as e:
+            last_exc = e
+            if attempt < 2:
+                time.sleep(2.0 ** attempt)
+    raise last_exc
 
 
 def _load_cached() -> tuple[pd.DataFrame, str]:
