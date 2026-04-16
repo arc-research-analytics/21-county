@@ -1,4 +1,59 @@
 county_name,year,supersector,total_annual_wages,annual_avg_emplvl,avg_annual_pay,in_core_11
+Barrow,2010,Construction,31220857,831,37570.0,False
+Barrow,2010,Education and health services,44842380,1321,33946.0,False
+Barrow,2010,Financial activities,17737839,501,35405.0,False
+Barrow,2010,Information,3246341,81,40078.0,False
+Barrow,2010,Leisure and hospitality,28909641,1771,16324.0,False
+Barrow,2010,Manufacturing,72059423,1664,43305.0,False
+Barrow,2010,Natural resources and mining,6183242,217,28494.0,False
+Barrow,2010,Other services,8750013,394,22208.0,False
+Barrow,2010,Professional and business services,44864936,1134,39563.0,False
+Barrow,2010,Public sector,110317044,3062,36028.0,False
+Barrow,2010,"Trade, transportation and utilities",115824579,3735,31011.0,False
+Barrow,2011,Construction,32467802,840,38652.0,False
+Barrow,2011,Education and health services,44867492,1367,32822.0,False
+Barrow,2011,Financial activities,15410798,452,34095.0,False
+Barrow,2011,Information,4026314,82,49101.0,False
+Barrow,2011,Leisure and hospitality,30044711,1852,16223.0,False
+Barrow,2011,Manufacturing,76661842,1746,43907.0,False
+Barrow,2011,Natural resources and mining,6064316,205,29582.0,False
+Barrow,2011,Other services,9723096,399,24369.0,False
+Barrow,2011,Professional and business services,37380082,999,37417.0,False
+Barrow,2011,Public sector,105656036,2919,36196.0,False
+Barrow,2011,"Trade, transportation and utilities",122126692,3798,32156.0,False
+Barrow,2012,Construction,32966165,816,40400.0,False
+Barrow,2012,Education and health services,46435273,1363,34068.0,False
+Barrow,2012,Financial activities,15853876,457,34691.0,False
+Barrow,2012,Information,4941431,109,45334.0,False
+Barrow,2012,Leisure and hospitality,28211746,1741,16204.0,False
+Barrow,2012,Manufacturing,76898090,1852,41522.0,False
+Barrow,2012,Natural resources and mining,6143652,179,34322.0,False
+Barrow,2012,Other services,10054597,427,23547.0,False
+Barrow,2012,Professional and business services,40279570,1092,36886.0,False
+Barrow,2012,Public sector,105878193,2905,36447.0,False
+Barrow,2012,"Trade, transportation and utilities",125050492,3881,32221.0,False
+Barrow,2013,Construction,35973051,817,44031.0,False
+Barrow,2013,Education and health services,48733770,1422,34271.0,False
+Barrow,2013,Financial activities,18256560,525,34774.0,False
+Barrow,2013,Information,5064069,121,41852.0,False
+Barrow,2013,Leisure and hospitality,29175805,1765,16530.0,False
+Barrow,2013,Manufacturing,83355328,1930,43189.0,False
+Barrow,2013,Natural resources and mining,6040415,171,35324.0,False
+Barrow,2013,Other services,9564010,447,21396.0,False
+Barrow,2013,Professional and business services,52628458,1474,35705.0,False
+Barrow,2013,Public sector,105712337,2837,37262.0,False
+Barrow,2013,"Trade, transportation and utilities",168027030,5279,31829.0,False
+Barrow,2014,Construction,42673406,938,45494.0,False
+Barrow,2014,Education and health services,52900006,1521,34780.0,False
+Barrow,2014,Financial activities,21871988,539,40579.0,False
+Barrow,2014,Information,4935343,124,39801.0,False
+Barrow,2014,Leisure and hospitality,30311030,1745,17370.0,False
+Barrow,2014,Manufacturing,92003043,2010,45773.0,False
+Barrow,2014,Natural resources and mining,3966997,122,32516.0,False
+Barrow,2014,Other services,10565581,472,22385.0,False
+Barrow,2014,Professional and business services,34312868,1167,29403.0,False
+Barrow,2014,Public sector,109127238,2875,37957.0,False
+Barrow,2014,"Trade, transportation and utilities",184205499,5628,32730.0,False
 Barrow,2015,Construction,48250281,1024,47119.0,False
 Barrow,2015,Education and health services,57684064,1566,36835.0,False
 Barrow,2015,Financial activities,17375148,499,34820.0,False
@@ -8,6 +63,7 @@ Barrow,2015,Manufacturing,98159056,2196,44699.0,False
 Barrow,2015,Natural resources and mining,4411688,106,41620.0,False
 Barrow,2015,Other services,11429173,499,22904.0,False
 Barrow,2015,Professional and business services,31085573,1073,28971.0,False
+Barrow,2015,Public sector,111741516,2921,38255.0,False
 Barrow,2015,"Trade, transportation and utilities",211682850,5945,35607.0,False
 Barrow,2016,Construction,57489157,1145,50209.0,False
 Barrow,2016,Education and health services,61155211,1591,38438.0,False
@@ -18,6 +74,7 @@ Barrow,2016,Manufacturing,101552170,2082,48776.0,False
 Barrow,2016,Natural resources and mining,4088732,100,40887.0,False
 Barrow,2016,Other services,11716372,489,23960.0,False
 Barrow,2016,Professional and business services,34158142,1009,33853.0,False
+Barrow,2016,Public sector,115581948,2911,39705.0,False
 Barrow,2016,"Trade, transportation and utilities",218123244,5951,36653.0,False
 Barrow,2017,Construction,62718829,1196,52440.0,False
 Barrow,2017,Education and health services,73871300,1760,41972.0,False
@@ -28,6 +85,7 @@ Barrow,2017,Manufacturing,102740413,2107,48761.0,False
 Barrow,2017,Natural resources and mining,5691529,161,35351.0,False
 Barrow,2017,Other services,11431202,450,25403.0,False
 Barrow,2017,Professional and business services,51580198,1336,38608.0,False
+Barrow,2017,Public sector,119978964,2825,42470.0,False
 Barrow,2017,"Trade, transportation and utilities",224701088,5903,38066.0,False
 Barrow,2018,Construction,69757515,1279,54541.0,False
 Barrow,2018,Education and health services,85800638,1973,43487.0,False
@@ -38,6 +96,7 @@ Barrow,2018,Manufacturing,109473051,2154,50823.0,False
 Barrow,2018,Natural resources and mining,8713428,233,37397.0,False
 Barrow,2018,Other services,11105898,436,25472.0,False
 Barrow,2018,Professional and business services,66086803,1492,44294.0,False
+Barrow,2018,Public sector,122839751,2879,42668.0,False
 Barrow,2018,"Trade, transportation and utilities",246364090,6121,40249.0,False
 Barrow,2019,Construction,79965222,1318,60672.0,False
 Barrow,2019,Education and health services,85653531,1968,43523.0,False
@@ -48,6 +107,7 @@ Barrow,2019,Manufacturing,111931169,2163,51748.0,False
 Barrow,2019,Natural resources and mining,13065452,320,40830.0,False
 Barrow,2019,Other services,13132887,464,28304.0,False
 Barrow,2019,Professional and business services,75165098,1491,50413.0,False
+Barrow,2019,Public sector,129131052,2967,43522.0,False
 Barrow,2019,"Trade, transportation and utilities",269706382,6636,40643.0,False
 Barrow,2020,Construction,85382249,1406,60727.0,False
 Barrow,2020,Education and health services,88041049,2091,42105.0,False
@@ -58,6 +118,7 @@ Barrow,2020,Manufacturing,125024880,2204,56726.0,False
 Barrow,2020,Natural resources and mining,16877792,359,47013.0,False
 Barrow,2020,Other services,14152570,445,31804.0,False
 Barrow,2020,Professional and business services,80439441,1563,51465.0,False
+Barrow,2020,Public sector,136432576,3129,43603.0,False
 Barrow,2020,"Trade, transportation and utilities",292153823,6705,43573.0,False
 Barrow,2021,Construction,97529598,1391,70115.0,False
 Barrow,2021,Education and health services,99163625,2262,43839.0,False
@@ -68,6 +129,7 @@ Barrow,2021,Manufacturing,132695991,2170,61150.0,False
 Barrow,2021,Natural resources and mining,17506146,354,49452.0,False
 Barrow,2021,Other services,16935344,508,33337.0,False
 Barrow,2021,Professional and business services,90208091,1653,54572.0,False
+Barrow,2021,Public sector,147997948,3086,47958.0,False
 Barrow,2021,"Trade, transportation and utilities",342769006,6991,49030.0,False
 Barrow,2022,Construction,116601851,1522,76611.0,False
 Barrow,2022,Education and health services,108543592,2323,46726.0,False
@@ -78,6 +140,7 @@ Barrow,2022,Manufacturing,145434254,2142,67896.0,False
 Barrow,2022,Natural resources and mining,18682555,320,58383.0,False
 Barrow,2022,Other services,23344344,603,38714.0,False
 Barrow,2022,Professional and business services,71293888,1442,49441.0,False
+Barrow,2022,Public sector,159330408,3130,50904.0,False
 Barrow,2022,"Trade, transportation and utilities",386524785,7603,50838.0,False
 Barrow,2023,Construction,125172533,1632,76699.0,False
 Barrow,2023,Education and health services,107030347,2150,49782.0,False
@@ -88,6 +151,7 @@ Barrow,2023,Manufacturing,156691396,2269,69057.0,False
 Barrow,2023,Natural resources and mining,7095431,111,63923.0,False
 Barrow,2023,Other services,27346003,682,40097.0,False
 Barrow,2023,Professional and business services,92512126,1930,47934.0,False
+Barrow,2023,Public sector,175793280,3307,53158.0,False
 Barrow,2023,"Trade, transportation and utilities",371891616,7355,50563.0,False
 Barrow,2024,Construction,153834667,1919,80164.0,False
 Barrow,2024,Education and health services,113148006,2184,51808.0,False
@@ -98,7 +162,63 @@ Barrow,2024,Manufacturing,164075430,2394,68536.0,False
 Barrow,2024,Natural resources and mining,5766784,104,55450.0,False
 Barrow,2024,Other services,28688363,672,42691.0,False
 Barrow,2024,Professional and business services,105447016,2185,48260.0,False
+Barrow,2024,Public sector,195538606,3504,55804.0,False
 Barrow,2024,"Trade, transportation and utilities",413712858,7588,54522.0,False
+Bartow,2010,Construction,39384143,1058,37225.0,False
+Bartow,2010,Education and health services,109365853,2566,42621.0,False
+Bartow,2010,Financial activities,33596188,943,35627.0,False
+Bartow,2010,Information,10365159,269,38532.0,False
+Bartow,2010,Leisure and hospitality,48607556,3323,14628.0,False
+Bartow,2010,Manufacturing,345744369,7133,48471.0,False
+Bartow,2010,Natural resources and mining,7277240,162,44921.0,False
+Bartow,2010,Other services,13379869,484,27644.0,False
+Bartow,2010,Professional and business services,84850662,2523,33631.0,False
+Bartow,2010,Public sector,192062119,5058,37972.0,False
+Bartow,2010,"Trade, transportation and utilities",224844303,6930,32445.0,False
+Bartow,2011,Construction,40382520,1063,37989.0,False
+Bartow,2011,Education and health services,111082873,2590,42889.0,False
+Bartow,2011,Financial activities,35020355,937,37375.0,False
+Bartow,2011,Information,11712686,308,38028.0,False
+Bartow,2011,Leisure and hospitality,50301085,3439,14627.0,False
+Bartow,2011,Manufacturing,378237335,7898,47890.0,False
+Bartow,2011,Natural resources and mining,5670288,147,38573.0,False
+Bartow,2011,Other services,14779809,522,28314.0,False
+Bartow,2011,Professional and business services,86915526,2469,35203.0,False
+Bartow,2011,Public sector,191118116,5076,37651.0,False
+Bartow,2011,"Trade, transportation and utilities",234121181,6962,33628.0,False
+Bartow,2012,Construction,44301371,1110,39911.0,False
+Bartow,2012,Education and health services,109023110,2501,43592.0,False
+Bartow,2012,Financial activities,34801568,894,38928.0,False
+Bartow,2012,Information,12152757,317,38337.0,False
+Bartow,2012,Leisure and hospitality,51913435,3444,15074.0,False
+Bartow,2012,Manufacturing,399472597,8160,48955.0,False
+Bartow,2012,Natural resources and mining,6627715,156,42485.0,False
+Bartow,2012,Other services,17911779,598,29953.0,False
+Bartow,2012,Professional and business services,88656249,2437,36379.0,False
+Bartow,2012,Public sector,189457492,4981,38036.0,False
+Bartow,2012,"Trade, transportation and utilities",241956756,6759,35798.0,False
+Bartow,2013,Construction,47829020,1201,39824.0,False
+Bartow,2013,Education and health services,108333427,2392,45290.0,False
+Bartow,2013,Financial activities,38445034,933,41206.0,False
+Bartow,2013,Information,12323095,313,39371.0,False
+Bartow,2013,Leisure and hospitality,55774492,3668,15206.0,False
+Bartow,2013,Manufacturing,414262460,8155,50799.0,False
+Bartow,2013,Natural resources and mining,7656018,169,45302.0,False
+Bartow,2013,Other services,18568303,599,30999.0,False
+Bartow,2013,Professional and business services,92009525,2478,37131.0,False
+Bartow,2013,Public sector,188568029,4766,39565.0,False
+Bartow,2013,"Trade, transportation and utilities",246467525,6720,36677.0,False
+Bartow,2014,Construction,58692516,1349,43508.0,False
+Bartow,2014,Education and health services,119948251,2492,48133.0,False
+Bartow,2014,Financial activities,41584836,990,42005.0,False
+Bartow,2014,Information,12399913,320,38750.0,False
+Bartow,2014,Leisure and hospitality,59039098,3755,15723.0,False
+Bartow,2014,Manufacturing,442766419,8479,52219.0,False
+Bartow,2014,Natural resources and mining,8718609,177,49258.0,False
+Bartow,2014,Other services,21567062,688,31347.0,False
+Bartow,2014,Professional and business services,88522864,2562,34552.0,False
+Bartow,2014,Public sector,188869056,4740,39846.0,False
+Bartow,2014,"Trade, transportation and utilities",268412187,7051,38067.0,False
 Bartow,2015,Construction,78618795,1659,47389.0,False
 Bartow,2015,Education and health services,127931582,2540,50367.0,False
 Bartow,2015,Financial activities,45961075,1021,45016.0,False
@@ -108,6 +228,7 @@ Bartow,2015,Manufacturing,472368397,9270,50957.0,False
 Bartow,2015,Natural resources and mining,9600594,181,53042.0,False
 Bartow,2015,Other services,24296692,730,33283.0,False
 Bartow,2015,Professional and business services,104015279,2592,40129.0,False
+Bartow,2015,Public sector,192595038,4752,40529.0,False
 Bartow,2015,"Trade, transportation and utilities",295526699,7404,39914.0,False
 Bartow,2016,Construction,84840773,1732,48984.0,False
 Bartow,2016,Education and health services,132779930,2679,49563.0,False
@@ -118,6 +239,7 @@ Bartow,2016,Manufacturing,497424435,9635,51627.0,False
 Bartow,2016,Natural resources and mining,9717625,182,53394.0,False
 Bartow,2016,Other services,26864290,761,35301.0,False
 Bartow,2016,Professional and business services,101174635,2357,42925.0,False
+Bartow,2016,Public sector,198568189,4727,42007.0,False
 Bartow,2016,"Trade, transportation and utilities",312908899,7699,40643.0,False
 Bartow,2017,Construction,90765929,1819,49899.0,False
 Bartow,2017,Education and health services,138919498,2835,49002.0,False
@@ -128,6 +250,7 @@ Bartow,2017,Manufacturing,502476029,9570,52505.0,False
 Bartow,2017,Natural resources and mining,10032133,196,51184.0,False
 Bartow,2017,Other services,25225060,732,34460.0,False
 Bartow,2017,Professional and business services,113043683,2612,43279.0,False
+Bartow,2017,Public sector,201177954,4750,42353.0,False
 Bartow,2017,"Trade, transportation and utilities",342316552,8334,41075.0,False
 Bartow,2018,Construction,99315663,1862,53338.0,False
 Bartow,2018,Education and health services,155313907,3175,48918.0,False
@@ -138,6 +261,7 @@ Bartow,2018,Manufacturing,549750860,10109,54382.0,False
 Bartow,2018,Natural resources and mining,11308206,211,53593.0,False
 Bartow,2018,Other services,27816875,776,35846.0,False
 Bartow,2018,Professional and business services,127480688,2886,44172.0,False
+Bartow,2018,Public sector,208995854,4782,43705.0,False
 Bartow,2018,"Trade, transportation and utilities",394887252,9053,43619.0,False
 Bartow,2019,Construction,100584014,1894,53107.0,False
 Bartow,2019,Education and health services,165982422,3318,50025.0,False
@@ -148,6 +272,7 @@ Bartow,2019,Manufacturing,552974094,10151,54475.0,False
 Bartow,2019,Natural resources and mining,12039921,224,53750.0,False
 Bartow,2019,Other services,30183627,819,36854.0,False
 Bartow,2019,Professional and business services,156782738,3887,40335.0,False
+Bartow,2019,Public sector,217330552,4858,44737.0,False
 Bartow,2019,"Trade, transportation and utilities",449302286,9791,45889.0,False
 Bartow,2020,Construction,104997703,1905,55117.0,False
 Bartow,2020,Education and health services,166834304,3335,50025.0,False
@@ -158,6 +283,7 @@ Bartow,2020,Manufacturing,541307222,9529,56806.0,False
 Bartow,2020,Natural resources and mining,13277791,245,54195.0,False
 Bartow,2020,Other services,31196831,773,40358.0,False
 Bartow,2020,Professional and business services,176112740,3995,44083.0,False
+Bartow,2020,Public sector,227256914,4843,46925.0,False
 Bartow,2020,"Trade, transportation and utilities",459592046,9585,47949.0,False
 Bartow,2021,Construction,113416163,1909,59411.0,False
 Bartow,2021,Education and health services,177389819,3397,52220.0,False
@@ -168,6 +294,7 @@ Bartow,2021,Manufacturing,582898925,9851,59172.0,False
 Bartow,2021,Natural resources and mining,13317924,240,55491.0,False
 Bartow,2021,Other services,37972517,850,44674.0,False
 Bartow,2021,Professional and business services,208909093,4246,49201.0,False
+Bartow,2021,Public sector,239188479,4913,48685.0,False
 Bartow,2021,"Trade, transportation and utilities",500983727,9892,50645.0,False
 Bartow,2022,Construction,125464082,2013,62327.0,False
 Bartow,2022,Education and health services,165751225,3281,50519.0,False
@@ -178,6 +305,7 @@ Bartow,2022,Manufacturing,674201451,10557,63863.0,False
 Bartow,2022,Natural resources and mining,13807728,211,65439.0,False
 Bartow,2022,Other services,47302541,966,48967.0,False
 Bartow,2022,Professional and business services,212683244,3986,53358.0,False
+Bartow,2022,Public sector,263827639,4976,53020.0,False
 Bartow,2022,"Trade, transportation and utilities",550843249,10306,53449.0,False
 Bartow,2023,Construction,157309269,2246,70040.0,False
 Bartow,2023,Education and health services,203698192,3503,58150.0,False
@@ -188,6 +316,7 @@ Bartow,2023,Manufacturing,754153163,11766,64096.0,False
 Bartow,2023,Natural resources and mining,13880504,198,70104.0,False
 Bartow,2023,Other services,51377692,1005,51122.0,False
 Bartow,2023,Professional and business services,246682190,4462,55285.0,False
+Bartow,2023,Public sector,277527933,5157,53816.0,False
 Bartow,2023,"Trade, transportation and utilities",556366031,10011,55575.0,False
 Bartow,2024,Construction,187070602,2533,73853.0,False
 Bartow,2024,Education and health services,234140436,3697,63333.0,False
@@ -198,7 +327,63 @@ Bartow,2024,Manufacturing,771699609,11456,67362.0,False
 Bartow,2024,Natural resources and mining,14424337,204,70708.0,False
 Bartow,2024,Other services,50644542,972,52103.0,False
 Bartow,2024,Professional and business services,284819223,4838,58871.0,False
+Bartow,2024,Public sector,313033475,5409,57873.0,False
 Bartow,2024,"Trade, transportation and utilities",599537067,10424,57515.0,False
+Carroll,2010,Construction,77520904,1866,41544.0,False
+Carroll,2010,Education and health services,222795931,4534,49139.0,False
+Carroll,2010,Financial activities,51986877,1083,48003.0,False
+Carroll,2010,Information,33991508,611,55633.0,False
+Carroll,2010,Leisure and hospitality,39191237,3214,12194.0,False
+Carroll,2010,Manufacturing,268790055,6878,39080.0,False
+Carroll,2010,Natural resources and mining,6978793,192,36348.0,False
+Carroll,2010,Other services,16390052,658,24909.0,False
+Carroll,2010,Professional and business services,112821309,2516,44842.0,False
+Carroll,2010,Public sector,267468188,7622,35092.0,False
+Carroll,2010,"Trade, transportation and utilities",181793535,6085,29876.0,False
+Carroll,2011,Construction,79353127,1880,42209.0,False
+Carroll,2011,Education and health services,236509573,4715,50161.0,False
+Carroll,2011,Financial activities,38426414,967,39738.0,False
+Carroll,2011,Information,41571685,735,56560.0,False
+Carroll,2011,Leisure and hospitality,40555179,3260,12440.0,False
+Carroll,2011,Manufacturing,287853732,7144,40293.0,False
+Carroll,2011,Natural resources and mining,5776391,170,33979.0,False
+Carroll,2011,Other services,18269947,672,27187.0,False
+Carroll,2011,Professional and business services,130212345,2242,58079.0,False
+Carroll,2011,Public sector,263227537,7498,35106.0,False
+Carroll,2011,"Trade, transportation and utilities",190365933,6183,30789.0,False
+Carroll,2012,Construction,81467114,1873,43496.0,False
+Carroll,2012,Education and health services,253536705,4874,52018.0,False
+Carroll,2012,Financial activities,38402504,928,41382.0,False
+Carroll,2012,Information,51628878,848,60883.0,False
+Carroll,2012,Leisure and hospitality,46564934,3694,12606.0,False
+Carroll,2012,Manufacturing,288231013,6795,42418.0,False
+Carroll,2012,Natural resources and mining,5681258,169,33617.0,False
+Carroll,2012,Other services,20156209,732,27536.0,False
+Carroll,2012,Professional and business services,137419132,2553,53827.0,False
+Carroll,2012,Public sector,274024292,7805,35109.0,False
+Carroll,2012,"Trade, transportation and utilities",213740132,6826,31313.0,False
+Carroll,2013,Construction,90238482,1933,46683.0,False
+Carroll,2013,Education and health services,259616225,5072,51186.0,False
+Carroll,2013,Financial activities,37640436,891,42245.0,False
+Carroll,2013,Information,83369426,974,85595.0,False
+Carroll,2013,Leisure and hospitality,52019610,4040,12876.0,False
+Carroll,2013,Manufacturing,266154623,6076,43804.0,False
+Carroll,2013,Natural resources and mining,3599353,91,39553.0,False
+Carroll,2013,Other services,21189069,714,29677.0,False
+Carroll,2013,Professional and business services,166941379,4189,39852.0,False
+Carroll,2013,Public sector,229955547,6235,36881.0,False
+Carroll,2013,"Trade, transportation and utilities",217689435,7086,30721.0,False
+Carroll,2014,Construction,96074405,2048,46911.0,False
+Carroll,2014,Education and health services,274030070,5214,52557.0,False
+Carroll,2014,Financial activities,37892149,884,42864.0,False
+Carroll,2014,Information,49099860,912,53838.0,False
+Carroll,2014,Leisure and hospitality,54904093,4228,12986.0,False
+Carroll,2014,Manufacturing,284287035,6299,45132.0,False
+Carroll,2014,Natural resources and mining,4562536,119,38341.0,False
+Carroll,2014,Other services,22223892,744,29871.0,False
+Carroll,2014,Professional and business services,186538994,4384,42550.0,False
+Carroll,2014,Public sector,236533954,6175,38305.0,False
+Carroll,2014,"Trade, transportation and utilities",226473541,7385,30667.0,False
 Carroll,2015,Construction,103364450,2105,49104.0,False
 Carroll,2015,Education and health services,286531114,5295,54114.0,False
 Carroll,2015,Financial activities,41681471,930,44819.0,False
@@ -208,6 +393,7 @@ Carroll,2015,Manufacturing,298381579,6425,46441.0,False
 Carroll,2015,Natural resources and mining,7051627,200,35258.0,False
 Carroll,2015,Other services,24802561,788,31475.0,False
 Carroll,2015,Professional and business services,174991014,4123,42443.0,False
+Carroll,2015,Public sector,246856498,6061,40729.0,False
 Carroll,2015,"Trade, transportation and utilities",244573172,7803,31343.0,False
 Carroll,2016,Construction,112252058,2166,51825.0,False
 Carroll,2016,Education and health services,314084302,5479,57325.0,False
@@ -218,6 +404,7 @@ Carroll,2016,Manufacturing,332597678,6832,48682.0,False
 Carroll,2016,Natural resources and mining,5883074,144,40855.0,False
 Carroll,2016,Other services,28163835,842,33449.0,False
 Carroll,2016,Professional and business services,183680089,3996,45966.0,False
+Carroll,2016,Public sector,256174849,6167,41540.0,False
 Carroll,2016,"Trade, transportation and utilities",234215724,7237,32364.0,False
 Carroll,2017,Construction,128467624,2398,53573.0,False
 Carroll,2017,Education and health services,321853002,5626,57208.0,False
@@ -228,6 +415,7 @@ Carroll,2017,Manufacturing,364487703,7119,51199.0,False
 Carroll,2017,Natural resources and mining,7657622,195,39270.0,False
 Carroll,2017,Other services,24708437,744,33210.0,False
 Carroll,2017,Professional and business services,184509065,3821,48288.0,False
+Carroll,2017,Public sector,271884854,6444,42192.0,False
 Carroll,2017,"Trade, transportation and utilities",239677892,7253,33045.0,False
 Carroll,2018,Construction,132888063,2450,54240.0,False
 Carroll,2018,Education and health services,336753176,5841,57653.0,False
@@ -238,6 +426,7 @@ Carroll,2018,Manufacturing,411798507,7531,54680.0,False
 Carroll,2018,Natural resources and mining,7604913,187,40668.0,False
 Carroll,2018,Other services,25612987,772,33177.0,False
 Carroll,2018,Professional and business services,194974740,3665,53199.0,False
+Carroll,2018,Public sector,286085950,6540,43744.0,False
 Carroll,2018,"Trade, transportation and utilities",255986565,7308,35028.0,False
 Carroll,2019,Construction,143121192,2476,57803.0,False
 Carroll,2019,Education and health services,355396866,6097,58290.0,False
@@ -248,6 +437,7 @@ Carroll,2019,Manufacturing,403167142,7758,51968.0,False
 Carroll,2019,Natural resources and mining,7114839,161,44192.0,False
 Carroll,2019,Other services,26301486,778,33807.0,False
 Carroll,2019,Professional and business services,183043356,3445,53133.0,False
+Carroll,2019,Public sector,293473712,6599,44472.0,False
 Carroll,2019,"Trade, transportation and utilities",263944947,7515,35122.0,False
 Carroll,2020,Construction,161079154,2661,60533.0,False
 Carroll,2020,Education and health services,354229946,5913,59907.0,False
@@ -258,6 +448,7 @@ Carroll,2020,Manufacturing,393781401,6972,56480.0,False
 Carroll,2020,Natural resources and mining,7450338,157,47454.0,False
 Carroll,2020,Other services,27026963,777,34784.0,False
 Carroll,2020,Professional and business services,201264066,3580,56219.0,False
+Carroll,2020,Public sector,297014576,6389,46488.0,False
 Carroll,2020,"Trade, transportation and utilities",291580290,7713,37804.0,False
 Carroll,2021,Construction,160011583,2509,63775.0,False
 Carroll,2021,Education and health services,385890106,5949,64866.0,False
@@ -268,6 +459,7 @@ Carroll,2021,Manufacturing,443971189,6979,63615.0,False
 Carroll,2021,Natural resources and mining,7508022,147,51075.0,False
 Carroll,2021,Other services,38761804,1021,37965.0,False
 Carroll,2021,Professional and business services,208179578,3834,54298.0,False
+Carroll,2021,Public sector,302268865,6269,48216.0,False
 Carroll,2021,"Trade, transportation and utilities",317953121,8048,39507.0,False
 Carroll,2022,Construction,189957034,2700,70354.0,False
 Carroll,2022,Education and health services,424794663,6245,68022.0,False
@@ -278,6 +470,7 @@ Carroll,2022,Manufacturing,470609826,7316,64326.0,False
 Carroll,2022,Natural resources and mining,7015482,132,53148.0,False
 Carroll,2022,Other services,42611964,1077,39565.0,False
 Carroll,2022,Professional and business services,269675988,3932,68585.0,False
+Carroll,2022,Public sector,334519869,6379,52441.0,False
 Carroll,2022,"Trade, transportation and utilities",342589051,8221,41672.0,False
 Carroll,2023,Construction,236384312,3029,78040.0,False
 Carroll,2023,Education and health services,469105398,6533,71806.0,False
@@ -288,6 +481,7 @@ Carroll,2023,Manufacturing,521763058,7588,68762.0,False
 Carroll,2023,Natural resources and mining,5856509,92,63658.0,False
 Carroll,2023,Other services,46127179,1109,41593.0,False
 Carroll,2023,Professional and business services,300148628,4443,67555.0,False
+Carroll,2023,Public sector,343537900,6595,52091.0,False
 Carroll,2023,"Trade, transportation and utilities",348208186,8036,43331.0,False
 Carroll,2024,Construction,264664468,3256,81285.0,False
 Carroll,2024,Education and health services,434958001,6642,65486.0,False
@@ -298,7 +492,63 @@ Carroll,2024,Manufacturing,582846007,7967,73158.0,False
 Carroll,2024,Natural resources and mining,11045517,206,53619.0,False
 Carroll,2024,Other services,41984961,1036,40526.0,False
 Carroll,2024,Professional and business services,302241156,4469,67631.0,False
+Carroll,2024,Public sector,369579777,6879,53726.0,False
 Carroll,2024,"Trade, transportation and utilities",367586253,8124,45247.0,False
+Cherokee,2010,Construction,121388191,2743,44254.0,True
+Cherokee,2010,Education and health services,191284660,4976,38441.0,True
+Cherokee,2010,Financial activities,88194443,1871,47138.0,True
+Cherokee,2010,Information,19436549,405,47991.0,True
+Cherokee,2010,Leisure and hospitality,88147558,6126,14389.0,True
+Cherokee,2010,Manufacturing,148200978,3558,41653.0,True
+Cherokee,2010,Natural resources and mining,3107444,93,33413.0,True
+Cherokee,2010,Other services,47866980,1694,28257.0,True
+Cherokee,2010,Professional and business services,181168776,4724,38351.0,True
+Cherokee,2010,Public sector,322175769,7936,40597.0,True
+Cherokee,2010,"Trade, transportation and utilities",298265113,9437,31606.0,True
+Cherokee,2011,Construction,122716151,2891,42448.0,True
+Cherokee,2011,Education and health services,186076063,4701,39582.0,True
+Cherokee,2011,Financial activities,89161493,1857,48014.0,True
+Cherokee,2011,Information,22301790,452,49340.0,True
+Cherokee,2011,Leisure and hospitality,90207616,6268,14392.0,True
+Cherokee,2011,Manufacturing,162870417,3763,43282.0,True
+Cherokee,2011,Natural resources and mining,3384613,103,32860.0,True
+Cherokee,2011,Other services,50125023,1753,28594.0,True
+Cherokee,2011,Professional and business services,189906149,4824,39367.0,True
+Cherokee,2011,Public sector,322123346,7770,41457.0,True
+Cherokee,2011,"Trade, transportation and utilities",331260843,9741,34007.0,True
+Cherokee,2012,Construction,124291329,2836,43826.0,True
+Cherokee,2012,Education and health services,197319281,4905,40228.0,True
+Cherokee,2012,Financial activities,101029359,1948,51863.0,True
+Cherokee,2012,Information,22877171,466,49093.0,True
+Cherokee,2012,Leisure and hospitality,96714824,6664,14513.0,True
+Cherokee,2012,Manufacturing,170667198,3997,42699.0,True
+Cherokee,2012,Natural resources and mining,2928550,96,30506.0,True
+Cherokee,2012,Other services,57765040,1879,30742.0,True
+Cherokee,2012,Professional and business services,202609753,4878,41535.0,True
+Cherokee,2012,Public sector,317521839,7702,41226.0,True
+Cherokee,2012,"Trade, transportation and utilities",333362085,10240,32555.0,True
+Cherokee,2013,Construction,131086628,2965,44211.0,True
+Cherokee,2013,Education and health services,238346776,5591,42630.0,True
+Cherokee,2013,Financial activities,101862863,1978,51498.0,True
+Cherokee,2013,Information,25595198,527,48568.0,True
+Cherokee,2013,Leisure and hospitality,102761179,6964,14756.0,True
+Cherokee,2013,Manufacturing,173139308,3970,43612.0,True
+Cherokee,2013,Natural resources and mining,3106449,104,29870.0,True
+Cherokee,2013,Other services,60847396,1791,33974.0,True
+Cherokee,2013,Professional and business services,219104401,5141,42619.0,True
+Cherokee,2013,Public sector,313203859,7641,40990.0,True
+Cherokee,2013,"Trade, transportation and utilities",357185459,10962,32584.0,True
+Cherokee,2014,Construction,162665117,3424,47507.0,True
+Cherokee,2014,Education and health services,251111906,5838,43013.0,True
+Cherokee,2014,Financial activities,111967151,2075,53960.0,True
+Cherokee,2014,Information,26553209,552,48104.0,True
+Cherokee,2014,Leisure and hospitality,107413243,7206,14906.0,True
+Cherokee,2014,Manufacturing,180968322,3969,45595.0,True
+Cherokee,2014,Natural resources and mining,4423822,149,29690.0,True
+Cherokee,2014,Other services,68196733,2008,33963.0,True
+Cherokee,2014,Professional and business services,236621487,5483,43155.0,True
+Cherokee,2014,Public sector,324392042,7603,42666.0,True
+Cherokee,2014,"Trade, transportation and utilities",387645834,11608,33395.0,True
 Cherokee,2015,Construction,191720125,3965,48353.0,True
 Cherokee,2015,Education and health services,288348706,6582,43809.0,True
 Cherokee,2015,Financial activities,123445043,2236,55208.0,True
@@ -308,6 +558,7 @@ Cherokee,2015,Manufacturing,195562597,4228,46254.0,True
 Cherokee,2015,Natural resources and mining,5478690,169,32418.0,True
 Cherokee,2015,Other services,71263164,2059,34611.0,True
 Cherokee,2015,Professional and business services,262678910,5600,46907.0,True
+Cherokee,2015,Public sector,346177582,7942,43588.0,True
 Cherokee,2015,"Trade, transportation and utilities",432431231,12225,35373.0,True
 Cherokee,2016,Construction,228491533,4270,53511.0,True
 Cherokee,2016,Education and health services,312925220,6968,44909.0,True
@@ -318,6 +569,7 @@ Cherokee,2016,Manufacturing,213059918,4494,47410.0,True
 Cherokee,2016,Natural resources and mining,6638474,176,37719.0,True
 Cherokee,2016,Other services,77081079,2161,35669.0,True
 Cherokee,2016,Professional and business services,278894378,5697,48955.0,True
+Cherokee,2016,Public sector,354138548,8253,42910.0,True
 Cherokee,2016,"Trade, transportation and utilities",455912726,12871,35422.0,True
 Cherokee,2017,Construction,270186472,4966,54407.0,True
 Cherokee,2017,Education and health services,341422536,7524,45378.0,True
@@ -328,6 +580,7 @@ Cherokee,2017,Manufacturing,238387866,4854,49112.0,True
 Cherokee,2017,Natural resources and mining,6437993,124,51919.0,True
 Cherokee,2017,Other services,80185391,2196,36514.0,True
 Cherokee,2017,Professional and business services,289080646,5815,49713.0,True
+Cherokee,2017,Public sector,370883109,8507,43597.0,True
 Cherokee,2017,"Trade, transportation and utilities",499874565,13567,36845.0,True
 Cherokee,2018,Construction,271859679,4919,55267.0,True
 Cherokee,2018,Education and health services,341875064,7788,43898.0,True
@@ -338,6 +591,7 @@ Cherokee,2018,Manufacturing,280124993,5380,52068.0,True
 Cherokee,2018,Natural resources and mining,6527350,121,53945.0,True
 Cherokee,2018,Other services,80303710,2216,36238.0,True
 Cherokee,2018,Professional and business services,301887809,5922,50977.0,True
+Cherokee,2018,Public sector,381760999,8649,44139.0,True
 Cherokee,2018,"Trade, transportation and utilities",515735056,14312,36035.0,True
 Cherokee,2019,Construction,275967722,4673,59056.0,True
 Cherokee,2019,Education and health services,393958187,8196,48067.0,True
@@ -348,6 +602,7 @@ Cherokee,2019,Manufacturing,345379866,6603,52307.0,True
 Cherokee,2019,Natural resources and mining,6033825,113,53397.0,True
 Cherokee,2019,Other services,89540122,2367,37829.0,True
 Cherokee,2019,Professional and business services,449876426,7740,58124.0,True
+Cherokee,2019,Public sector,400690798,8804,45512.0,True
 Cherokee,2019,"Trade, transportation and utilities",534714228,14307,37374.0,True
 Cherokee,2020,Construction,298136370,4865,61282.0,True
 Cherokee,2020,Education and health services,401110984,8139,49283.0,True
@@ -358,6 +613,7 @@ Cherokee,2020,Manufacturing,324383406,5894,55036.0,True
 Cherokee,2020,Natural resources and mining,6706050,117,57317.0,True
 Cherokee,2020,Other services,87263516,2169,40232.0,True
 Cherokee,2020,Professional and business services,530296059,8723,60793.0,True
+Cherokee,2020,Public sector,417144465,8748,47685.0,True
 Cherokee,2020,"Trade, transportation and utilities",570456067,14141,40341.0,True
 Cherokee,2021,Construction,323436992,4958,65235.0,True
 Cherokee,2021,Education and health services,444157574,8747,50778.0,True
@@ -368,6 +624,7 @@ Cherokee,2021,Manufacturing,348143992,6091,57157.0,True
 Cherokee,2021,Natural resources and mining,9119726,147,62039.0,True
 Cherokee,2021,Other services,99155526,2216,44745.0,True
 Cherokee,2021,Professional and business services,354654517,6572,53964.0,True
+Cherokee,2021,Public sector,448492142,8736,51338.0,True
 Cherokee,2021,"Trade, transportation and utilities",625314618,14195,44052.0,True
 Cherokee,2022,Construction,395598760,5662,69869.0,True
 Cherokee,2022,Education and health services,490058887,9330,52525.0,True
@@ -378,6 +635,7 @@ Cherokee,2022,Manufacturing,358896190,6083,59000.0,True
 Cherokee,2022,Natural resources and mining,12175979,178,68404.0,True
 Cherokee,2022,Other services,130701293,2603,50212.0,True
 Cherokee,2022,Professional and business services,402599836,7052,57090.0,True
+Cherokee,2022,Public sector,487875932,9061,53843.0,True
 Cherokee,2022,"Trade, transportation and utilities",700190796,14961,46801.0,True
 Cherokee,2023,Construction,474100933,6175,76777.0,True
 Cherokee,2023,Education and health services,587185692,10192,57612.0,True
@@ -388,6 +646,7 @@ Cherokee,2023,Manufacturing,375386207,6177,60772.0,True
 Cherokee,2023,Natural resources and mining,14752912,198,74510.0,True
 Cherokee,2023,Other services,149125620,2904,51352.0,True
 Cherokee,2023,Professional and business services,462262973,7509,61561.0,True
+Cherokee,2023,Public sector,532399253,9373,56801.0,True
 Cherokee,2023,"Trade, transportation and utilities",696126580,15249,45651.0,True
 Cherokee,2024,Construction,534480542,6589,81117.0,True
 Cherokee,2024,Education and health services,631234535,10705,58966.0,True
@@ -398,7 +657,59 @@ Cherokee,2024,Manufacturing,396033749,6214,63732.0,True
 Cherokee,2024,Natural resources and mining,14118619,184,76732.0,True
 Cherokee,2024,Other services,123409362,2774,44488.0,True
 Cherokee,2024,Professional and business services,495789098,7669,64648.0,True
+Cherokee,2024,Public sector,558557990,9742,57335.0,True
 Cherokee,2024,"Trade, transportation and utilities",732943831,15429,47504.0,True
+Clayton,2010,Education and health services,346476249,8346,41514.0,True
+Clayton,2010,Financial activities,102284325,2863,35726.0,True
+Clayton,2010,Information,20764214,449,46245.0,True
+Clayton,2010,Leisure and hospitality,167799124,9789,17142.0,True
+Clayton,2010,Manufacturing,216016180,4408,49005.0,True
+Clayton,2010,Other services,38796780,1277,30381.0,True
+Clayton,2010,Professional and business services,270839158,8340,32475.0,True
+Clayton,2010,Public sector,630863308,15663,40277.0,True
+Clayton,2010,"Trade, transportation and utilities",2261492792,48298,46824.0,True
+Clayton,2011,Education and health services,341575975,8194,41686.0,True
+Clayton,2011,Financial activities,95014472,2710,35061.0,True
+Clayton,2011,Information,29384268,552,53232.0,True
+Clayton,2011,Leisure and hospitality,171773542,9685,17736.0,True
+Clayton,2011,Manufacturing,213613659,4262,50121.0,True
+Clayton,2011,Other services,40867477,1319,30984.0,True
+Clayton,2011,Professional and business services,281341602,8330,33775.0,True
+Clayton,2011,Public sector,589505702,14760,39939.0,True
+Clayton,2011,"Trade, transportation and utilities",2449642214,49163,49827.0,True
+Clayton,2012,Construction,111999836,2311,48464.0,True
+Clayton,2012,Education and health services,328203843,7786,42153.0,True
+Clayton,2012,Financial activities,98012210,2795,35067.0,True
+Clayton,2012,Information,24291659,472,51465.0,True
+Clayton,2012,Leisure and hospitality,169543091,9364,18106.0,True
+Clayton,2012,Manufacturing,231199634,4347,53186.0,True
+Clayton,2012,Natural resources and mining,1646348,36,45732.0,True
+Clayton,2012,Other services,43810493,1378,31793.0,True
+Clayton,2012,Professional and business services,290636540,8428,34485.0,True
+Clayton,2012,Public sector,570941431,14220,40151.0,True
+Clayton,2012,"Trade, transportation and utilities",3422157919,60163,56881.0,True
+Clayton,2013,Construction,119972834,2395,50093.0,True
+Clayton,2013,Education and health services,357672687,8279,43202.0,True
+Clayton,2013,Financial activities,119030773,3142,37884.0,True
+Clayton,2013,Information,22789124,457,49867.0,True
+Clayton,2013,Leisure and hospitality,171716989,9949,17260.0,True
+Clayton,2013,Manufacturing,249227940,4565,54595.0,True
+Clayton,2013,Natural resources and mining,3884872,74,52498.0,True
+Clayton,2013,Other services,57322797,1687,33979.0,True
+Clayton,2013,Professional and business services,322153163,9346,34470.0,True
+Clayton,2013,Public sector,603677517,14863,40616.0,True
+Clayton,2013,"Trade, transportation and utilities",3147127421,56238,55961.0,True
+Clayton,2014,Construction,135178138,2656,50895.0,True
+Clayton,2014,Education and health services,367763932,8365,43965.0,True
+Clayton,2014,Financial activities,121950129,2880,42344.0,True
+Clayton,2014,Information,28384952,494,57459.0,True
+Clayton,2014,Leisure and hospitality,183703577,10439,17598.0,True
+Clayton,2014,Manufacturing,215120921,4097,52507.0,True
+Clayton,2014,Natural resources and mining,4631086,77,60144.0,True
+Clayton,2014,Other services,57586627,1789,32189.0,True
+Clayton,2014,Professional and business services,336240777,10042,33483.0,True
+Clayton,2014,Public sector,611994955,15025,40732.0,True
+Clayton,2014,"Trade, transportation and utilities",3432791238,57606,59591.0,True
 Clayton,2015,Construction,145747890,2743,53134.0,True
 Clayton,2015,Education and health services,392249682,8523,46022.0,True
 Clayton,2015,Financial activities,134317810,2894,46413.0,True
@@ -408,6 +719,7 @@ Clayton,2015,Manufacturing,235487197,4203,56028.0,True
 Clayton,2015,Natural resources and mining,8973015,198,45318.0,True
 Clayton,2015,Other services,65423750,1989,32893.0,True
 Clayton,2015,Professional and business services,378235258,12074,31326.0,True
+Clayton,2015,Public sector,624634508,15189,41124.0,True
 Clayton,2015,"Trade, transportation and utilities",3535343701,58136,60812.0,True
 Clayton,2016,Construction,173183672,3108,55722.0,True
 Clayton,2016,Education and health services,404611368,9035,44783.0,True
@@ -418,6 +730,7 @@ Clayton,2016,Manufacturing,230864779,4022,57400.0,True
 Clayton,2016,Natural resources and mining,12420581,296,41961.0,True
 Clayton,2016,Other services,68614331,2102,32642.0,True
 Clayton,2016,Professional and business services,368466106,12755,28888.0,True
+Clayton,2016,Public sector,645658287,14791,43652.0,True
 Clayton,2016,"Trade, transportation and utilities",4169174090,59053,70601.0,True
 Clayton,2017,Construction,176632254,3125,56522.0,True
 Clayton,2017,Education and health services,419375369,9256,45308.0,True
@@ -428,6 +741,7 @@ Clayton,2017,Manufacturing,249044113,4132,60272.0,True
 Clayton,2017,Natural resources and mining,11535277,269,42882.0,True
 Clayton,2017,Other services,63546326,1861,34146.0,True
 Clayton,2017,Professional and business services,416059528,13526,30760.0,True
+Clayton,2017,Public sector,665470754,14654,45412.0,True
 Clayton,2017,"Trade, transportation and utilities",4220826035,60542,69717.0,True
 Clayton,2018,Construction,209754971,3404,61620.0,True
 Clayton,2018,Education and health services,423772780,9100,46568.0,True
@@ -438,6 +752,7 @@ Clayton,2018,Manufacturing,265564447,4386,60548.0,True
 Clayton,2018,Natural resources and mining,15014661,360,41707.0,True
 Clayton,2018,Other services,57098441,1643,34753.0,True
 Clayton,2018,Professional and business services,415009094,12778,32478.0,True
+Clayton,2018,Public sector,664873513,14745,45091.0,True
 Clayton,2018,"Trade, transportation and utilities",4569894893,59621,76649.0,True
 Clayton,2019,Construction,235727661,3514,67082.0,True
 Clayton,2019,Education and health services,439489639,9284,47338.0,True
@@ -448,6 +763,7 @@ Clayton,2019,Manufacturing,280094931,4452,62914.0,True
 Clayton,2019,Natural resources and mining,15829948,405,39086.0,True
 Clayton,2019,Other services,66024850,1737,38011.0,True
 Clayton,2019,Professional and business services,451537388,13154,34327.0,True
+Clayton,2019,Public sector,668570165,14062,47544.0,True
 Clayton,2019,"Trade, transportation and utilities",4743693985,60804,78016.0,True
 Clayton,2020,Construction,225392248,3199,70457.0,True
 Clayton,2020,Education and health services,428344519,8328,51434.0,True
@@ -458,6 +774,7 @@ Clayton,2020,Manufacturing,350778720,5050,69461.0,True
 Clayton,2020,Natural resources and mining,10606943,225,47142.0,True
 Clayton,2020,Other services,66474370,1658,40093.0,True
 Clayton,2020,Professional and business services,408124675,11405,35785.0,True
+Clayton,2020,Public sector,717184882,13825,51876.0,True
 Clayton,2020,"Trade, transportation and utilities",4441954116,55365,80230.0,True
 Clayton,2021,Construction,225474020,3164,71262.0,True
 Clayton,2021,Education and health services,450739844,8435,53437.0,True
@@ -468,6 +785,7 @@ Clayton,2021,Manufacturing,356910276,5229,68256.0,True
 Clayton,2021,Natural resources and mining,10425574,237,43990.0,True
 Clayton,2021,Other services,73938804,1764,41915.0,True
 Clayton,2021,Professional and business services,424520813,11171,38002.0,True
+Clayton,2021,Public sector,763492269,13626,56032.0,True
 Clayton,2021,"Trade, transportation and utilities",4398486642,57722,76201.0,True
 Clayton,2022,Construction,250581855,3321,75454.0,True
 Clayton,2022,Education and health services,477054172,8646,55176.0,True
@@ -478,6 +796,7 @@ Clayton,2022,Manufacturing,336780540,5459,61693.0,True
 Clayton,2022,Natural resources and mining,11587321,260,44567.0,True
 Clayton,2022,Other services,85213487,1984,42950.0,True
 Clayton,2022,Professional and business services,400893457,9364,42812.0,True
+Clayton,2022,Public sector,816922074,13844,59009.0,True
 Clayton,2022,"Trade, transportation and utilities",4971665536,64280,77344.0,True
 Clayton,2023,Construction,284399501,3543,80271.0,True
 Clayton,2023,Education and health services,552882000,10044,55046.0,True
@@ -488,6 +807,7 @@ Clayton,2023,Manufacturing,354125748,5497,64422.0,True
 Clayton,2023,Natural resources and mining,7612672,128,59474.0,True
 Clayton,2023,Other services,112975904,2419,46704.0,True
 Clayton,2023,Professional and business services,460338469,9692,47497.0,True
+Clayton,2023,Public sector,920182268,14476,63566.0,True
 Clayton,2023,"Trade, transportation and utilities",6384548576,71336,89500.0,True
 Clayton,2024,Education and health services,555092181,9939,55850.0,True
 Clayton,2024,Financial activities,196735458,3000,65578.0,True
@@ -496,7 +816,63 @@ Clayton,2024,Leisure and hospitality,298641119,10722,27853.0,True
 Clayton,2024,Manufacturing,370569324,5408,68522.0,True
 Clayton,2024,Other services,110096173,2292,48035.0,True
 Clayton,2024,Professional and business services,451879327,9414,48001.0,True
+Clayton,2024,Public sector,916376080,14537,63037.0,True
 Clayton,2024,"Trade, transportation and utilities",6749231016,70448,95804.0,True
+Cobb,2010,Construction,980339285,17465,56132.0,True
+Cobb,2010,Education and health services,1559700743,32852,47477.0,True
+Cobb,2010,Financial activities,1026848582,16447,62434.0,True
+Cobb,2010,Information,542683493,7340,73935.0,True
+Cobb,2010,Leisure and hospitality,461032785,27754,16611.0,True
+Cobb,2010,Manufacturing,1351061122,19115,70681.0,True
+Cobb,2010,Natural resources and mining,4679691,116,40342.0,True
+Cobb,2010,Other services,275503704,8466,32542.0,True
+Cobb,2010,Professional and business services,3207218530,55895,57379.0,True
+Cobb,2010,Public sector,1389348917,34305,40500.0,True
+Cobb,2010,"Trade, transportation and utilities",3029091827,65321,46372.0,True
+Cobb,2011,Construction,981407844,17327,56640.0,True
+Cobb,2011,Education and health services,1608540592,33638,47819.0,True
+Cobb,2011,Financial activities,1098779809,16654,65977.0,True
+Cobb,2011,Information,504363054,6897,73128.0,True
+Cobb,2011,Leisure and hospitality,472411491,28058,16837.0,True
+Cobb,2011,Manufacturing,1374112890,19383,70893.0,True
+Cobb,2011,Natural resources and mining,6049610,110,54996.0,True
+Cobb,2011,Other services,282880464,8532,33155.0,True
+Cobb,2011,Professional and business services,3543843610,60114,58952.0,True
+Cobb,2011,Public sector,1360599243,33312,40844.0,True
+Cobb,2011,"Trade, transportation and utilities",3119154142,66509,46898.0,True
+Cobb,2012,Construction,1006571838,16902,59553.0,True
+Cobb,2012,Education and health services,1717562189,34739,49442.0,True
+Cobb,2012,Financial activities,1191901961,17559,67880.0,True
+Cobb,2012,Information,520969950,6671,78095.0,True
+Cobb,2012,Leisure and hospitality,495189300,28833,17174.0,True
+Cobb,2012,Manufacturing,1252621539,18470,67819.0,True
+Cobb,2012,Natural resources and mining,5392139,109,49469.0,True
+Cobb,2012,Other services,320166586,9093,35210.0,True
+Cobb,2012,Professional and business services,4517338115,65946,68501.0,True
+Cobb,2012,Public sector,1387297726,33684,41186.0,True
+Cobb,2012,"Trade, transportation and utilities",3293160987,69271,47540.0,True
+Cobb,2013,Construction,1074374911,18263,58828.0,True
+Cobb,2013,Education and health services,1759078478,35676,49307.0,True
+Cobb,2013,Financial activities,1348304401,19387,69547.0,True
+Cobb,2013,Information,638180773,7713,82741.0,True
+Cobb,2013,Leisure and hospitality,559750126,31942,17524.0,True
+Cobb,2013,Manufacturing,1263450666,17879,70667.0,True
+Cobb,2013,Natural resources and mining,4946262,95,52066.0,True
+Cobb,2013,Other services,325962996,9058,35986.0,True
+Cobb,2013,Professional and business services,4678272457,67462,69347.0,True
+Cobb,2013,Public sector,1412381658,34461,40985.0,True
+Cobb,2013,"Trade, transportation and utilities",3506801987,70349,49849.0,True
+Cobb,2014,Construction,1219931988,20331,60004.0,True
+Cobb,2014,Education and health services,1864924829,36977,50435.0,True
+Cobb,2014,Financial activities,1457625488,20421,71379.0,True
+Cobb,2014,Information,687844620,7907,86992.0,True
+Cobb,2014,Leisure and hospitality,612595664,34227,17898.0,True
+Cobb,2014,Manufacturing,1260680262,17590,71670.0,True
+Cobb,2014,Natural resources and mining,5515452,103,53548.0,True
+Cobb,2014,Other services,368400868,9644,38200.0,True
+Cobb,2014,Professional and business services,4997052468,71691,69703.0,True
+Cobb,2014,Public sector,1450885604,33972,42708.0,True
+Cobb,2014,"Trade, transportation and utilities",3677201035,72583,50662.0,True
 Cobb,2015,Construction,1383155846,22035,62771.0,True
 Cobb,2015,Education and health services,1976890115,38554,51276.0,True
 Cobb,2015,Financial activities,1595457669,21288,74946.0,True
@@ -506,6 +882,7 @@ Cobb,2015,Manufacturing,1349821906,18169,74293.0,True
 Cobb,2015,Natural resources and mining,6273079,119,52715.0,True
 Cobb,2015,Other services,374959230,9652,38848.0,True
 Cobb,2015,Professional and business services,5068878808,71024,71369.0,True
+Cobb,2015,Public sector,1534051677,33682,45545.0,True
 Cobb,2015,"Trade, transportation and utilities",3817243910,74544,51208.0,True
 Cobb,2016,Construction,1623368863,24534,66168.0,True
 Cobb,2016,Education and health services,2080991330,39739,52366.0,True
@@ -516,6 +893,7 @@ Cobb,2016,Manufacturing,1393186479,18126,76861.0,True
 Cobb,2016,Natural resources and mining,6952313,134,51883.0,True
 Cobb,2016,Other services,404184964,10201,39622.0,True
 Cobb,2016,Professional and business services,5243868094,73552,71295.0,True
+Cobb,2016,Public sector,1590173746,33890,46922.0,True
 Cobb,2016,"Trade, transportation and utilities",3931341494,76107,51655.0,True
 Cobb,2017,Construction,1715512942,25256,67925.0,True
 Cobb,2017,Education and health services,2178971475,40177,54234.0,True
@@ -526,6 +904,7 @@ Cobb,2017,Manufacturing,1415810168,18908,74879.0,True
 Cobb,2017,Natural resources and mining,6707315,144,46579.0,True
 Cobb,2017,Other services,396475143,10122,39170.0,True
 Cobb,2017,Professional and business services,5505706022,75950,72491.0,True
+Cobb,2017,Public sector,1644988880,34066,48288.0,True
 Cobb,2017,"Trade, transportation and utilities",4246724265,79471,53437.0,True
 Cobb,2018,Construction,1858683636,26772,69426.0,True
 Cobb,2018,Education and health services,2322401924,41279,56261.0,True
@@ -536,6 +915,7 @@ Cobb,2018,Manufacturing,1395375136,18851,74021.0,True
 Cobb,2018,Natural resources and mining,6587644,129,51067.0,True
 Cobb,2018,Other services,394890689,10166,38844.0,True
 Cobb,2018,Professional and business services,5763854957,79841,72192.0,True
+Cobb,2018,Public sector,1696507314,34411,49301.0,True
 Cobb,2018,"Trade, transportation and utilities",4320901977,78143,55295.0,True
 Cobb,2019,Construction,2091625528,28663,72973.0,True
 Cobb,2019,Education and health services,2473800688,43011,57516.0,True
@@ -546,6 +926,7 @@ Cobb,2019,Manufacturing,1423042220,18643,76331.0,True
 Cobb,2019,Natural resources and mining,6200978,119,52109.0,True
 Cobb,2019,Other services,415891523,10270,40496.0,True
 Cobb,2019,Professional and business services,6293226503,85553,73559.0,True
+Cobb,2019,Public sector,1756422897,34517,50886.0,True
 Cobb,2019,"Trade, transportation and utilities",4465313304,78983,56535.0,True
 Cobb,2020,Construction,2083062503,28027,74323.0,True
 Cobb,2020,Education and health services,2690715293,42684,63038.0,True
@@ -556,6 +937,7 @@ Cobb,2020,Manufacturing,1520671444,18054,84229.0,True
 Cobb,2020,Natural resources and mining,7143582,139,51393.0,True
 Cobb,2020,Other services,399560056,8878,45006.0,True
 Cobb,2020,Professional and business services,6561066499,81886,80124.0,True
+Cobb,2020,Public sector,1816517423,33729,53856.0,True
 Cobb,2020,"Trade, transportation and utilities",4247039761,74977,56645.0,True
 Cobb,2021,Construction,2218618982,28279,78455.0,True
 Cobb,2021,Education and health services,3158200425,46030,68612.0,True
@@ -566,6 +948,7 @@ Cobb,2021,Manufacturing,1595765025,18349,86967.0,True
 Cobb,2021,Natural resources and mining,9074940,162,56018.0,True
 Cobb,2021,Other services,475172553,9517,49929.0,True
 Cobb,2021,Professional and business services,7014045385,83872,83628.0,True
+Cobb,2021,Public sector,1882740535,32600,57753.0,True
 Cobb,2021,"Trade, transportation and utilities",4635979617,75882,61095.0,True
 Cobb,2022,Construction,2436542476,29662,82144.0,True
 Cobb,2022,Education and health services,3412800737,47824,71362.0,True
@@ -576,6 +959,7 @@ Cobb,2022,Manufacturing,1712110853,19228,89043.0,True
 Cobb,2022,Natural resources and mining,10862168,186,58399.0,True
 Cobb,2022,Other services,600579380,10720,56024.0,True
 Cobb,2022,Professional and business services,7374127990,83798,87999.0,True
+Cobb,2022,Public sector,2063916751,33189,62187.0,True
 Cobb,2022,"Trade, transportation and utilities",4904004265,80231,61124.0,True
 Cobb,2023,Construction,2727537524,30806,88539.0,True
 Cobb,2023,Education and health services,3650924743,51312,71151.0,True
@@ -586,6 +970,7 @@ Cobb,2023,Manufacturing,1882193150,19945,94369.0,True
 Cobb,2023,Natural resources and mining,13612144,204,66726.0,True
 Cobb,2023,Other services,627987944,11146,56342.0,True
 Cobb,2023,Professional and business services,7548715542,80165,94165.0,True
+Cobb,2023,Public sector,2262377016,34385,65795.0,True
 Cobb,2023,"Trade, transportation and utilities",5081993170,79732,63738.0,True
 Cobb,2024,Construction,2952594457,31775,92922.0,True
 Cobb,2024,Education and health services,4049062203,54726,73988.0,True
@@ -596,7 +981,63 @@ Cobb,2024,Manufacturing,1922118516,20190,95202.0,True
 Cobb,2024,Natural resources and mining,15380433,198,77679.0,True
 Cobb,2024,Other services,583552622,10442,55885.0,True
 Cobb,2024,Professional and business services,7674977160,77338,99239.0,True
+Cobb,2024,Public sector,2432095590,34960,69568.0,True
 Cobb,2024,"Trade, transportation and utilities",5301510320,80837,65583.0,True
+Coweta,2010,Construction,38291900,1175,32589.0,False
+Coweta,2010,Education and health services,138447265,3398,40744.0,False
+Coweta,2010,Financial activities,39803713,931,42754.0,False
+Coweta,2010,Information,14768583,421,35080.0,False
+Coweta,2010,Leisure and hospitality,56233981,3766,14932.0,False
+Coweta,2010,Manufacturing,163648820,3798,43088.0,False
+Coweta,2010,Natural resources and mining,2241167,63,35574.0,False
+Coweta,2010,Other services,22831777,861,26518.0,False
+Coweta,2010,Professional and business services,80291714,2422,33151.0,False
+Coweta,2010,Public sector,202952941,5245,38695.0,False
+Coweta,2010,"Trade, transportation and utilities",242151168,7624,31762.0,False
+Coweta,2011,Construction,42571057,1145,37180.0,False
+Coweta,2011,Education and health services,139748431,3432,40719.0,False
+Coweta,2011,Financial activities,37938303,936,40532.0,False
+Coweta,2011,Information,14729303,439,33552.0,False
+Coweta,2011,Leisure and hospitality,58307027,3876,15043.0,False
+Coweta,2011,Manufacturing,176739364,4066,43468.0,False
+Coweta,2011,Natural resources and mining,1908539,51,37422.0,False
+Coweta,2011,Other services,23613441,843,28011.0,False
+Coweta,2011,Professional and business services,102461998,2824,36283.0,False
+Coweta,2011,Public sector,203374799,5201,39103.0,False
+Coweta,2011,"Trade, transportation and utilities",239061557,7436,32149.0,False
+Coweta,2012,Construction,42002186,1038,40465.0,False
+Coweta,2012,Education and health services,168139231,3710,45321.0,False
+Coweta,2012,Financial activities,37081904,880,42139.0,False
+Coweta,2012,Information,15122518,450,33606.0,False
+Coweta,2012,Leisure and hospitality,56882157,3979,14296.0,False
+Coweta,2012,Manufacturing,180387683,3968,45461.0,False
+Coweta,2012,Natural resources and mining,1756350,46,38182.0,False
+Coweta,2012,Other services,27154595,940,28888.0,False
+Coweta,2012,Professional and business services,117215010,3199,36641.0,False
+Coweta,2012,Public sector,204005801,5213,39134.0,False
+Coweta,2012,"Trade, transportation and utilities",243727762,7484,32567.0,False
+Coweta,2013,Construction,41116885,978,42042.0,False
+Coweta,2013,Education and health services,215833287,4394,49120.0,False
+Coweta,2013,Financial activities,39546430,861,45931.0,False
+Coweta,2013,Information,18703144,664,28167.0,False
+Coweta,2013,Leisure and hospitality,60025596,4168,14402.0,False
+Coweta,2013,Manufacturing,195721478,4161,47037.0,False
+Coweta,2013,Natural resources and mining,1751921,45,38932.0,False
+Coweta,2013,Other services,29094705,960,30307.0,False
+Coweta,2013,Professional and business services,128373361,3691,34780.0,False
+Coweta,2013,Public sector,204964495,5148,39814.0,False
+Coweta,2013,"Trade, transportation and utilities",252999078,7663,33016.0,False
+Coweta,2014,Construction,47363297,1079,43896.0,False
+Coweta,2014,Education and health services,254081446,5041,50403.0,False
+Coweta,2014,Financial activities,43363079,897,48342.0,False
+Coweta,2014,Information,25591028,999,25617.0,False
+Coweta,2014,Leisure and hospitality,64215050,4370,14695.0,False
+Coweta,2014,Manufacturing,214231457,4501,47596.0,False
+Coweta,2014,Natural resources and mining,1963754,47,41782.0,False
+Coweta,2014,Other services,33261091,1070,31085.0,False
+Coweta,2014,Professional and business services,149989587,4089,36681.0,False
+Coweta,2014,Public sector,209751402,5118,40983.0,False
+Coweta,2014,"Trade, transportation and utilities",273596709,7965,34350.0,False
 Coweta,2015,Construction,55735801,1220,45685.0,False
 Coweta,2015,Education and health services,296204801,5674,52204.0,False
 Coweta,2015,Financial activities,49587206,982,50496.0,False
@@ -606,6 +1047,7 @@ Coweta,2015,Manufacturing,228836278,4797,47704.0,False
 Coweta,2015,Natural resources and mining,1872073,44,42547.0,False
 Coweta,2015,Other services,37674025,1125,33488.0,False
 Coweta,2015,Professional and business services,139092445,4179,33284.0,False
+Coweta,2015,Public sector,217055908,5208,41677.0,False
 Coweta,2015,"Trade, transportation and utilities",278413545,8043,34616.0,False
 Coweta,2016,Construction,62671675,1352,46355.0,False
 Coweta,2016,Education and health services,316227415,6014,52582.0,False
@@ -616,6 +1058,7 @@ Coweta,2016,Manufacturing,243197922,4840,50248.0,False
 Coweta,2016,Natural resources and mining,2369302,58,40850.0,False
 Coweta,2016,Other services,38482982,1164,33061.0,False
 Coweta,2016,Professional and business services,121630343,3472,35032.0,False
+Coweta,2016,Public sector,224781088,5259,42742.0,False
 Coweta,2016,"Trade, transportation and utilities",286480215,8345,34330.0,False
 Coweta,2017,Construction,72218694,1519,47544.0,False
 Coweta,2017,Education and health services,329433989,6036,54578.0,False
@@ -626,6 +1069,7 @@ Coweta,2017,Manufacturing,251265791,4993,50324.0,False
 Coweta,2017,Natural resources and mining,2487304,64,38864.0,False
 Coweta,2017,Other services,35916657,1096,32771.0,False
 Coweta,2017,Professional and business services,116843903,3305,35354.0,False
+Coweta,2017,Public sector,232087670,5244,44258.0,False
 Coweta,2017,"Trade, transportation and utilities",298281948,8589,34728.0,False
 Coweta,2018,Construction,75255023,1582,47570.0,False
 Coweta,2018,Education and health services,365947818,6372,57431.0,False
@@ -636,6 +1080,7 @@ Coweta,2018,Manufacturing,277393211,5360,51752.0,False
 Coweta,2018,Natural resources and mining,2921235,68,42959.0,False
 Coweta,2018,Other services,34986003,1100,31805.0,False
 Coweta,2018,Professional and business services,131755311,3623,36366.0,False
+Coweta,2018,Public sector,239786211,5301,45234.0,False
 Coweta,2018,"Trade, transportation and utilities",338033796,9410,35923.0,False
 Coweta,2019,Construction,79526134,1611,49364.0,False
 Coweta,2019,Education and health services,401535879,6782,59206.0,False
@@ -646,6 +1091,7 @@ Coweta,2019,Manufacturing,286011117,5420,52770.0,False
 Coweta,2019,Natural resources and mining,3073252,81,37941.0,False
 Coweta,2019,Other services,36714654,1144,32093.0,False
 Coweta,2019,Professional and business services,137075960,3652,37534.0,False
+Coweta,2019,Public sector,247204529,5375,45992.0,False
 Coweta,2019,"Trade, transportation and utilities",353775818,9432,37508.0,False
 Coweta,2020,Construction,80205490,1567,51184.0,False
 Coweta,2020,Education and health services,376884920,6426,58650.0,False
@@ -656,6 +1102,7 @@ Coweta,2020,Manufacturing,275445711,5164,53340.0,False
 Coweta,2020,Natural resources and mining,3519957,87,40459.0,False
 Coweta,2020,Other services,35932523,1064,33771.0,False
 Coweta,2020,Professional and business services,156968081,3923,40012.0,False
+Coweta,2020,Public sector,258541852,5286,48911.0,False
 Coweta,2020,"Trade, transportation and utilities",392762066,9475,41452.0,False
 Coweta,2021,Construction,88320821,1623,54418.0,False
 Coweta,2021,Education and health services,415677906,6760,61491.0,False
@@ -666,6 +1113,7 @@ Coweta,2021,Manufacturing,309057973,5577,55417.0,False
 Coweta,2021,Natural resources and mining,3587529,85,42206.0,False
 Coweta,2021,Other services,44001874,1117,39393.0,False
 Coweta,2021,Professional and business services,169917146,3983,42661.0,False
+Coweta,2021,Public sector,270964959,5276,51358.0,False
 Coweta,2021,"Trade, transportation and utilities",498219469,11284,44153.0,False
 Coweta,2022,Construction,95673376,1675,57118.0,False
 Coweta,2022,Education and health services,453880625,7227,62803.0,False
@@ -676,6 +1124,7 @@ Coweta,2022,Manufacturing,352130735,6104,57689.0,False
 Coweta,2022,Natural resources and mining,4107083,88,46671.0,False
 Coweta,2022,Other services,51494747,1202,42841.0,False
 Coweta,2022,Professional and business services,210916569,4410,47827.0,False
+Coweta,2022,Public sector,299164611,5434,55054.0,False
 Coweta,2022,"Trade, transportation and utilities",577017583,12775,45168.0,False
 Coweta,2023,Construction,175721181,2499,70317.0,False
 Coweta,2023,Education and health services,466561348,7257,64291.0,False
@@ -686,6 +1135,7 @@ Coweta,2023,Manufacturing,383455238,6240,61451.0,False
 Coweta,2023,Natural resources and mining,4814389,85,56640.0,False
 Coweta,2023,Other services,61340475,1334,45982.0,False
 Coweta,2023,Professional and business services,238930728,5433,43978.0,False
+Coweta,2023,Public sector,320208122,5706,56118.0,False
 Coweta,2023,"Trade, transportation and utilities",564284798,12167,46378.0,False
 Coweta,2024,Construction,207429739,2786,74454.0,False
 Coweta,2024,Education and health services,502113299,7462,67289.0,False
@@ -696,7 +1146,63 @@ Coweta,2024,Manufacturing,401882593,6196,64862.0,False
 Coweta,2024,Natural resources and mining,5197582,80,64970.0,False
 Coweta,2024,Other services,55351846,1321,41901.0,False
 Coweta,2024,Professional and business services,257677323,5184,49706.0,False
+Coweta,2024,Public sector,343194534,5889,58277.0,False
 Coweta,2024,"Trade, transportation and utilities",585601157,11727,49936.0,False
+Dawson,2010,Construction,10705533,307,34871.0,False
+Dawson,2010,Education and health services,12414912,327,37966.0,False
+Dawson,2010,Financial activities,8965859,204,43950.0,False
+Dawson,2010,Information,2136963,57,37491.0,False
+Dawson,2010,Leisure and hospitality,13922803,925,15052.0,False
+Dawson,2010,Manufacturing,19579700,460,42565.0,False
+Dawson,2010,Natural resources and mining,275989,19,14526.0,False
+Dawson,2010,Other services,4356626,165,26404.0,False
+Dawson,2010,Professional and business services,9947069,289,34419.0,False
+Dawson,2010,Public sector,36536442,1217,30022.0,False
+Dawson,2010,"Trade, transportation and utilities",69711015,3325,20966.0,False
+Dawson,2011,Construction,8925925,259,34463.0,False
+Dawson,2011,Education and health services,13384892,333,40195.0,False
+Dawson,2011,Financial activities,9716515,205,47398.0,False
+Dawson,2011,Information,1941505,50,38830.0,False
+Dawson,2011,Leisure and hospitality,12839746,866,14826.0,False
+Dawson,2011,Manufacturing,20922743,474,44141.0,False
+Dawson,2011,Natural resources and mining,229341,17,13491.0,False
+Dawson,2011,Other services,4133627,167,24752.0,False
+Dawson,2011,Professional and business services,9491971,349,27198.0,False
+Dawson,2011,Public sector,36665634,1209,30327.0,False
+Dawson,2011,"Trade, transportation and utilities",73569621,3496,21044.0,False
+Dawson,2012,Construction,8621498,255,33810.0,False
+Dawson,2012,Education and health services,12191695,310,39328.0,False
+Dawson,2012,Financial activities,9256629,196,47228.0,False
+Dawson,2012,Information,1787245,46,38853.0,False
+Dawson,2012,Leisure and hospitality,14070093,931,15113.0,False
+Dawson,2012,Manufacturing,21389205,485,44101.0,False
+Dawson,2012,Natural resources and mining,303125,17,17831.0,False
+Dawson,2012,Other services,4121850,163,25287.0,False
+Dawson,2012,Professional and business services,9853721,411,23975.0,False
+Dawson,2012,Public sector,36429426,1186,30716.0,False
+Dawson,2012,"Trade, transportation and utilities",79405492,3672,21625.0,False
+Dawson,2013,Construction,7305731,202,36167.0,False
+Dawson,2013,Education and health services,11386281,293,38861.0,False
+Dawson,2013,Financial activities,8685625,196,44314.0,False
+Dawson,2013,Information,1769468,51,34695.0,False
+Dawson,2013,Leisure and hospitality,15740351,1099,14322.0,False
+Dawson,2013,Manufacturing,19950993,474,42091.0,False
+Dawson,2013,Natural resources and mining,284559,21,13550.0,False
+Dawson,2013,Other services,3752165,145,25877.0,False
+Dawson,2013,Professional and business services,10211630,363,28131.0,False
+Dawson,2013,Public sector,34031297,1093,31136.0,False
+Dawson,2013,"Trade, transportation and utilities",79864477,3649,21887.0,False
+Dawson,2014,Construction,8137177,220,36987.0,False
+Dawson,2014,Education and health services,11090866,281,39469.0,False
+Dawson,2014,Financial activities,9325181,201,46394.0,False
+Dawson,2014,Information,1562725,48,32557.0,False
+Dawson,2014,Leisure and hospitality,16066087,1098,14632.0,False
+Dawson,2014,Manufacturing,19214079,465,41321.0,False
+Dawson,2014,Natural resources and mining,308704,20,15435.0,False
+Dawson,2014,Other services,4638907,172,26970.0,False
+Dawson,2014,Professional and business services,10741989,351,30604.0,False
+Dawson,2014,Public sector,34646542,1091,31757.0,False
+Dawson,2014,"Trade, transportation and utilities",79756268,3529,22600.0,False
 Dawson,2015,Construction,8690282,221,39323.0,False
 Dawson,2015,Education and health services,21825764,478,45661.0,False
 Dawson,2015,Financial activities,9772604,209,46759.0,False
@@ -706,6 +1212,7 @@ Dawson,2015,Manufacturing,27886047,679,41069.0,False
 Dawson,2015,Natural resources and mining,401666,25,16067.0,False
 Dawson,2015,Other services,4968319,185,26856.0,False
 Dawson,2015,Professional and business services,10109315,279,36234.0,False
+Dawson,2015,Public sector,36413900,1101,33073.0,False
 Dawson,2015,"Trade, transportation and utilities",80056319,3516,22769.0,False
 Dawson,2016,Construction,10369101,241,43025.0,False
 Dawson,2016,Education and health services,24041210,562,42778.0,False
@@ -716,6 +1223,7 @@ Dawson,2016,Manufacturing,40282946,1001,40243.0,False
 Dawson,2016,Natural resources and mining,436969,24,18207.0,False
 Dawson,2016,Other services,5490117,202,27179.0,False
 Dawson,2016,Professional and business services,10747933,298,36067.0,False
+Dawson,2016,Public sector,38773274,1153,33628.0,False
 Dawson,2016,"Trade, transportation and utilities",72790420,3237,22487.0,False
 Dawson,2017,Construction,10543665,232,45447.0,False
 Dawson,2017,Education and health services,30587052,688,44458.0,False
@@ -726,6 +1234,7 @@ Dawson,2017,Manufacturing,41289981,995,41497.0,False
 Dawson,2017,Natural resources and mining,475502,18,26417.0,False
 Dawson,2017,Other services,6146297,211,29129.0,False
 Dawson,2017,Professional and business services,12625348,351,35970.0,False
+Dawson,2017,Public sector,43077048,1218,35367.0,False
 Dawson,2017,"Trade, transportation and utilities",79232412,3530,22445.0,False
 Dawson,2018,Construction,11441647,247,46322.0,False
 Dawson,2018,Education and health services,32240357,719,44841.0,False
@@ -736,6 +1245,7 @@ Dawson,2018,Manufacturing,45337819,992,45703.0,False
 Dawson,2018,Natural resources and mining,720300,26,27704.0,False
 Dawson,2018,Other services,6454359,219,29472.0,False
 Dawson,2018,Professional and business services,12290975,325,37818.0,False
+Dawson,2018,Public sector,45476650,1246,36498.0,False
 Dawson,2018,"Trade, transportation and utilities",85965968,3579,24020.0,False
 Dawson,2019,Construction,16023886,346,46312.0,False
 Dawson,2019,Education and health services,35874434,786,45642.0,False
@@ -746,6 +1256,7 @@ Dawson,2019,Manufacturing,50406847,1001,50356.0,False
 Dawson,2019,Natural resources and mining,813382,35,23239.0,False
 Dawson,2019,Other services,8150313,266,30640.0,False
 Dawson,2019,Professional and business services,18878385,403,46845.0,False
+Dawson,2019,Public sector,46862713,1235,37946.0,False
 Dawson,2019,"Trade, transportation and utilities",87174557,3472,25108.0,False
 Dawson,2020,Construction,19574477,390,50191.0,False
 Dawson,2020,Education and health services,33398170,763,43772.0,False
@@ -756,6 +1267,7 @@ Dawson,2020,Manufacturing,50538963,917,55113.0,False
 Dawson,2020,Natural resources and mining,971269,37,26251.0,False
 Dawson,2020,Other services,9519787,277,34367.0,False
 Dawson,2020,Professional and business services,21187773,433,48933.0,False
+Dawson,2020,Public sector,49782611,1249,39858.0,False
 Dawson,2020,"Trade, transportation and utilities",80491221,2838,28362.0,False
 Dawson,2021,Construction,23662875,467,50670.0,False
 Dawson,2021,Education and health services,24693764,541,45645.0,False
@@ -766,6 +1278,7 @@ Dawson,2021,Manufacturing,59449784,988,60172.0,False
 Dawson,2021,Natural resources and mining,1030770,33,31235.0,False
 Dawson,2021,Other services,11157956,293,38082.0,False
 Dawson,2021,Professional and business services,25954406,521,49817.0,False
+Dawson,2021,Public sector,52496799,1232,42611.0,False
 Dawson,2021,"Trade, transportation and utilities",100894899,3362,30010.0,False
 Dawson,2022,Construction,27528555,491,56066.0,False
 Dawson,2022,Education and health services,28409464,588,48315.0,False
@@ -776,6 +1289,7 @@ Dawson,2022,Manufacturing,51356921,842,60994.0,False
 Dawson,2022,Natural resources and mining,1052245,36,29229.0,False
 Dawson,2022,Other services,13614675,328,41508.0,False
 Dawson,2022,Professional and business services,32156116,595,54044.0,False
+Dawson,2022,Public sector,55660424,1237,44996.0,False
 Dawson,2022,"Trade, transportation and utilities",112224188,3530,31792.0,False
 Dawson,2023,Construction,30264640,531,56996.0,False
 Dawson,2023,Education and health services,32505965,662,49103.0,False
@@ -786,6 +1300,7 @@ Dawson,2023,Manufacturing,34917773,562,62131.0,False
 Dawson,2023,Natural resources and mining,674290,22,30650.0,False
 Dawson,2023,Other services,15556758,366,42505.0,False
 Dawson,2023,Professional and business services,39469524,704,56065.0,False
+Dawson,2023,Public sector,58873946,1237,47594.0,False
 Dawson,2023,"Trade, transportation and utilities",114056062,3560,32038.0,False
 Dawson,2024,Construction,42390166,548,77354.0,False
 Dawson,2024,Education and health services,35818856,685,52290.0,False
@@ -796,7 +1311,63 @@ Dawson,2024,Manufacturing,57521050,977,58875.0,False
 Dawson,2024,Natural resources and mining,1708583,28,61021.0,False
 Dawson,2024,Other services,13845816,330,41957.0,False
 Dawson,2024,Professional and business services,42873299,744,57625.0,False
+Dawson,2024,Public sector,64534343,1291,49988.0,False
 Dawson,2024,"Trade, transportation and utilities",119587395,3509,34080.0,False
+DeKalb,2010,Construction,460706753,9225,49941.0,True
+DeKalb,2010,Education and health services,2686887758,51696,51975.0,True
+DeKalb,2010,Financial activities,821049654,13434,61117.0,True
+DeKalb,2010,Information,673859509,8736,77136.0,True
+DeKalb,2010,Leisure and hospitality,392507580,22902,17139.0,True
+DeKalb,2010,Manufacturing,655193557,12297,53281.0,True
+DeKalb,2010,Natural resources and mining,11844255,132,89729.0,True
+DeKalb,2010,Other services,281304940,8060,34901.0,True
+DeKalb,2010,Professional and business services,2486109477,42046,59128.0,True
+DeKalb,2010,Public sector,2705956727,49226,54970.0,True
+DeKalb,2010,"Trade, transportation and utilities",2158946173,55236,39086.0,True
+DeKalb,2011,Construction,467935755,9279,50430.0,True
+DeKalb,2011,Education and health services,2781852213,52363,53126.0,True
+DeKalb,2011,Financial activities,875534362,13605,64354.0,True
+DeKalb,2011,Information,731472981,9089,80479.0,True
+DeKalb,2011,Leisure and hospitality,413561500,23722,17434.0,True
+DeKalb,2011,Manufacturing,675147265,12664,53312.0,True
+DeKalb,2011,Natural resources and mining,19708261,125,157666.0,True
+DeKalb,2011,Other services,281298865,8130,34600.0,True
+DeKalb,2011,Professional and business services,2574942400,42038,61253.0,True
+DeKalb,2011,Public sector,2732327186,48237,56644.0,True
+DeKalb,2011,"Trade, transportation and utilities",2257447045,56029,40291.0,True
+DeKalb,2012,Construction,447594159,8742,51200.0,True
+DeKalb,2012,Education and health services,2890341718,52989,54546.0,True
+DeKalb,2012,Financial activities,930015512,13572,68525.0,True
+DeKalb,2012,Information,824647060,10479,78695.0,True
+DeKalb,2012,Leisure and hospitality,435913461,24572,17740.0,True
+DeKalb,2012,Manufacturing,675960151,12713,53171.0,True
+DeKalb,2012,Natural resources and mining,22812578,164,139101.0,True
+DeKalb,2012,Other services,311947903,8640,36105.0,True
+DeKalb,2012,Professional and business services,2718500686,41352,65740.0,True
+DeKalb,2012,Public sector,2646787445,47123,56168.0,True
+DeKalb,2012,"Trade, transportation and utilities",2317501016,55934,41433.0,True
+DeKalb,2013,Construction,510856905,9745,52422.0,True
+DeKalb,2013,Education and health services,3038272008,54562,55685.0,True
+DeKalb,2013,Financial activities,924488353,14466,63908.0,True
+DeKalb,2013,Information,916092906,10824,84635.0,True
+DeKalb,2013,Leisure and hospitality,448167343,24677,18161.0,True
+DeKalb,2013,Manufacturing,719700960,12813,56170.0,True
+DeKalb,2013,Natural resources and mining,15763866,128,123155.0,True
+DeKalb,2013,Other services,330243578,8738,37794.0,True
+DeKalb,2013,Professional and business services,2501651057,41068,60915.0,True
+DeKalb,2013,Public sector,2105703166,40596,51870.0,True
+DeKalb,2013,"Trade, transportation and utilities",2418643282,57620,41976.0,True
+DeKalb,2014,Construction,547783025,10074,54376.0,True
+DeKalb,2014,Education and health services,3199931354,56024,57117.0,True
+DeKalb,2014,Financial activities,1016052264,15780,64389.0,True
+DeKalb,2014,Information,941495556,11483,81990.0,True
+DeKalb,2014,Leisure and hospitality,475280377,25649,18530.0,True
+DeKalb,2014,Manufacturing,755025651,13033,57932.0,True
+DeKalb,2014,Natural resources and mining,17322062,100,173221.0,True
+DeKalb,2014,Other services,354954638,9124,38903.0,True
+DeKalb,2014,Professional and business services,2711454316,42195,64260.0,True
+DeKalb,2014,Public sector,2178088663,41558,52411.0,True
+DeKalb,2014,"Trade, transportation and utilities",2492528007,58462,42635.0,True
 DeKalb,2015,Construction,588618573,10032,58674.0,True
 DeKalb,2015,Education and health services,3465896276,58988,58756.0,True
 DeKalb,2015,Financial activities,1033020875,15799,65385.0,True
@@ -806,6 +1377,7 @@ DeKalb,2015,Manufacturing,772847969,13092,59032.0,True
 DeKalb,2015,Natural resources and mining,4575767,87,52595.0,True
 DeKalb,2015,Other services,358723969,8976,39965.0,True
 DeKalb,2015,Professional and business services,2870849868,44804,64076.0,True
+DeKalb,2015,Public sector,2131800132,40909,52111.0,True
 DeKalb,2015,"Trade, transportation and utilities",2852477491,61240,46579.0,True
 DeKalb,2016,Construction,631703337,10110,62483.0,True
 DeKalb,2016,Education and health services,3659693434,60249,60743.0,True
@@ -816,6 +1388,7 @@ DeKalb,2016,Manufacturing,833034871,13292,62672.0,True
 DeKalb,2016,Natural resources and mining,4990834,87,57366.0,True
 DeKalb,2016,Other services,384118817,9597,40025.0,True
 DeKalb,2016,Professional and business services,2846384676,44257,64315.0,True
+DeKalb,2016,Public sector,2253777200,42239,53358.0,True
 DeKalb,2016,"Trade, transportation and utilities",2912033650,61230,47559.0,True
 DeKalb,2017,Construction,648376548,10107,64151.0,True
 DeKalb,2017,Education and health services,3809477151,61019,62431.0,True
@@ -826,6 +1399,7 @@ DeKalb,2017,Manufacturing,787716062,13450,58566.0,True
 DeKalb,2017,Natural resources and mining,6157170,99,62194.0,True
 DeKalb,2017,Other services,381154743,9443,40364.0,True
 DeKalb,2017,Professional and business services,3015905361,45632,66092.0,True
+DeKalb,2017,Public sector,2342090472,42622,54950.0,True
 DeKalb,2017,"Trade, transportation and utilities",2904635544,60442,48057.0,True
 DeKalb,2018,Construction,740134321,10937,67673.0,True
 DeKalb,2018,Education and health services,3997240889,61565,64927.0,True
@@ -836,6 +1410,7 @@ DeKalb,2018,Manufacturing,770335512,13450,57274.0,True
 DeKalb,2018,Natural resources and mining,6008176,94,63917.0,True
 DeKalb,2018,Other services,399570893,9888,40410.0,True
 DeKalb,2018,Professional and business services,3173245931,46280,68566.0,True
+DeKalb,2018,Public sector,2418306577,43137,56061.0,True
 DeKalb,2018,"Trade, transportation and utilities",2858404020,58912,48520.0,True
 DeKalb,2019,Construction,750422373,11096,67630.0,True
 DeKalb,2019,Education and health services,4173265619,63090,66148.0,True
@@ -846,6 +1421,7 @@ DeKalb,2019,Manufacturing,785080070,13704,57288.0,True
 DeKalb,2019,Natural resources and mining,5603562,88,63677.0,True
 DeKalb,2019,Other services,413604105,9979,41447.0,True
 DeKalb,2019,Professional and business services,3317064962,45499,72904.0,True
+DeKalb,2019,Public sector,2511904581,43389,57893.0,True
 DeKalb,2019,"Trade, transportation and utilities",3009837536,58835,51157.0,True
 DeKalb,2020,Construction,699278424,10134,69003.0,True
 DeKalb,2020,Education and health services,4379012603,61426,71289.0,True
@@ -856,6 +1432,7 @@ DeKalb,2020,Manufacturing,760127727,12691,59895.0,True
 DeKalb,2020,Natural resources and mining,17007917,210,80990.0,True
 DeKalb,2020,Other services,392687471,8751,44873.0,True
 DeKalb,2020,Professional and business services,3359383563,44495,75500.0,True
+DeKalb,2020,Public sector,2637577425,43465,60683.0,True
 DeKalb,2020,"Trade, transportation and utilities",2928216204,54741,53492.0,True
 DeKalb,2021,Construction,734506899,10076,72897.0,True
 DeKalb,2021,Education and health services,4725077865,63395,74534.0,True
@@ -866,6 +1443,7 @@ DeKalb,2021,Manufacturing,776830204,12604,61634.0,True
 DeKalb,2021,Natural resources and mining,18365600,214,85821.0,True
 DeKalb,2021,Other services,448596059,9132,49124.0,True
 DeKalb,2021,Professional and business services,3597789529,45807,78542.0,True
+DeKalb,2021,Public sector,2720172320,42065,64666.0,True
 DeKalb,2021,"Trade, transportation and utilities",3232540765,56540,57173.0,True
 DeKalb,2022,Construction,765300995,9891,77373.0,True
 DeKalb,2022,Education and health services,5240512428,67596,77527.0,True
@@ -876,6 +1454,7 @@ DeKalb,2022,Manufacturing,839260651,13305,63079.0,True
 DeKalb,2022,Natural resources and mining,17780108,205,86732.0,True
 DeKalb,2022,Other services,523506995,9821,53305.0,True
 DeKalb,2022,Professional and business services,3976495135,46721,85112.0,True
+DeKalb,2022,Public sector,2820242305,41761,67533.0,True
 DeKalb,2022,"Trade, transportation and utilities",3526617739,58047,60755.0,True
 DeKalb,2023,Construction,851896006,10156,83881.0,True
 DeKalb,2023,Education and health services,5683620952,70882,80184.0,True
@@ -886,6 +1465,7 @@ DeKalb,2023,Manufacturing,972100735,13877,70051.0,True
 DeKalb,2023,Natural resources and mining,18233661,182,100185.0,True
 DeKalb,2023,Other services,586182901,10360,56581.0,True
 DeKalb,2023,Professional and business services,4345630558,48253,90059.0,True
+DeKalb,2023,Public sector,3058487920,43812,69809.0,True
 DeKalb,2023,"Trade, transportation and utilities",3547532124,58227,60926.0,True
 DeKalb,2024,Construction,857993968,9804,87515.0,True
 DeKalb,2024,Education and health services,5978196152,70389,84931.0,True
@@ -896,7 +1476,63 @@ DeKalb,2024,Manufacturing,974659331,13200,73838.0,True
 DeKalb,2024,Natural resources and mining,28059769,263,106691.0,True
 DeKalb,2024,Other services,487930007,8717,55975.0,True
 DeKalb,2024,Professional and business services,4414977931,46661,94618.0,True
+DeKalb,2024,Public sector,3425847034,45426,75416.0,True
 DeKalb,2024,"Trade, transportation and utilities",3663723564,58612,62508.0,True
+Douglas,2010,Construction,72948157,1915,38093.0,True
+Douglas,2010,Education and health services,152134293,4153,36632.0,True
+Douglas,2010,Financial activities,46527069,1207,38548.0,True
+Douglas,2010,Information,10187838,225,45279.0,True
+Douglas,2010,Leisure and hospitality,81074935,5586,14514.0,True
+Douglas,2010,Manufacturing,132223196,3081,42916.0,True
+Douglas,2010,Natural resources and mining,2672900,46,58107.0,True
+Douglas,2010,Other services,26679499,955,27937.0,True
+Douglas,2010,Professional and business services,96942817,3436,28214.0,True
+Douglas,2010,Public sector,222495656,5873,37884.0,True
+Douglas,2010,"Trade, transportation and utilities",319275457,10828,29486.0,True
+Douglas,2011,Construction,69914869,1817,38478.0,True
+Douglas,2011,Education and health services,152844979,4073,37526.0,True
+Douglas,2011,Financial activities,50040060,1249,40064.0,True
+Douglas,2011,Information,10749196,205,52435.0,True
+Douglas,2011,Leisure and hospitality,80028228,5544,14435.0,True
+Douglas,2011,Manufacturing,127739268,2958,43184.0,True
+Douglas,2011,Natural resources and mining,2616490,41,63817.0,True
+Douglas,2011,Other services,27288347,971,28103.0,True
+Douglas,2011,Professional and business services,104929047,3547,29582.0,True
+Douglas,2011,Public sector,221679223,5715,38789.0,True
+Douglas,2011,"Trade, transportation and utilities",323178535,9982,32376.0,True
+Douglas,2012,Construction,74876576,1872,39998.0,True
+Douglas,2012,Education and health services,162443077,4293,37839.0,True
+Douglas,2012,Financial activities,56405306,1374,41052.0,True
+Douglas,2012,Information,11818056,209,56546.0,True
+Douglas,2012,Leisure and hospitality,83468569,5534,15083.0,True
+Douglas,2012,Manufacturing,133550104,3012,44339.0,True
+Douglas,2012,Natural resources and mining,2462292,35,70351.0,True
+Douglas,2012,Other services,30752284,1034,29741.0,True
+Douglas,2012,Professional and business services,107989989,3719,29037.0,True
+Douglas,2012,Public sector,223071087,5712,39053.0,True
+Douglas,2012,"Trade, transportation and utilities",324800447,9865,32925.0,True
+Douglas,2013,Construction,77307834,1873,41275.0,True
+Douglas,2013,Education and health services,179315462,4493,39910.0,True
+Douglas,2013,Financial activities,56839353,1313,43290.0,True
+Douglas,2013,Information,11210787,209,53640.0,True
+Douglas,2013,Leisure and hospitality,70875733,4639,15278.0,True
+Douglas,2013,Manufacturing,155794945,3373,46189.0,True
+Douglas,2013,Natural resources and mining,2090425,32,65326.0,True
+Douglas,2013,Other services,31611752,1084,29162.0,True
+Douglas,2013,Professional and business services,125766796,4763,26405.0,True
+Douglas,2013,Public sector,223907676,5699,39289.0,True
+Douglas,2013,"Trade, transportation and utilities",354049840,10317,34317.0,True
+Douglas,2014,Construction,83652533,1877,44567.0,True
+Douglas,2014,Education and health services,187427731,4635,40437.0,True
+Douglas,2014,Financial activities,64721433,1380,46900.0,True
+Douglas,2014,Information,12167660,225,54078.0,True
+Douglas,2014,Leisure and hospitality,75349419,4931,15281.0,True
+Douglas,2014,Manufacturing,176607050,3866,45682.0,True
+Douglas,2014,Natural resources and mining,2199353,37,59442.0,True
+Douglas,2014,Other services,32530379,1135,28661.0,True
+Douglas,2014,Professional and business services,125188836,4670,26807.0,True
+Douglas,2014,Public sector,223905382,5626,39798.0,True
+Douglas,2014,"Trade, transportation and utilities",375821760,10533,35680.0,True
 Douglas,2015,Construction,79914947,1855,43081.0,True
 Douglas,2015,Education and health services,188079229,4588,40994.0,True
 Douglas,2015,Financial activities,72117578,1524,47321.0,True
@@ -906,6 +1542,7 @@ Douglas,2015,Manufacturing,169022019,3877,43596.0,True
 Douglas,2015,Natural resources and mining,2517843,45,55952.0,True
 Douglas,2015,Other services,34788431,1183,29407.0,True
 Douglas,2015,Professional and business services,140245096,5136,27306.0,True
+Douglas,2015,Public sector,230679736,5544,41609.0,True
 Douglas,2015,"Trade, transportation and utilities",410533037,10875,37750.0,True
 Douglas,2016,Construction,86240011,1860,46366.0,True
 Douglas,2016,Education and health services,192985791,4707,41000.0,True
@@ -916,6 +1553,7 @@ Douglas,2016,Manufacturing,181008902,4001,45241.0,True
 Douglas,2016,Natural resources and mining,3202992,51,62804.0,True
 Douglas,2016,Other services,34099186,1110,30720.0,True
 Douglas,2016,Professional and business services,149006777,5465,27266.0,True
+Douglas,2016,Public sector,238478076,5619,42441.0,True
 Douglas,2016,"Trade, transportation and utilities",444852218,11620,38283.0,True
 Douglas,2017,Construction,93933628,1924,48822.0,True
 Douglas,2017,Education and health services,198259481,4667,42481.0,True
@@ -926,6 +1564,7 @@ Douglas,2017,Manufacturing,194714348,4119,47272.0,True
 Douglas,2017,Natural resources and mining,3158045,54,58482.0,True
 Douglas,2017,Other services,32116922,1065,30157.0,True
 Douglas,2017,Professional and business services,155014722,5036,30781.0,True
+Douglas,2017,Public sector,246587629,5635,43760.0,True
 Douglas,2017,"Trade, transportation and utilities",495324893,12509,39597.0,True
 Douglas,2018,Construction,97556921,1950,50029.0,True
 Douglas,2018,Education and health services,205928607,4677,44030.0,True
@@ -936,6 +1575,7 @@ Douglas,2018,Manufacturing,202586609,4137,48969.0,True
 Douglas,2018,Natural resources and mining,3425959,59,58067.0,True
 Douglas,2018,Other services,33418586,1018,32828.0,True
 Douglas,2018,Professional and business services,171091238,5337,32058.0,True
+Douglas,2018,Public sector,260613475,5733,45458.0,True
 Douglas,2018,"Trade, transportation and utilities",615466510,14597,42164.0,True
 Douglas,2019,Construction,107851296,2026,53234.0,True
 Douglas,2019,Education and health services,220569472,4771,46231.0,True
@@ -946,6 +1586,7 @@ Douglas,2019,Manufacturing,199802012,3970,50328.0,True
 Douglas,2019,Natural resources and mining,3856051,56,68858.0,True
 Douglas,2019,Other services,35422331,1074,32982.0,True
 Douglas,2019,Professional and business services,192204886,6099,31514.0,True
+Douglas,2019,Public sector,271880779,5839,46563.0,True
 Douglas,2019,"Trade, transportation and utilities",655429772,14805,44271.0,True
 Douglas,2020,Construction,111134583,2086,53276.0,True
 Douglas,2020,Education and health services,234634672,4654,50416.0,True
@@ -956,6 +1597,7 @@ Douglas,2020,Manufacturing,196909216,3804,51764.0,True
 Douglas,2020,Natural resources and mining,4237037,63,67255.0,True
 Douglas,2020,Other services,39013673,990,39408.0,True
 Douglas,2020,Professional and business services,165121580,4361,37863.0,True
+Douglas,2020,Public sector,278838058,5740,48578.0,True
 Douglas,2020,"Trade, transportation and utilities",697164058,14309,48722.0,True
 Douglas,2021,Construction,128478341,2301,55836.0,True
 Douglas,2021,Education and health services,262010976,4805,54529.0,True
@@ -966,6 +1608,7 @@ Douglas,2021,Manufacturing,218100447,4024,54200.0,True
 Douglas,2021,Natural resources and mining,4495129,66,68108.0,True
 Douglas,2021,Other services,42928202,1070,40120.0,True
 Douglas,2021,Professional and business services,190463590,4686,40645.0,True
+Douglas,2021,Public sector,288177126,5486,52530.0,True
 Douglas,2021,"Trade, transportation and utilities",785686352,15144,51881.0,True
 Douglas,2022,Construction,127343790,2226,57207.0,True
 Douglas,2022,Education and health services,278634466,4810,57928.0,True
@@ -976,6 +1619,7 @@ Douglas,2022,Manufacturing,249860487,4233,59027.0,True
 Douglas,2022,Natural resources and mining,5253118,66,79593.0,True
 Douglas,2022,Other services,55987800,1174,47690.0,True
 Douglas,2022,Professional and business services,239925774,4686,51201.0,True
+Douglas,2022,Public sector,318345676,5540,57463.0,True
 Douglas,2022,"Trade, transportation and utilities",1036160146,18757,55241.0,True
 Douglas,2023,Construction,163068791,2506,65071.0,True
 Douglas,2023,Education and health services,314550195,5318,59148.0,True
@@ -986,6 +1630,7 @@ Douglas,2023,Manufacturing,219870570,3350,65633.0,True
 Douglas,2023,Natural resources and mining,4918694,66,74526.0,True
 Douglas,2023,Other services,62863398,1290,48731.0,True
 Douglas,2023,Professional and business services,317528315,6368,49863.0,True
+Douglas,2023,Public sector,329252789,5640,58378.0,True
 Douglas,2023,"Trade, transportation and utilities",1055313147,18794,56152.0,True
 Douglas,2024,Construction,206526270,2697,76576.0,True
 Douglas,2024,Education and health services,343452611,5559,61783.0,True
@@ -996,7 +1641,63 @@ Douglas,2024,Manufacturing,230979303,3196,72271.0,True
 Douglas,2024,Natural resources and mining,5526898,71,77844.0,True
 Douglas,2024,Other services,64732464,1325,48855.0,True
 Douglas,2024,Professional and business services,355105473,6390,55572.0,True
+Douglas,2024,Public sector,350558698,5747,60999.0,True
 Douglas,2024,"Trade, transportation and utilities",1138766122,19254,59144.0,True
+Fayette,2010,Construction,98088328,2112,46443.0,True
+Fayette,2010,Education and health services,214285872,5294,40477.0,True
+Fayette,2010,Financial activities,61561441,1366,45067.0,True
+Fayette,2010,Information,13012171,341,38159.0,True
+Fayette,2010,Leisure and hospitality,59556276,4284,13902.0,True
+Fayette,2010,Manufacturing,127853934,2336,54732.0,True
+Fayette,2010,Natural resources and mining,3795495,76,49941.0,True
+Fayette,2010,Other services,41327564,1468,28152.0,True
+Fayette,2010,Professional and business services,158029141,3334,47399.0,True
+Fayette,2010,Public sector,235119830,5379,43711.0,True
+Fayette,2010,"Trade, transportation and utilities",373537918,10052,37161.0,True
+Fayette,2011,Construction,104347706,2125,49105.0,True
+Fayette,2011,Education and health services,225238220,5491,41020.0,True
+Fayette,2011,Financial activities,66370444,1390,47749.0,True
+Fayette,2011,Information,12343621,320,38574.0,True
+Fayette,2011,Leisure and hospitality,65273859,4506,14486.0,True
+Fayette,2011,Manufacturing,131410904,2384,55122.0,True
+Fayette,2011,Natural resources and mining,2432902,66,36862.0,True
+Fayette,2011,Other services,44226871,1492,29643.0,True
+Fayette,2011,Professional and business services,162328163,3127,51912.0,True
+Fayette,2011,Public sector,238147800,5297,44959.0,True
+Fayette,2011,"Trade, transportation and utilities",401962520,10547,38112.0,True
+Fayette,2012,Construction,112715864,2156,52280.0,True
+Fayette,2012,Education and health services,244843274,5844,41897.0,True
+Fayette,2012,Financial activities,66935707,1341,49915.0,True
+Fayette,2012,Information,12055099,299,40318.0,True
+Fayette,2012,Leisure and hospitality,75634943,5169,14632.0,True
+Fayette,2012,Manufacturing,153882410,2490,61800.0,True
+Fayette,2012,Natural resources and mining,2263462,60,37724.0,True
+Fayette,2012,Other services,46850124,1578,29690.0,True
+Fayette,2012,Professional and business services,150503328,3120,48238.0,True
+Fayette,2012,Public sector,229568839,5206,44097.0,True
+Fayette,2012,"Trade, transportation and utilities",407349393,10273,39652.0,True
+Fayette,2013,Construction,115261946,2273,50709.0,True
+Fayette,2013,Education and health services,266060616,6329,42038.0,True
+Fayette,2013,Financial activities,67974436,1313,51770.0,True
+Fayette,2013,Information,12885966,292,44130.0,True
+Fayette,2013,Leisure and hospitality,83061510,5483,15149.0,True
+Fayette,2013,Manufacturing,159025457,2683,59272.0,True
+Fayette,2013,Natural resources and mining,2235215,56,39915.0,True
+Fayette,2013,Other services,50933712,1644,30982.0,True
+Fayette,2013,Professional and business services,152130988,3055,49797.0,True
+Fayette,2013,Public sector,214164967,4910,43618.0,True
+Fayette,2013,"Trade, transportation and utilities",391340852,10239,38221.0,True
+Fayette,2014,Construction,137362479,2523,54444.0,True
+Fayette,2014,Education and health services,271363291,6374,42573.0,True
+Fayette,2014,Financial activities,67733209,1297,52223.0,True
+Fayette,2014,Information,13722961,307,44700.0,True
+Fayette,2014,Leisure and hospitality,92237788,5994,15388.0,True
+Fayette,2014,Manufacturing,166556348,2852,58400.0,True
+Fayette,2014,Natural resources and mining,2458081,61,40296.0,True
+Fayette,2014,Other services,60537372,1902,31828.0,True
+Fayette,2014,Professional and business services,148135600,3133,47282.0,True
+Fayette,2014,Public sector,219694523,4818,45599.0,True
+Fayette,2014,"Trade, transportation and utilities",330488970,9639,34287.0,True
 Fayette,2015,Construction,158865179,2846,55821.0,True
 Fayette,2015,Education and health services,292005290,6467,45153.0,True
 Fayette,2015,Financial activities,70386824,1302,54061.0,True
@@ -1006,6 +1707,7 @@ Fayette,2015,Manufacturing,193939240,3118,62200.0,True
 Fayette,2015,Natural resources and mining,2914843,65,44844.0,True
 Fayette,2015,Other services,65446391,1962,33357.0,True
 Fayette,2015,Professional and business services,168412019,3411,49373.0,True
+Fayette,2015,Public sector,230847618,4929,46835.0,True
 Fayette,2015,"Trade, transportation and utilities",336091328,9788,34337.0,True
 Fayette,2016,Construction,176795616,3082,57364.0,True
 Fayette,2016,Education and health services,296810209,6785,43745.0,True
@@ -1016,6 +1718,7 @@ Fayette,2016,Manufacturing,221999635,3601,61649.0,True
 Fayette,2016,Natural resources and mining,3220264,65,49543.0,True
 Fayette,2016,Other services,68952759,2024,34068.0,True
 Fayette,2016,Professional and business services,177915428,3473,51228.0,True
+Fayette,2016,Public sector,244465277,5049,48419.0,True
 Fayette,2016,"Trade, transportation and utilities",357220049,10006,35701.0,True
 Fayette,2017,Construction,176053287,3033,58046.0,True
 Fayette,2017,Education and health services,320452352,6983,45890.0,True
@@ -1026,6 +1729,7 @@ Fayette,2017,Manufacturing,258454638,3956,65332.0,True
 Fayette,2017,Natural resources and mining,3339455,67,49843.0,True
 Fayette,2017,Other services,69387939,2001,34677.0,True
 Fayette,2017,Professional and business services,191053683,3638,52516.0,True
+Fayette,2017,Public sector,263135953,5060,52003.0,True
 Fayette,2017,"Trade, transportation and utilities",369724272,10152,36419.0,True
 Fayette,2018,Construction,194567891,3201,60783.0,True
 Fayette,2018,Education and health services,348325535,7240,48111.0,True
@@ -1036,6 +1740,7 @@ Fayette,2018,Manufacturing,304618946,4307,70726.0,True
 Fayette,2018,Natural resources and mining,3542808,71,49899.0,True
 Fayette,2018,Other services,65369890,1865,35051.0,True
 Fayette,2018,Professional and business services,206025802,3723,55339.0,True
+Fayette,2018,Public sector,266340248,5173,51487.0,True
 Fayette,2018,"Trade, transportation and utilities",385284818,10112,38102.0,True
 Fayette,2019,Construction,203024590,3284,61822.0,True
 Fayette,2019,Education and health services,368071637,7625,48272.0,True
@@ -1046,6 +1751,7 @@ Fayette,2019,Manufacturing,348170010,4622,75329.0,True
 Fayette,2019,Natural resources and mining,8699492,153,56859.0,True
 Fayette,2019,Other services,71577416,1986,36041.0,True
 Fayette,2019,Professional and business services,236706421,4025,58809.0,True
+Fayette,2019,Public sector,275937391,5202,53044.0,True
 Fayette,2019,"Trade, transportation and utilities",391016140,9968,39227.0,True
 Fayette,2020,Construction,198843323,3151,63105.0,True
 Fayette,2020,Education and health services,361164105,6877,52518.0,True
@@ -1056,6 +1762,7 @@ Fayette,2020,Manufacturing,306790695,4338,70722.0,True
 Fayette,2020,Natural resources and mining,9539793,167,57125.0,True
 Fayette,2020,Other services,68022546,1823,37314.0,True
 Fayette,2020,Professional and business services,225555293,3867,58328.0,True
+Fayette,2020,Public sector,280748072,5113,54909.0,True
 Fayette,2020,"Trade, transportation and utilities",452477335,9912,45649.0,True
 Fayette,2021,Construction,271381073,3809,71247.0,True
 Fayette,2021,Education and health services,293174264,5801,50539.0,True
@@ -1066,6 +1773,7 @@ Fayette,2021,Manufacturing,298869309,4153,71965.0,True
 Fayette,2021,Natural resources and mining,9597131,170,56454.0,True
 Fayette,2021,Other services,81959474,1958,41859.0,True
 Fayette,2021,Professional and business services,260044064,4333,60015.0,True
+Fayette,2021,Public sector,287836098,5077,56694.0,True
 Fayette,2021,"Trade, transportation and utilities",478110958,10406,45946.0,True
 Fayette,2022,Construction,318747959,4066,78393.0,True
 Fayette,2022,Education and health services,323652425,6302,51357.0,True
@@ -1076,6 +1784,7 @@ Fayette,2022,Manufacturing,349979146,4323,80957.0,True
 Fayette,2022,Natural resources and mining,7469349,121,61730.0,True
 Fayette,2022,Other services,97203723,2159,45023.0,True
 Fayette,2022,Professional and business services,313894037,4783,65627.0,True
+Fayette,2022,Public sector,316956803,4911,64540.0,True
 Fayette,2022,"Trade, transportation and utilities",545621766,11029,49472.0,True
 Fayette,2023,Construction,281971240,3428,82255.0,True
 Fayette,2023,Education and health services,354169758,6569,53915.0,True
@@ -1086,6 +1795,7 @@ Fayette,2023,Manufacturing,433105635,5469,79193.0,True
 Fayette,2023,Natural resources and mining,6854848,111,61755.0,True
 Fayette,2023,Other services,106282099,2220,47875.0,True
 Fayette,2023,Professional and business services,311959294,4606,67729.0,True
+Fayette,2023,Public sector,352150316,5301,66431.0,True
 Fayette,2023,"Trade, transportation and utilities",569144481,11117,51196.0,True
 Fayette,2024,Construction,244563654,3008,81304.0,True
 Fayette,2024,Education and health services,402823211,7214,55839.0,True
@@ -1096,7 +1806,63 @@ Fayette,2024,Manufacturing,437592377,5384,81276.0,True
 Fayette,2024,Natural resources and mining,7857029,123,63878.0,True
 Fayette,2024,Other services,106085176,2150,49342.0,True
 Fayette,2024,Professional and business services,331410013,4570,72519.0,True
+Fayette,2024,Public sector,374015606,5350,69909.0,True
 Fayette,2024,"Trade, transportation and utilities",581426201,11224,51802.0,True
+Forsyth,2010,Construction,208307789,4283,48636.0,True
+Forsyth,2010,Education and health services,218734333,5821,37577.0,True
+Forsyth,2010,Financial activities,80619641,1614,49950.0,True
+Forsyth,2010,Information,35823829,643,55714.0,True
+Forsyth,2010,Leisure and hospitality,76881593,5137,14966.0,True
+Forsyth,2010,Manufacturing,364191007,7431,49010.0,True
+Forsyth,2010,Natural resources and mining,5185384,118,43944.0,True
+Forsyth,2010,Other services,47343608,1391,34036.0,True
+Forsyth,2010,Professional and business services,462723701,8981,51523.0,True
+Forsyth,2010,Public sector,259645114,6399,40576.0,True
+Forsyth,2010,"Trade, transportation and utilities",512910031,11108,46175.0,True
+Forsyth,2011,Construction,219339773,4538,48334.0,True
+Forsyth,2011,Education and health services,241382471,6340,38073.0,True
+Forsyth,2011,Financial activities,81235765,1655,49085.0,True
+Forsyth,2011,Information,38902197,586,66386.0,True
+Forsyth,2011,Leisure and hospitality,80223658,5424,14790.0,True
+Forsyth,2011,Manufacturing,355700259,7497,47446.0,True
+Forsyth,2011,Natural resources and mining,5247736,114,46033.0,True
+Forsyth,2011,Other services,52049698,1421,36629.0,True
+Forsyth,2011,Professional and business services,553935835,10108,54802.0,True
+Forsyth,2011,Public sector,262235111,6417,40866.0,True
+Forsyth,2011,"Trade, transportation and utilities",513256058,11293,45449.0,True
+Forsyth,2012,Construction,214431864,4463,48047.0,True
+Forsyth,2012,Education and health services,269778036,6816,39580.0,True
+Forsyth,2012,Financial activities,99208014,1839,53947.0,True
+Forsyth,2012,Information,43374435,629,68958.0,True
+Forsyth,2012,Leisure and hospitality,87120196,5873,14834.0,True
+Forsyth,2012,Manufacturing,403131441,8301,48564.0,True
+Forsyth,2012,Natural resources and mining,4969550,101,49203.0,True
+Forsyth,2012,Other services,61187927,1632,37493.0,True
+Forsyth,2012,Professional and business services,588673798,10569,55698.0,True
+Forsyth,2012,Public sector,267081167,6516,40989.0,True
+Forsyth,2012,"Trade, transportation and utilities",525939610,11444,45958.0,True
+Forsyth,2013,Construction,236021075,4836,48805.0,True
+Forsyth,2013,Education and health services,326281777,7565,43130.0,True
+Forsyth,2013,Financial activities,106222250,1963,54112.0,True
+Forsyth,2013,Information,49533878,716,69181.0,True
+Forsyth,2013,Leisure and hospitality,109391019,6974,15686.0,True
+Forsyth,2013,Manufacturing,423455063,8749,48400.0,True
+Forsyth,2013,Natural resources and mining,5182100,110,47110.0,True
+Forsyth,2013,Other services,67654060,1705,39680.0,True
+Forsyth,2013,Professional and business services,716561068,11831,60566.0,True
+Forsyth,2013,Public sector,271890191,6488,41907.0,True
+Forsyth,2013,"Trade, transportation and utilities",607571697,12732,47720.0,True
+Forsyth,2014,Construction,268689723,5174,51931.0,True
+Forsyth,2014,Education and health services,335143876,7851,42688.0,True
+Forsyth,2014,Financial activities,124979952,2140,58402.0,True
+Forsyth,2014,Information,56921388,786,72419.0,True
+Forsyth,2014,Leisure and hospitality,114110523,7313,15604.0,True
+Forsyth,2014,Manufacturing,446438866,8644,51647.0,True
+Forsyth,2014,Natural resources and mining,7025226,144,48786.0,True
+Forsyth,2014,Other services,75671229,1818,41623.0,True
+Forsyth,2014,Professional and business services,735245659,11953,61511.0,True
+Forsyth,2014,Public sector,288233062,6764,42613.0,True
+Forsyth,2014,"Trade, transportation and utilities",643856449,13444,47892.0,True
 Forsyth,2015,Construction,314942754,5832,54003.0,True
 Forsyth,2015,Education and health services,367323189,8331,44091.0,True
 Forsyth,2015,Financial activities,133572524,2133,62622.0,True
@@ -1106,6 +1872,7 @@ Forsyth,2015,Manufacturing,458225349,8569,53475.0,True
 Forsyth,2015,Natural resources and mining,8197631,155,52888.0,True
 Forsyth,2015,Other services,76235237,1903,40061.0,True
 Forsyth,2015,Professional and business services,788384641,12151,64882.0,True
+Forsyth,2015,Public sector,312071098,7056,44228.0,True
 Forsyth,2015,"Trade, transportation and utilities",723369294,14496,49901.0,True
 Forsyth,2016,Construction,356975697,6379,55961.0,True
 Forsyth,2016,Education and health services,402858445,8765,45962.0,True
@@ -1116,6 +1883,7 @@ Forsyth,2016,Manufacturing,394827453,7626,51774.0,True
 Forsyth,2016,Natural resources and mining,8785305,154,57047.0,True
 Forsyth,2016,Other services,85844459,2086,41153.0,True
 Forsyth,2016,Professional and business services,796566706,12962,61454.0,True
+Forsyth,2016,Public sector,334289898,7473,44733.0,True
 Forsyth,2016,"Trade, transportation and utilities",731395474,14672,49850.0,True
 Forsyth,2017,Construction,374162356,6345,58970.0,True
 Forsyth,2017,Education and health services,436031193,9280,46986.0,True
@@ -1126,6 +1894,7 @@ Forsyth,2017,Manufacturing,426522087,7763,54943.0,True
 Forsyth,2017,Natural resources and mining,9128576,164,55662.0,True
 Forsyth,2017,Other services,83603369,2127,39306.0,True
 Forsyth,2017,Professional and business services,805275175,13133,61317.0,True
+Forsyth,2017,Public sector,354590671,7740,45813.0,True
 Forsyth,2017,"Trade, transportation and utilities",743382572,15030,49460.0,True
 Forsyth,2018,Construction,403506861,6489,62183.0,True
 Forsyth,2018,Education and health services,448788901,10123,44334.0,True
@@ -1136,6 +1905,7 @@ Forsyth,2018,Manufacturing,458132360,7977,57432.0,True
 Forsyth,2018,Natural resources and mining,10427122,190,54880.0,True
 Forsyth,2018,Other services,81493896,2112,38586.0,True
 Forsyth,2018,Professional and business services,844400962,13698,61644.0,True
+Forsyth,2018,Public sector,367617215,8026,45803.0,True
 Forsyth,2018,"Trade, transportation and utilities",748682108,15482,48358.0,True
 Forsyth,2019,Construction,409591294,6516,62859.0,True
 Forsyth,2019,Education and health services,537940760,10555,50965.0,True
@@ -1146,6 +1916,7 @@ Forsyth,2019,Manufacturing,487359532,8366,58255.0,True
 Forsyth,2019,Natural resources and mining,7470963,144,51882.0,True
 Forsyth,2019,Other services,96325895,2192,43944.0,True
 Forsyth,2019,Professional and business services,848303658,13910,60985.0,True
+Forsyth,2019,Public sector,402172543,8334,48257.0,True
 Forsyth,2019,"Trade, transportation and utilities",785879845,15859,49554.0,True
 Forsyth,2020,Construction,416232742,6411,64925.0,True
 Forsyth,2020,Education and health services,552700679,10739,51467.0,True
@@ -1156,6 +1927,7 @@ Forsyth,2020,Manufacturing,462630924,7894,58605.0,True
 Forsyth,2020,Natural resources and mining,7838292,146,53687.0,True
 Forsyth,2020,Other services,80094487,1913,41869.0,True
 Forsyth,2020,Professional and business services,777667154,11515,67535.0,True
+Forsyth,2020,Public sector,421761271,8232,51234.0,True
 Forsyth,2020,"Trade, transportation and utilities",795448975,15621,50922.0,True
 Forsyth,2021,Construction,432208587,6352,68043.0,True
 Forsyth,2021,Education and health services,618129687,11485,53821.0,True
@@ -1166,6 +1938,7 @@ Forsyth,2021,Manufacturing,526399132,8320,63269.0,True
 Forsyth,2021,Natural resources and mining,7721867,147,52530.0,True
 Forsyth,2021,Other services,99048085,2098,47211.0,True
 Forsyth,2021,Professional and business services,877775462,12271,71533.0,True
+Forsyth,2021,Public sector,442964182,8330,53177.0,True
 Forsyth,2021,"Trade, transportation and utilities",909411774,16380,55520.0,True
 Forsyth,2022,Construction,469792543,6330,74217.0,True
 Forsyth,2022,Education and health services,698403999,12516,55801.0,True
@@ -1176,6 +1949,7 @@ Forsyth,2022,Manufacturing,587708551,8149,72120.0,True
 Forsyth,2022,Natural resources and mining,8089008,150,53927.0,True
 Forsyth,2022,Other services,127294631,2401,53017.0,True
 Forsyth,2022,Professional and business services,990820190,13267,74683.0,True
+Forsyth,2022,Public sector,487079865,8723,55839.0,True
 Forsyth,2022,"Trade, transportation and utilities",1043773818,17755,58788.0,True
 Forsyth,2023,Construction,531847342,6771,78548.0,True
 Forsyth,2023,Education and health services,842692126,13503,62408.0,True
@@ -1186,6 +1960,7 @@ Forsyth,2023,Manufacturing,584825513,8377,69813.0,True
 Forsyth,2023,Natural resources and mining,8213185,156,52649.0,True
 Forsyth,2023,Other services,146827833,2677,54848.0,True
 Forsyth,2023,Professional and business services,962923330,12562,76654.0,True
+Forsyth,2023,Public sector,530051562,9110,58183.0,True
 Forsyth,2023,"Trade, transportation and utilities",1110811109,18793,59108.0,True
 Forsyth,2024,Construction,610002642,7343,83073.0,True
 Forsyth,2024,Education and health services,985542453,15066,65415.0,True
@@ -1196,7 +1971,63 @@ Forsyth,2024,Manufacturing,573212960,8160,70247.0,True
 Forsyth,2024,Natural resources and mining,11076323,198,55941.0,True
 Forsyth,2024,Other services,124340987,2448,50793.0,True
 Forsyth,2024,Professional and business services,1029004970,13081,78664.0,True
+Forsyth,2024,Public sector,582040780,9536,61036.0,True
 Forsyth,2024,"Trade, transportation and utilities",1161832502,19196,60525.0,True
+Fulton,2010,Construction,878560491,14845,59182.0,True
+Fulton,2010,Education and health services,4171944596,82100,50815.0,True
+Fulton,2010,Financial activities,5893111866,64832,90898.0,True
+Fulton,2010,Information,4214406567,45480,92665.0,True
+Fulton,2010,Leisure and hospitality,2121686707,76567,27710.0,True
+Fulton,2010,Manufacturing,2187010055,25602,85423.0,True
+Fulton,2010,Natural resources and mining,17759551,246,72193.0,True
+Fulton,2010,Other services,767611354,21190,36225.0,True
+Fulton,2010,Professional and business services,10872023054,148231,73345.0,True
+Fulton,2010,Public sector,5200721382,95077,54700.0,True
+Fulton,2010,"Trade, transportation and utilities",7526522303,130172,57820.0,True
+Fulton,2011,Construction,867062036,14482,59872.0,True
+Fulton,2011,Education and health services,4503079541,86682,51949.0,True
+Fulton,2011,Financial activities,6432747276,66482,96759.0,True
+Fulton,2011,Information,4460586446,46598,95725.0,True
+Fulton,2011,Leisure and hospitality,2229327886,79265,28125.0,True
+Fulton,2011,Manufacturing,2470525590,25816,95697.0,True
+Fulton,2011,Natural resources and mining,22473374,275,81721.0,True
+Fulton,2011,Other services,801049250,21651,36998.0,True
+Fulton,2011,Professional and business services,11778584646,157657,74710.0,True
+Fulton,2011,Public sector,5122178247,91909,55731.0,True
+Fulton,2011,"Trade, transportation and utilities",7963507706,133241,59768.0,True
+Fulton,2012,Construction,859255692,13851,62036.0,True
+Fulton,2012,Education and health services,4727214918,88656,53321.0,True
+Fulton,2012,Financial activities,6671549448,65853,101310.0,True
+Fulton,2012,Information,4824403257,46114,104619.0,True
+Fulton,2012,Leisure and hospitality,2340097001,82078,28511.0,True
+Fulton,2012,Manufacturing,2651130413,26344,100635.0,True
+Fulton,2012,Natural resources and mining,20815478,274,75969.0,True
+Fulton,2012,Other services,924898403,23332,39641.0,True
+Fulton,2012,Professional and business services,12083369171,160446,75311.0,True
+Fulton,2012,Public sector,5052398422,90790,55649.0,True
+Fulton,2012,"Trade, transportation and utilities",7223973614,123432,58526.0,True
+Fulton,2013,Construction,877808626,14153,62023.0,True
+Fulton,2013,Education and health services,4962078998,91083,54479.0,True
+Fulton,2013,Financial activities,6896718433,65426,105413.0,True
+Fulton,2013,Information,4708220509,45822,102750.0,True
+Fulton,2013,Leisure and hospitality,2380572442,84739,28093.0,True
+Fulton,2013,Manufacturing,2605564821,26415,98640.0,True
+Fulton,2013,Natural resources and mining,23511121,287,81920.0,True
+Fulton,2013,Other services,942450493,23050,40887.0,True
+Fulton,2013,Professional and business services,12585616022,168555,74668.0,True
+Fulton,2013,Public sector,5497138599,96240,57119.0,True
+Fulton,2013,"Trade, transportation and utilities",8029351619,129846,61837.0,True
+Fulton,2014,Construction,1048205388,16034,65374.0,True
+Fulton,2014,Education and health services,5062904417,92887,54506.0,True
+Fulton,2014,Financial activities,7387048912,66726,110707.0,True
+Fulton,2014,Information,5148233439,47521,108336.0,True
+Fulton,2014,Leisure and hospitality,2556161456,87448,29231.0,True
+Fulton,2014,Manufacturing,2529067741,25499,99183.0,True
+Fulton,2014,Natural resources and mining,23826815,302,78897.0,True
+Fulton,2014,Other services,1042566691,24968,41756.0,True
+Fulton,2014,Professional and business services,13625003556,176099,77371.0,True
+Fulton,2014,Public sector,5669527515,93835,60420.0,True
+Fulton,2014,"Trade, transportation and utilities",8564361743,134911,63482.0,True
 Fulton,2015,Construction,1144412046,16705,68507.0,True
 Fulton,2015,Education and health services,5471108039,96423,56741.0,True
 Fulton,2015,Financial activities,7903186230,69755,113299.0,True
@@ -1206,6 +2037,7 @@ Fulton,2015,Manufacturing,2434601889,25755,94529.0,True
 Fulton,2015,Natural resources and mining,45773651,327,139981.0,True
 Fulton,2015,Other services,1071629753,24838,43145.0,True
 Fulton,2015,Professional and business services,15395631517,184001,83671.0,True
+Fulton,2015,Public sector,5956066208,96005,62039.0,True
 Fulton,2015,"Trade, transportation and utilities",9219267815,141266,65262.0,True
 Fulton,2016,Construction,1362294482,18552,73431.0,True
 Fulton,2016,Education and health services,5837555407,101282,57637.0,True
@@ -1216,6 +2048,7 @@ Fulton,2016,Manufacturing,2810809366,29162,96386.0,True
 Fulton,2016,Natural resources and mining,57586726,540,106642.0,True
 Fulton,2016,Other services,1155162555,25946,44522.0,True
 Fulton,2016,Professional and business services,16337437253,190976,85547.0,True
+Fulton,2016,Public sector,6206696980,96956,64016.0,True
 Fulton,2016,"Trade, transportation and utilities",9603092996,144188,66601.0,True
 Fulton,2017,Construction,1497710848,19495,76825.0,True
 Fulton,2017,Education and health services,6196428790,104706,59179.0,True
@@ -1226,6 +2059,7 @@ Fulton,2017,Manufacturing,3004724824,29945,100341.0,True
 Fulton,2017,Natural resources and mining,48786548,339,143913.0,True
 Fulton,2017,Other services,1129900536,25446,44404.0,True
 Fulton,2017,Professional and business services,17386356181,198855,87432.0,True
+Fulton,2017,Public sector,6473770556,97953,66091.0,True
 Fulton,2017,"Trade, transportation and utilities",9956720643,149061,66796.0,True
 Fulton,2018,Construction,1600114740,19672,81340.0,True
 Fulton,2018,Education and health services,6554072958,109382,59919.0,True
@@ -1236,6 +2070,7 @@ Fulton,2018,Manufacturing,3187052940,30848,103315.0,True
 Fulton,2018,Natural resources and mining,47906330,351,136485.0,True
 Fulton,2018,Other services,1167121749,26405,44201.0,True
 Fulton,2018,Professional and business services,19175818945,209197,91664.0,True
+Fulton,2018,Public sector,6653859663,98340,67662.0,True
 Fulton,2018,"Trade, transportation and utilities",9426142427,147954,63710.0,True
 Fulton,2019,Construction,1726355436,20516,84147.0,True
 Fulton,2019,Education and health services,7219922657,113939,63367.0,True
@@ -1246,6 +2081,7 @@ Fulton,2019,Manufacturing,2086925965,26918,77529.0,True
 Fulton,2019,Natural resources and mining,40680593,357,113951.0,True
 Fulton,2019,Other services,1298677930,27766,46772.0,True
 Fulton,2019,Professional and business services,22956428197,229709,99937.0,True
+Fulton,2019,Public sector,6825349777,98303,69432.0,True
 Fulton,2019,"Trade, transportation and utilities",8443262998,142833,59113.0,True
 Fulton,2020,Construction,1766964653,19808,89205.0,True
 Fulton,2020,Education and health services,7292681519,107879,67601.0,True
@@ -1256,6 +2092,7 @@ Fulton,2020,Manufacturing,2106867389,26089,80757.0,True
 Fulton,2020,Natural resources and mining,38252189,342,111849.0,True
 Fulton,2020,Other services,1261089719,24033,52473.0,True
 Fulton,2020,Professional and business services,23234090577,216258,107437.0,True
+Fulton,2020,Public sector,7285077325,100164,72731.0,True
 Fulton,2020,"Trade, transportation and utilities",8625323599,139123,61998.0,True
 Fulton,2021,Construction,1876235840,20457,91716.0,True
 Fulton,2021,Education and health services,7982333953,110711,72101.0,True
@@ -1266,6 +2103,7 @@ Fulton,2021,Manufacturing,2202441438,25850,85201.0,True
 Fulton,2021,Natural resources and mining,54873660,504,108876.0,True
 Fulton,2021,Other services,1433348492,25590,56012.0,True
 Fulton,2021,Professional and business services,25181262912,225065,111884.0,True
+Fulton,2021,Public sector,7599810147,100148,75886.0,True
 Fulton,2021,"Trade, transportation and utilities",9359030004,142988,65453.0,True
 Fulton,2022,Construction,2137638006,21071,101449.0,True
 Fulton,2022,Education and health services,8605717805,114724,75012.0,True
@@ -1276,6 +2114,7 @@ Fulton,2022,Manufacturing,2375306033,27060,87779.0,True
 Fulton,2022,Natural resources and mining,56004744,491,114063.0,True
 Fulton,2022,Other services,1732968102,28148,61566.0,True
 Fulton,2022,Professional and business services,28689772428,240091,119495.0,True
+Fulton,2022,Public sector,7950250345,101151,78598.0,True
 Fulton,2022,"Trade, transportation and utilities",10670635176,159774,66786.0,True
 Fulton,2023,Construction,2263576446,22018,102806.0,True
 Fulton,2023,Education and health services,9295807319,120107,77396.0,True
@@ -1286,6 +2125,7 @@ Fulton,2023,Manufacturing,2653125666,28525,93011.0,True
 Fulton,2023,Natural resources and mining,65707854,658,99860.0,True
 Fulton,2023,Other services,1938668660,29530,65651.0,True
 Fulton,2023,Professional and business services,29289246580,235108,124578.0,True
+Fulton,2023,Public sector,8270055422,102244,80885.0,True
 Fulton,2023,"Trade, transportation and utilities",11019018634,156138,70572.0,True
 Fulton,2024,Construction,2465653677,23589,104526.0,True
 Fulton,2024,Education and health services,10390534624,131186,79205.0,True
@@ -1296,7 +2136,63 @@ Fulton,2024,Manufacturing,2682313345,28005,95780.0,True
 Fulton,2024,Natural resources and mining,69804431,690,101166.0,True
 Fulton,2024,Other services,1952926408,29513,66172.0,True
 Fulton,2024,Professional and business services,30418423003,230737,131832.0,True
+Fulton,2024,Public sector,9101365945,106903,85137.0,True
 Fulton,2024,"Trade, transportation and utilities",11351660249,152295,74537.0,True
+Gwinnett,2010,Construction,806274391,16064,50191.0,True
+Gwinnett,2010,Education and health services,1075297527,26135,41144.0,True
+Gwinnett,2010,Financial activities,1090839040,19793,55112.0,True
+Gwinnett,2010,Information,596101470,8623,69129.0,True
+Gwinnett,2010,Leisure and hospitality,409628794,26736,15321.0,True
+Gwinnett,2010,Manufacturing,1471296862,22168,66370.0,True
+Gwinnett,2010,Natural resources and mining,14616337,283,51648.0,True
+Gwinnett,2010,Other services,297430334,8362,35569.0,True
+Gwinnett,2010,Professional and business services,2864096994,55644,51472.0,True
+Gwinnett,2010,Public sector,1450523954,35091,41336.0,True
+Gwinnett,2010,"Trade, transportation and utilities",3352015323,77669,43158.0,True
+Gwinnett,2011,Construction,799775129,15858,50434.0,True
+Gwinnett,2011,Education and health services,1123655031,27249,41237.0,True
+Gwinnett,2011,Financial activities,1171037297,20369,57491.0,True
+Gwinnett,2011,Information,641876467,8900,72121.0,True
+Gwinnett,2011,Leisure and hospitality,425566956,27210,15640.0,True
+Gwinnett,2011,Manufacturing,1585446956,22584,70202.0,True
+Gwinnett,2011,Natural resources and mining,14852471,288,51571.0,True
+Gwinnett,2011,Other services,307508903,8836,34802.0,True
+Gwinnett,2011,Professional and business services,3050631118,56161,54319.0,True
+Gwinnett,2011,Public sector,1427500708,34554,41312.0,True
+Gwinnett,2011,"Trade, transportation and utilities",3541542475,79888,44331.0,True
+Gwinnett,2012,Construction,783871492,15283,51290.0,True
+Gwinnett,2012,Education and health services,1186813152,28063,42291.0,True
+Gwinnett,2012,Financial activities,1353587649,22178,61033.0,True
+Gwinnett,2012,Information,656377147,8676,75654.0,True
+Gwinnett,2012,Leisure and hospitality,449206316,28295,15876.0,True
+Gwinnett,2012,Manufacturing,1534621788,23127,66356.0,True
+Gwinnett,2012,Natural resources and mining,14816220,285,51987.0,True
+Gwinnett,2012,Other services,338567155,9185,36861.0,True
+Gwinnett,2012,Professional and business services,3364021089,57332,58676.0,True
+Gwinnett,2012,Public sector,1410929252,34417,40995.0,True
+Gwinnett,2012,"Trade, transportation and utilities",3686696238,81576,45193.0,True
+Gwinnett,2013,Construction,839196553,15736,53330.0,True
+Gwinnett,2013,Education and health services,1272301906,29093,43732.0,True
+Gwinnett,2013,Financial activities,1431477338,22794,62801.0,True
+Gwinnett,2013,Information,756646369,9908,76367.0,True
+Gwinnett,2013,Leisure and hospitality,478070743,30218,15821.0,True
+Gwinnett,2013,Manufacturing,1608065609,23921,67224.0,True
+Gwinnett,2013,Natural resources and mining,17323444,294,58923.0,True
+Gwinnett,2013,Other services,332393478,9035,36790.0,True
+Gwinnett,2013,Professional and business services,3307900808,57659,57370.0,True
+Gwinnett,2013,Public sector,1397681119,33940,41181.0,True
+Gwinnett,2013,"Trade, transportation and utilities",3604808174,79296,45460.0,True
+Gwinnett,2014,Construction,952798644,17083,55775.0,True
+Gwinnett,2014,Education and health services,1360432275,30572,44499.0,True
+Gwinnett,2014,Financial activities,1406559131,22871,61500.0,True
+Gwinnett,2014,Information,803264971,10127,79319.0,True
+Gwinnett,2014,Leisure and hospitality,507687848,31853,15938.0,True
+Gwinnett,2014,Manufacturing,1686457774,24994,67475.0,True
+Gwinnett,2014,Natural resources and mining,17898497,309,57924.0,True
+Gwinnett,2014,Other services,373760106,9719,38457.0,True
+Gwinnett,2014,Professional and business services,3784404242,61429,61606.0,True
+Gwinnett,2014,Public sector,1459086596,34514,42275.0,True
+Gwinnett,2014,"Trade, transportation and utilities",3817608601,81801,46669.0,True
 Gwinnett,2015,Construction,1059126109,18124,58438.0,True
 Gwinnett,2015,Education and health services,1443467972,31429,45928.0,True
 Gwinnett,2015,Financial activities,1481244762,22777,65032.0,True
@@ -1306,6 +2202,7 @@ Gwinnett,2015,Manufacturing,1735153074,25246,68730.0,True
 Gwinnett,2015,Natural resources and mining,18536047,327,56685.0,True
 Gwinnett,2015,Other services,382893622,9801,39067.0,True
 Gwinnett,2015,Professional and business services,4004347119,62350,64224.0,True
+Gwinnett,2015,Public sector,1531267183,34933,43834.0,True
 Gwinnett,2015,"Trade, transportation and utilities",4062288134,85556,47481.0,True
 Gwinnett,2016,Construction,1091667237,18355,59475.0,True
 Gwinnett,2016,Education and health services,1539223391,32969,46687.0,True
@@ -1316,6 +2213,7 @@ Gwinnett,2016,Manufacturing,1710265532,25905,66021.0,True
 Gwinnett,2016,Natural resources and mining,19981048,328,60918.0,True
 Gwinnett,2016,Other services,404791489,10262,39446.0,True
 Gwinnett,2016,Professional and business services,4081456210,64263,63512.0,True
+Gwinnett,2016,Public sector,1613371877,35858,44993.0,True
 Gwinnett,2016,"Trade, transportation and utilities",4206572493,87116,48287.0,True
 Gwinnett,2017,Construction,1191831533,19940,59771.0,True
 Gwinnett,2017,Education and health services,1594406992,34577,46112.0,True
@@ -1326,6 +2224,7 @@ Gwinnett,2017,Manufacturing,1754766026,26373,66536.0,True
 Gwinnett,2017,Natural resources and mining,22157150,349,63488.0,True
 Gwinnett,2017,Other services,401482609,10021,40064.0,True
 Gwinnett,2017,Professional and business services,4411826658,66730,66115.0,True
+Gwinnett,2017,Public sector,1673764563,36397,45986.0,True
 Gwinnett,2017,"Trade, transportation and utilities",4379906617,88345,49577.0,True
 Gwinnett,2018,Construction,1336706169,21424,62393.0,True
 Gwinnett,2018,Education and health services,1711546401,36393,47030.0,True
@@ -1336,6 +2235,7 @@ Gwinnett,2018,Manufacturing,1906175282,28162,67686.0,True
 Gwinnett,2018,Natural resources and mining,23690564,378,62673.0,True
 Gwinnett,2018,Other services,428577932,10288,41658.0,True
 Gwinnett,2018,Professional and business services,4460844658,66382,67200.0,True
+Gwinnett,2018,Public sector,1759358908,36967,47593.0,True
 Gwinnett,2018,"Trade, transportation and utilities",4277210678,88156,48519.0,True
 Gwinnett,2019,Construction,1458151596,22640,64406.0,True
 Gwinnett,2019,Education and health services,1800822118,38188,47157.0,True
@@ -1346,6 +2246,7 @@ Gwinnett,2019,Manufacturing,2046013718,28695,71302.0,True
 Gwinnett,2019,Natural resources and mining,27250522,478,57009.0,True
 Gwinnett,2019,Other services,467300284,10936,42730.0,True
 Gwinnett,2019,Professional and business services,4601856353,66707,68986.0,True
+Gwinnett,2019,Public sector,1842921092,37314,49390.0,True
 Gwinnett,2019,"Trade, transportation and utilities",4545708503,89830,50603.0,True
 Gwinnett,2020,Construction,1483300295,22319,66459.0,True
 Gwinnett,2020,Education and health services,1755167614,36532,48045.0,True
@@ -1356,6 +2257,7 @@ Gwinnett,2020,Manufacturing,1819513038,26264,69278.0,True
 Gwinnett,2020,Natural resources and mining,22785349,425,53613.0,True
 Gwinnett,2020,Other services,451040230,10081,44742.0,True
 Gwinnett,2020,Professional and business services,4808946349,65349,73589.0,True
+Gwinnett,2020,Public sector,1924779354,36524,52699.0,True
 Gwinnett,2020,"Trade, transportation and utilities",4661836529,86871,53664.0,True
 Gwinnett,2021,Construction,1573721189,22457,70077.0,True
 Gwinnett,2021,Education and health services,1952763744,39232,49775.0,True
@@ -1366,6 +2268,7 @@ Gwinnett,2021,Manufacturing,1969139798,27195,72408.0,True
 Gwinnett,2021,Natural resources and mining,23536723,434,54232.0,True
 Gwinnett,2021,Other services,564401803,11281,50031.0,True
 Gwinnett,2021,Professional and business services,5049363534,68019,74235.0,True
+Gwinnett,2021,Public sector,2028879170,36880,55013.0,True
 Gwinnett,2021,"Trade, transportation and utilities",5248937711,91102,57616.0,True
 Gwinnett,2022,Construction,1759652747,23892,73650.0,True
 Gwinnett,2022,Education and health services,2176677290,42776,50885.0,True
@@ -1376,6 +2279,7 @@ Gwinnett,2022,Manufacturing,2079571823,27561,75453.0,True
 Gwinnett,2022,Natural resources and mining,30726406,506,60724.0,True
 Gwinnett,2022,Other services,664776644,12453,53383.0,True
 Gwinnett,2022,Professional and business services,5483815641,69957,78388.0,True
+Gwinnett,2022,Public sector,2269847708,37959,59797.0,True
 Gwinnett,2022,"Trade, transportation and utilities",5833125151,95600,61016.0,True
 Gwinnett,2023,Construction,1992212981,25047,79539.0,True
 Gwinnett,2023,Education and health services,2490863073,46894,53117.0,True
@@ -1386,6 +2290,7 @@ Gwinnett,2023,Manufacturing,2069128387,27020,76578.0,True
 Gwinnett,2023,Natural resources and mining,38938904,617,63110.0,True
 Gwinnett,2023,Other services,708610356,12878,55025.0,True
 Gwinnett,2023,Professional and business services,5630190184,70199,80203.0,True
+Gwinnett,2023,Public sector,2514134255,40804,61615.0,True
 Gwinnett,2023,"Trade, transportation and utilities",5915603742,94353,62697.0,True
 Gwinnett,2024,Construction,2260380703,27114,83366.0,True
 Gwinnett,2024,Education and health services,2782993673,50363,55259.0,True
@@ -1396,7 +2301,63 @@ Gwinnett,2024,Manufacturing,2176694338,27503,79144.0,True
 Gwinnett,2024,Natural resources and mining,36940167,466,79271.0,True
 Gwinnett,2024,Other services,657539864,11684,56277.0,True
 Gwinnett,2024,Professional and business services,5748168508,69780,82376.0,True
+Gwinnett,2024,Public sector,2698473971,41966,64301.0,True
 Gwinnett,2024,"Trade, transportation and utilities",5995154257,93825,63897.0,True
+Hall,2010,Construction,110733795,2817,39309.0,False
+Hall,2010,Education and health services,458851861,10694,42907.0,False
+Hall,2010,Financial activities,128576114,2565,50127.0,False
+Hall,2010,Information,30008307,556,53972.0,False
+Hall,2010,Leisure and hospitality,222553655,5150,43214.0,False
+Hall,2010,Manufacturing,572444460,14696,38952.0,False
+Hall,2010,Natural resources and mining,12573297,292,43059.0,False
+Hall,2010,Other services,40599750,1559,26042.0,False
+Hall,2010,Professional and business services,208718715,6923,30149.0,False
+Hall,2010,Public sector,367030013,10192,36012.0,False
+Hall,2010,"Trade, transportation and utilities",464904446,13091,35513.0,False
+Hall,2011,Construction,110626466,2780,39794.0,False
+Hall,2011,Education and health services,486400787,11174,43530.0,False
+Hall,2011,Financial activities,210630909,3684,57175.0,False
+Hall,2011,Information,30486421,567,53768.0,False
+Hall,2011,Leisure and hospitality,239500522,5366,44633.0,False
+Hall,2011,Manufacturing,614539643,15408,39884.0,False
+Hall,2011,Natural resources and mining,12854262,297,43280.0,False
+Hall,2011,Other services,41065024,1566,26223.0,False
+Hall,2011,Professional and business services,210234057,6649,31619.0,False
+Hall,2011,Public sector,362108492,9875,36669.0,False
+Hall,2011,"Trade, transportation and utilities",493569964,13357,36952.0,False
+Hall,2012,Construction,116283139,2809,41397.0,False
+Hall,2012,Education and health services,511542573,11522,44397.0,False
+Hall,2012,Financial activities,140754065,2396,58745.0,False
+Hall,2012,Information,30691686,564,54418.0,False
+Hall,2012,Leisure and hospitality,242296171,5365,45162.0,False
+Hall,2012,Manufacturing,651222699,16338,39859.0,False
+Hall,2012,Natural resources and mining,11661048,260,44850.0,False
+Hall,2012,Other services,46397119,1621,28623.0,False
+Hall,2012,Professional and business services,210716213,6638,31744.0,False
+Hall,2012,Public sector,358971328,9780,36705.0,False
+Hall,2012,"Trade, transportation and utilities",528084842,13992,37742.0,False
+Hall,2013,Construction,125772432,2997,41966.0,False
+Hall,2013,Education and health services,535619652,11989,44676.0,False
+Hall,2013,Financial activities,150504645,2506,60058.0,False
+Hall,2013,Information,31854834,566,56281.0,False
+Hall,2013,Leisure and hospitality,266370835,6242,42674.0,False
+Hall,2013,Manufacturing,695754175,16905,41157.0,False
+Hall,2013,Natural resources and mining,11568940,252,45908.0,False
+Hall,2013,Other services,45003100,1508,29843.0,False
+Hall,2013,Professional and business services,216801614,6590,32899.0,False
+Hall,2013,Public sector,359748764,9750,36897.0,False
+Hall,2013,"Trade, transportation and utilities",553284085,14558,38006.0,False
+Hall,2014,Construction,138391070,3133,44172.0,False
+Hall,2014,Education and health services,587170697,12012,48882.0,False
+Hall,2014,Financial activities,140972830,2405,58617.0,False
+Hall,2014,Information,32808560,572,57358.0,False
+Hall,2014,Leisure and hospitality,284078726,6614,42951.0,False
+Hall,2014,Manufacturing,752842991,17896,42068.0,False
+Hall,2014,Natural resources and mining,11339133,255,44467.0,False
+Hall,2014,Other services,52515552,1628,32258.0,False
+Hall,2014,Professional and business services,253920661,6908,36757.0,False
+Hall,2014,Public sector,370501903,9911,37383.0,False
+Hall,2014,"Trade, transportation and utilities",569133157,14595,38995.0,False
 Hall,2015,Construction,152938460,3336,45845.0,False
 Hall,2015,Education and health services,670269023,13028,51448.0,False
 Hall,2015,Financial activities,159851758,2599,61505.0,False
@@ -1406,6 +2367,7 @@ Hall,2015,Manufacturing,801977196,18566,43196.0,False
 Hall,2015,Natural resources and mining,11631866,262,44396.0,False
 Hall,2015,Other services,51796622,1651,31373.0,False
 Hall,2015,Professional and business services,281724710,7212,39063.0,False
+Hall,2015,Public sector,388158646,10035,38680.0,False
 Hall,2015,"Trade, transportation and utilities",624550565,15274,40890.0,False
 Hall,2016,Construction,178244938,3584,49734.0,False
 Hall,2016,Education and health services,711177126,13508,52649.0,False
@@ -1416,6 +2378,7 @@ Hall,2016,Manufacturing,823259630,19258,42749.0,False
 Hall,2016,Natural resources and mining,11067097,246,44988.0,False
 Hall,2016,Other services,57813280,1788,32334.0,False
 Hall,2016,Professional and business services,315259895,7303,43169.0,False
+Hall,2016,Public sector,398898366,10084,39558.0,False
 Hall,2016,"Trade, transportation and utilities",635003114,15611,40677.0,False
 Hall,2017,Construction,204274424,4006,50992.0,False
 Hall,2017,Education and health services,751083669,13791,54462.0,False
@@ -1426,6 +2389,7 @@ Hall,2017,Manufacturing,884631624,19988,44258.0,False
 Hall,2017,Natural resources and mining,12184552,256,47596.0,False
 Hall,2017,Other services,57383531,1793,32004.0,False
 Hall,2017,Professional and business services,353345146,7991,44218.0,False
+Hall,2017,Public sector,416052148,10280,40472.0,False
 Hall,2017,"Trade, transportation and utilities",685751506,16095,42606.0,False
 Hall,2018,Construction,223264178,4235,52719.0,False
 Hall,2018,Education and health services,788330698,14169,55638.0,False
@@ -1436,6 +2400,7 @@ Hall,2018,Manufacturing,943635753,20646,45706.0,False
 Hall,2018,Natural resources and mining,13807311,286,48277.0,False
 Hall,2018,Other services,57127380,1799,31755.0,False
 Hall,2018,Professional and business services,389494422,8913,43700.0,False
+Hall,2018,Public sector,432460400,10308,41954.0,False
 Hall,2018,"Trade, transportation and utilities",719342343,16443,43748.0,False
 Hall,2019,Construction,233266994,4380,53257.0,False
 Hall,2019,Education and health services,856041570,14754,58021.0,False
@@ -1446,6 +2411,7 @@ Hall,2019,Manufacturing,979627414,20706,47311.0,False
 Hall,2019,Natural resources and mining,15730466,325,48401.0,False
 Hall,2019,Other services,64680464,1949,33186.0,False
 Hall,2019,Professional and business services,394756993,8915,44280.0,False
+Hall,2019,Public sector,452552474,10391,43552.0,False
 Hall,2019,"Trade, transportation and utilities",750612156,16742,44834.0,False
 Hall,2020,Construction,249806227,4414,56594.0,False
 Hall,2020,Education and health services,896180819,14766,60692.0,False
@@ -1456,6 +2422,7 @@ Hall,2020,Manufacturing,962427785,19582,49149.0,False
 Hall,2020,Natural resources and mining,20718814,402,51539.0,False
 Hall,2020,Other services,61551215,1748,35212.0,False
 Hall,2020,Professional and business services,430874209,9348,46093.0,False
+Hall,2020,Public sector,470549400,10352,45455.0,False
 Hall,2020,"Trade, transportation and utilities",812434010,16830,48273.0,False
 Hall,2021,Construction,275766963,4581,60198.0,False
 Hall,2021,Education and health services,1003978442,14829,67704.0,False
@@ -1466,6 +2433,7 @@ Hall,2021,Manufacturing,1113590980,20447,54462.0,False
 Hall,2021,Natural resources and mining,21999576,396,55554.0,False
 Hall,2021,Other services,74116263,1897,39070.0,False
 Hall,2021,Professional and business services,493651406,10051,49115.0,False
+Hall,2021,Public sector,489455520,10384,47136.0,False
 Hall,2021,"Trade, transportation and utilities",916339998,17426,52585.0,False
 Hall,2022,Construction,291897196,4578,63761.0,False
 Hall,2022,Education and health services,1091417113,15263,71507.0,False
@@ -1476,6 +2444,7 @@ Hall,2022,Manufacturing,1292971186,22070,58585.0,False
 Hall,2022,Natural resources and mining,19858471,333,59635.0,False
 Hall,2022,Other services,93327856,2242,41627.0,False
 Hall,2022,Professional and business services,596707250,10844,55026.0,False
+Hall,2022,Public sector,532483978,10548,50482.0,False
 Hall,2022,"Trade, transportation and utilities",1013155125,18064,56087.0,False
 Hall,2023,Construction,332449038,4794,69347.0,False
 Hall,2023,Education and health services,1183408152,16287,72660.0,False
@@ -1486,6 +2455,7 @@ Hall,2023,Manufacturing,1419188334,24241,58545.0,False
 Hall,2023,Natural resources and mining,16109949,264,61023.0,False
 Hall,2023,Other services,104643500,2214,47264.0,False
 Hall,2023,Professional and business services,643084806,10927,58853.0,False
+Hall,2023,Public sector,574807254,10929,52595.0,False
 Hall,2023,"Trade, transportation and utilities",1058285745,18616,56848.0,False
 Hall,2024,Construction,362063643,5010,72268.0,False
 Hall,2024,Education and health services,1335929383,17180,77761.0,False
@@ -1496,7 +2466,63 @@ Hall,2024,Manufacturing,1505329479,25074,60035.0,False
 Hall,2024,Natural resources and mining,18217356,314,58017.0,False
 Hall,2024,Other services,105641757,2159,48931.0,False
 Hall,2024,Professional and business services,649704561,10180,63822.0,False
+Hall,2024,Public sector,618588865,11225,55108.0,False
 Hall,2024,"Trade, transportation and utilities",1079364231,18762,57529.0,False
+Henry,2010,Construction,63878483,1532,41696.0,True
+Henry,2010,Education and health services,212733860,5474,38863.0,True
+Henry,2010,Financial activities,72173707,1730,41719.0,True
+Henry,2010,Information,14798776,321,46102.0,True
+Henry,2010,Leisure and hospitality,86385567,6428,13439.0,True
+Henry,2010,Manufacturing,117740661,2653,44380.0,True
+Henry,2010,Natural resources and mining,3801093,102,37266.0,True
+Henry,2010,Other services,33029447,1166,28327.0,True
+Henry,2010,Professional and business services,171731490,6019,28532.0,True
+Henry,2010,Public sector,419708073,9556,43921.0,True
+Henry,2010,"Trade, transportation and utilities",390720519,12722,30712.0,True
+Henry,2011,Construction,62710136,1488,42144.0,True
+Henry,2011,Education and health services,232008209,5815,39898.0,True
+Henry,2011,Financial activities,80018623,1867,42859.0,True
+Henry,2011,Information,11649320,281,41457.0,True
+Henry,2011,Leisure and hospitality,89623978,6593,13594.0,True
+Henry,2011,Manufacturing,123908394,2622,47257.0,True
+Henry,2011,Natural resources and mining,3954734,116,34093.0,True
+Henry,2011,Other services,35006954,1288,27179.0,True
+Henry,2011,Professional and business services,170735672,5740,29745.0,True
+Henry,2011,Public sector,408883035,9214,44376.0,True
+Henry,2011,"Trade, transportation and utilities",415320921,13378,31045.0,True
+Henry,2012,Construction,65842026,1542,42699.0,True
+Henry,2012,Education and health services,259561060,6538,39700.0,True
+Henry,2012,Financial activities,88280232,1767,49961.0,True
+Henry,2012,Information,11080806,285,38880.0,True
+Henry,2012,Leisure and hospitality,92436399,6709,13778.0,True
+Henry,2012,Manufacturing,125720603,2563,49052.0,True
+Henry,2012,Natural resources and mining,3799734,111,34232.0,True
+Henry,2012,Other services,36031886,1304,27632.0,True
+Henry,2012,Professional and business services,165331313,5437,30409.0,True
+Henry,2012,Public sector,410115712,9072,45207.0,True
+Henry,2012,"Trade, transportation and utilities",431758389,13977,30891.0,True
+Henry,2013,Construction,69587261,1583,43959.0,True
+Henry,2013,Education and health services,260752853,6599,39514.0,True
+Henry,2013,Financial activities,80138299,1826,43887.0,True
+Henry,2013,Information,26350736,504,52283.0,True
+Henry,2013,Leisure and hospitality,99070202,7045,14062.0,True
+Henry,2013,Manufacturing,129410326,2608,49621.0,True
+Henry,2013,Natural resources and mining,6027105,138,43675.0,True
+Henry,2013,Other services,36789043,1313,28019.0,True
+Henry,2013,Professional and business services,172532857,5835,29569.0,True
+Henry,2013,Public sector,394095890,8787,44850.0,True
+Henry,2013,"Trade, transportation and utilities",448904808,14390,31196.0,True
+Henry,2014,Construction,72773330,1628,44701.0,True
+Henry,2014,Education and health services,266876672,6699,39838.0,True
+Henry,2014,Financial activities,77103360,1708,45142.0,True
+Henry,2014,Information,25019914,459,54510.0,True
+Henry,2014,Leisure and hospitality,103754037,7395,14030.0,True
+Henry,2014,Manufacturing,138598332,2743,50528.0,True
+Henry,2014,Natural resources and mining,5952269,143,41624.0,True
+Henry,2014,Other services,42769563,1472,29055.0,True
+Henry,2014,Professional and business services,188888170,5874,32157.0,True
+Henry,2014,Public sector,403831594,8587,47028.0,True
+Henry,2014,"Trade, transportation and utilities",492067902,15214,32343.0,True
 Henry,2015,Construction,83711833,1805,46378.0,True
 Henry,2015,Education and health services,285966806,6760,42303.0,True
 Henry,2015,Financial activities,79091696,1740,45455.0,True
@@ -1506,6 +2532,7 @@ Henry,2015,Manufacturing,155332699,3001,51760.0,True
 Henry,2015,Natural resources and mining,6930759,149,46515.0,True
 Henry,2015,Other services,45189010,1416,31913.0,True
 Henry,2015,Professional and business services,192143610,6213,30926.0,True
+Henry,2015,Public sector,419048544,8851,47345.0,True
 Henry,2015,"Trade, transportation and utilities",537820070,15949,33721.0,True
 Henry,2016,Construction,91748342,1888,48596.0,True
 Henry,2016,Education and health services,307047761,7291,42113.0,True
@@ -1516,6 +2543,7 @@ Henry,2016,Manufacturing,162328285,3049,53240.0,True
 Henry,2016,Natural resources and mining,8230029,188,43777.0,True
 Henry,2016,Other services,48119371,1492,32252.0,True
 Henry,2016,Professional and business services,202497675,6589,30733.0,True
+Henry,2016,Public sector,436538755,9167,47621.0,True
 Henry,2016,"Trade, transportation and utilities",563282879,16441,34261.0,True
 Henry,2017,Construction,99793900,1955,51045.0,True
 Henry,2017,Education and health services,341677282,7511,45490.0,True
@@ -1526,6 +2554,7 @@ Henry,2017,Manufacturing,151003545,2814,53662.0,True
 Henry,2017,Natural resources and mining,7282540,133,54756.0,True
 Henry,2017,Other services,45169611,1380,32732.0,True
 Henry,2017,Professional and business services,230813770,6936,33278.0,True
+Henry,2017,Public sector,459985170,9396,48955.0,True
 Henry,2017,"Trade, transportation and utilities",598863834,17225,34767.0,True
 Henry,2018,Construction,107823703,1987,54265.0,True
 Henry,2018,Education and health services,376597569,8099,46499.0,True
@@ -1536,6 +2565,7 @@ Henry,2018,Manufacturing,166585631,2974,56014.0,True
 Henry,2018,Natural resources and mining,6661625,138,48273.0,True
 Henry,2018,Other services,45746447,1372,33343.0,True
 Henry,2018,Professional and business services,280662847,8243,34049.0,True
+Henry,2018,Public sector,485028739,9615,50445.0,True
 Henry,2018,"Trade, transportation and utilities",619102437,17376,35630.0,True
 Henry,2019,Construction,118352205,2061,57425.0,True
 Henry,2019,Education and health services,419178920,8487,49391.0,True
@@ -1546,6 +2576,7 @@ Henry,2019,Manufacturing,180912038,3201,56517.0,True
 Henry,2019,Natural resources and mining,7172666,149,48139.0,True
 Henry,2019,Other services,51974572,1473,35285.0,True
 Henry,2019,Professional and business services,318022860,8946,35549.0,True
+Henry,2019,Public sector,495038097,9597,51583.0,True
 Henry,2019,"Trade, transportation and utilities",691008789,19219,35954.0,True
 Henry,2020,Construction,124208732,2095,59288.0,True
 Henry,2020,Education and health services,446680981,8243,54189.0,True
@@ -1556,6 +2587,7 @@ Henry,2020,Manufacturing,193073925,3208,60185.0,True
 Henry,2020,Natural resources and mining,6888971,129,53403.0,True
 Henry,2020,Other services,51482632,1373,37496.0,True
 Henry,2020,Professional and business services,312379024,8404,37170.0,True
+Henry,2020,Public sector,504284575,9367,53836.0,True
 Henry,2020,"Trade, transportation and utilities",796656592,20106,39623.0,True
 Henry,2021,Construction,125306390,2070,60534.0,True
 Henry,2021,Education and health services,487346458,8160,59724.0,True
@@ -1566,6 +2598,7 @@ Henry,2021,Manufacturing,205590655,3306,62187.0,True
 Henry,2021,Natural resources and mining,6563559,150,43757.0,True
 Henry,2021,Other services,59447106,1520,39110.0,True
 Henry,2021,Professional and business services,372781265,9172,40643.0,True
+Henry,2021,Public sector,536788107,9278,57856.0,True
 Henry,2021,"Trade, transportation and utilities",910631054,22171,41073.0,True
 Henry,2022,Construction,135463374,2169,62454.0,True
 Henry,2022,Education and health services,517313023,8225,62895.0,True
@@ -1576,6 +2609,7 @@ Henry,2022,Manufacturing,242157563,3844,62996.0,True
 Henry,2022,Natural resources and mining,7044771,157,44871.0,True
 Henry,2022,Other services,78558003,1776,44233.0,True
 Henry,2022,Professional and business services,414379707,9633,43017.0,True
+Henry,2022,Public sector,586338460,9593,61121.0,True
 Henry,2022,"Trade, transportation and utilities",1008122338,23097,43647.0,True
 Henry,2023,Construction,169083582,2349,71981.0,True
 Henry,2023,Education and health services,546190795,9433,57902.0,True
@@ -1586,6 +2620,7 @@ Henry,2023,Manufacturing,244139662,3780,64587.0,True
 Henry,2023,Natural resources and mining,8868619,184,48199.0,True
 Henry,2023,Other services,90034129,1938,46457.0,True
 Henry,2023,Professional and business services,388760866,8017,48492.0,True
+Henry,2023,Public sector,648013312,10033,64588.0,True
 Henry,2023,"Trade, transportation and utilities",1035448427,23372,44303.0,True
 Henry,2024,Construction,163937442,2181,75166.0,True
 Henry,2024,Education and health services,634549976,10572,60022.0,True
@@ -1596,7 +2631,61 @@ Henry,2024,Manufacturing,272193571,3893,69919.0,True
 Henry,2024,Natural resources and mining,8921355,164,54399.0,True
 Henry,2024,Other services,96721640,1904,50799.0,True
 Henry,2024,Professional and business services,374527681,7260,51588.0,True
+Henry,2024,Public sector,699279614,10247,68242.0,True
 Henry,2024,"Trade, transportation and utilities",1133147231,23970,47274.0,True
+Newton,2010,Construction,37841151,1020,37099.0,False
+Newton,2010,Education and health services,74200591,2155,34432.0,False
+Newton,2010,Financial activities,18277700,472,38724.0,False
+Newton,2010,Information,9565083,197,48554.0,False
+Newton,2010,Leisure and hospitality,25296848,1694,14933.0,False
+Newton,2010,Manufacturing,236465399,4379,54000.0,False
+Newton,2010,Natural resources and mining,2383442,58,41094.0,False
+Newton,2010,Other services,9580044,414,23140.0,False
+Newton,2010,Professional and business services,33615458,1212,27736.0,False
+Newton,2010,Public sector,165311867,4606,35891.0,False
+Newton,2010,"Trade, transportation and utilities",105631134,3484,30319.0,False
+Newton,2011,Construction,36948790,977,37819.0,False
+Newton,2011,Education and health services,76853582,2204,34870.0,False
+Newton,2011,Financial activities,19239820,462,41645.0,False
+Newton,2011,Information,10971957,227,48335.0,False
+Newton,2011,Leisure and hospitality,27429350,1895,14475.0,False
+Newton,2011,Manufacturing,239149555,4583,52182.0,False
+Newton,2011,Natural resources and mining,2387058,57,41878.0,False
+Newton,2011,Other services,11263693,401,28089.0,False
+Newton,2011,Professional and business services,37325708,1229,30371.0,False
+Newton,2011,Public sector,162609941,4396,36990.0,False
+Newton,2011,"Trade, transportation and utilities",110789698,3564,31086.0,False
+Newton,2012,Education and health services,82446942,2286,36066.0,False
+Newton,2012,Financial activities,21312587,466,45735.0,False
+Newton,2012,Information,12484942,271,46070.0,False
+Newton,2012,Leisure and hospitality,28181106,1940,14526.0,False
+Newton,2012,Manufacturing,246217132,4574,53830.0,False
+Newton,2012,Other services,12390127,441,28096.0,False
+Newton,2012,Professional and business services,41232739,1259,32750.0,False
+Newton,2012,Public sector,160639824,4295,37402.0,False
+Newton,2012,"Trade, transportation and utilities",120768485,3863,31263.0,False
+Newton,2013,Construction,44525647,1089,40887.0,False
+Newton,2013,Education and health services,80997264,2319,34928.0,False
+Newton,2013,Financial activities,19182664,465,41253.0,False
+Newton,2013,Information,12458242,261,47733.0,False
+Newton,2013,Leisure and hospitality,30179197,2024,14911.0,False
+Newton,2013,Manufacturing,229854762,4142,55494.0,False
+Newton,2013,Natural resources and mining,1670550,42,39775.0,False
+Newton,2013,Other services,14395365,456,31569.0,False
+Newton,2013,Professional and business services,54980119,1524,36076.0,False
+Newton,2013,Public sector,162428882,4363,37229.0,False
+Newton,2013,"Trade, transportation and utilities",119187835,3864,30846.0,False
+Newton,2014,Construction,50065585,1207,41479.0,False
+Newton,2014,Education and health services,81848646,2327,35173.0,False
+Newton,2014,Financial activities,19355534,453,42727.0,False
+Newton,2014,Information,13511476,261,51768.0,False
+Newton,2014,Leisure and hospitality,31730237,2181,14548.0,False
+Newton,2014,Manufacturing,243043477,4348,55898.0,False
+Newton,2014,Natural resources and mining,1932110,51,37885.0,False
+Newton,2014,Other services,14845685,489,30359.0,False
+Newton,2014,Professional and business services,70068676,1704,41120.0,False
+Newton,2014,Public sector,168904530,4433,38102.0,False
+Newton,2014,"Trade, transportation and utilities",127963860,3957,32339.0,False
 Newton,2015,Construction,58504443,1306,44797.0,False
 Newton,2015,Education and health services,87420542,2398,36456.0,False
 Newton,2015,Financial activities,20162378,463,43547.0,False
@@ -1606,6 +2695,7 @@ Newton,2015,Manufacturing,259560044,4580,56672.0,False
 Newton,2015,Natural resources and mining,1762962,50,35259.0,False
 Newton,2015,Other services,14823136,517,28671.0,False
 Newton,2015,Professional and business services,102243544,2320,44070.0,False
+Newton,2015,Public sector,176026939,4431,39726.0,False
 Newton,2015,"Trade, transportation and utilities",137519608,4131,33290.0,False
 Newton,2016,Construction,69301163,1414,49011.0,False
 Newton,2016,Education and health services,89161044,2337,38152.0,False
@@ -1616,6 +2706,7 @@ Newton,2016,Manufacturing,268443651,4557,58908.0,False
 Newton,2016,Natural resources and mining,1808018,50,36160.0,False
 Newton,2016,Other services,15091621,501,30123.0,False
 Newton,2016,Professional and business services,89851657,2410,37283.0,False
+Newton,2016,Public sector,183076079,4439,41243.0,False
 Newton,2016,"Trade, transportation and utilities",150919304,4344,34742.0,False
 Newton,2017,Construction,73798036,1448,50965.0,False
 Newton,2017,Education and health services,90800708,2271,39983.0,False
@@ -1626,6 +2717,7 @@ Newton,2017,Manufacturing,310324284,4919,63087.0,False
 Newton,2017,Natural resources and mining,1526367,44,34690.0,False
 Newton,2017,Other services,13891435,461,30133.0,False
 Newton,2017,Professional and business services,106702879,2933,36380.0,False
+Newton,2017,Public sector,187491700,4467,41973.0,False
 Newton,2017,"Trade, transportation and utilities",154704351,4368,35418.0,False
 Newton,2018,Construction,80163578,1519,52774.0,False
 Newton,2018,Education and health services,107119049,2547,42057.0,False
@@ -1636,6 +2728,7 @@ Newton,2018,Manufacturing,234248851,4232,55352.0,False
 Newton,2018,Natural resources and mining,1598294,42,38055.0,False
 Newton,2018,Other services,14411688,466,30926.0,False
 Newton,2018,Professional and business services,119770999,3460,34616.0,False
+Newton,2018,Public sector,194609523,4487,43372.0,False
 Newton,2018,"Trade, transportation and utilities",233412213,5072,46020.0,False
 Newton,2019,Construction,89636770,1587,56482.0,False
 Newton,2019,Education and health services,112848307,2625,42990.0,False
@@ -1646,6 +2739,7 @@ Newton,2019,Manufacturing,243961383,4407,55358.0,False
 Newton,2019,Natural resources and mining,1856580,50,37132.0,False
 Newton,2019,Other services,16744821,507,33027.0,False
 Newton,2019,Professional and business services,124615697,3461,36006.0,False
+Newton,2019,Public sector,202005692,4548,44416.0,False
 Newton,2019,"Trade, transportation and utilities",231668110,5051,45866.0,False
 Newton,2020,Construction,104323078,1675,62282.0,False
 Newton,2020,Education and health services,116015213,2503,46350.0,False
@@ -1656,6 +2750,7 @@ Newton,2020,Manufacturing,246672068,4190,58872.0,False
 Newton,2020,Natural resources and mining,1894010,52,36423.0,False
 Newton,2020,Other services,16753214,482,34758.0,False
 Newton,2020,Professional and business services,130521968,3436,37987.0,False
+Newton,2020,Public sector,208377689,4431,47027.0,False
 Newton,2020,"Trade, transportation and utilities",220740604,4722,46747.0,False
 Newton,2021,Construction,96687605,1676,57690.0,False
 Newton,2021,Education and health services,129573544,2405,53877.0,False
@@ -1666,6 +2761,7 @@ Newton,2021,Manufacturing,249129152,4117,60512.0,False
 Newton,2021,Natural resources and mining,1952334,51,38281.0,False
 Newton,2021,Other services,22026029,540,40789.0,False
 Newton,2021,Professional and business services,122283936,3084,39651.0,False
+Newton,2021,Public sector,217991351,4337,50263.0,False
 Newton,2021,"Trade, transportation and utilities",180295366,4284,42086.0,False
 Newton,2022,Construction,104033541,1709,60874.0,False
 Newton,2022,Education and health services,157833358,2310,68326.0,False
@@ -1676,6 +2772,7 @@ Newton,2022,Manufacturing,263582635,4145,63591.0,False
 Newton,2022,Natural resources and mining,2002642,51,39267.0,False
 Newton,2022,Other services,26510788,649,40849.0,False
 Newton,2022,Professional and business services,114472460,2607,43910.0,False
+Newton,2022,Public sector,240982359,4389,54906.0,False
 Newton,2022,"Trade, transportation and utilities",191578347,4333,44214.0,False
 Newton,2023,Construction,118375483,1777,66615.0,False
 Newton,2023,Education and health services,178032287,2970,59944.0,False
@@ -1686,6 +2783,7 @@ Newton,2023,Manufacturing,303369048,4418,68667.0,False
 Newton,2023,Natural resources and mining,2270958,53,42848.0,False
 Newton,2023,Other services,29279633,677,43249.0,False
 Newton,2023,Professional and business services,114603177,2284,50177.0,False
+Newton,2023,Public sector,247922608,4455,55650.0,False
 Newton,2023,"Trade, transportation and utilities",197111868,4456,44235.0,False
 Newton,2024,Construction,138367715,1933,71582.0,False
 Newton,2024,Education and health services,189296551,3777,50118.0,False
@@ -1696,7 +2794,63 @@ Newton,2024,Manufacturing,310758086,4389,70804.0,False
 Newton,2024,Natural resources and mining,2535150,52,48753.0,False
 Newton,2024,Other services,25512366,703,36291.0,False
 Newton,2024,Professional and business services,136411187,2497,54630.0,False
+Newton,2024,Public sector,270126744,4668,57868.0,False
 Newton,2024,"Trade, transportation and utilities",301820687,5463,55248.0,False
+Paulding,2010,Construction,60000759,1532,39165.0,False
+Paulding,2010,Education and health services,52406164,1573,33316.0,False
+Paulding,2010,Financial activities,16836655,470,35823.0,False
+Paulding,2010,Information,7748604,230,33690.0,False
+Paulding,2010,Leisure and hospitality,37082492,2815,13173.0,False
+Paulding,2010,Manufacturing,40439862,846,47801.0,False
+Paulding,2010,Natural resources and mining,789060,22,35866.0,False
+Paulding,2010,Other services,12895898,537,24015.0,False
+Paulding,2010,Professional and business services,43688335,1215,35957.0,False
+Paulding,2010,Public sector,185592575,5222,35541.0,False
+Paulding,2010,"Trade, transportation and utilities",109549984,4183,26189.0,False
+Paulding,2011,Construction,54094602,1403,38556.0,False
+Paulding,2011,Education and health services,57270165,1657,34563.0,False
+Paulding,2011,Financial activities,23267933,538,43249.0,False
+Paulding,2011,Information,8006510,224,35743.0,False
+Paulding,2011,Leisure and hospitality,39076013,2936,13309.0,False
+Paulding,2011,Manufacturing,39931715,884,45172.0,False
+Paulding,2011,Natural resources and mining,774423,20,38721.0,False
+Paulding,2011,Other services,14456963,573,25230.0,False
+Paulding,2011,Professional and business services,50461293,1520,33198.0,False
+Paulding,2011,Public sector,179163903,4890,36639.0,False
+Paulding,2011,"Trade, transportation and utilities",115045818,4267,26962.0,False
+Paulding,2012,Construction,55081776,1418,38845.0,False
+Paulding,2012,Education and health services,58386860,1720,33946.0,False
+Paulding,2012,Financial activities,27165305,570,47658.0,False
+Paulding,2012,Information,8168105,207,39459.0,False
+Paulding,2012,Leisure and hospitality,42451494,2991,14193.0,False
+Paulding,2012,Manufacturing,41404084,891,46469.0,False
+Paulding,2012,Natural resources and mining,782778,23,34034.0,False
+Paulding,2012,Other services,17175647,605,28389.0,False
+Paulding,2012,Professional and business services,57260429,1703,33623.0,False
+Paulding,2012,Public sector,181313120,4840,37461.0,False
+Paulding,2012,"Trade, transportation and utilities",123602709,4476,27615.0,False
+Paulding,2013,Construction,65224006,1607,40587.0,False
+Paulding,2013,Education and health services,68840628,2051,33564.0,False
+Paulding,2013,Financial activities,25001402,542,46128.0,False
+Paulding,2013,Information,7352541,202,36399.0,False
+Paulding,2013,Leisure and hospitality,46584886,3230,14423.0,False
+Paulding,2013,Manufacturing,34858595,743,46916.0,False
+Paulding,2013,Natural resources and mining,759921,25,30397.0,False
+Paulding,2013,Other services,17074027,593,28793.0,False
+Paulding,2013,Professional and business services,52733409,1626,32431.0,False
+Paulding,2013,Public sector,182915980,4829,37879.0,False
+Paulding,2013,"Trade, transportation and utilities",123649101,4485,27569.0,False
+Paulding,2014,Construction,73511637,1768,41579.0,False
+Paulding,2014,Education and health services,80599902,2181,36955.0,False
+Paulding,2014,Financial activities,27140692,566,47952.0,False
+Paulding,2014,Information,7468857,202,36975.0,False
+Paulding,2014,Leisure and hospitality,51858598,3527,14703.0,False
+Paulding,2014,Manufacturing,39416548,821,48010.0,False
+Paulding,2014,Natural resources and mining,1106679,40,27667.0,False
+Paulding,2014,Other services,20090047,658,30532.0,False
+Paulding,2014,Professional and business services,57766638,1686,34263.0,False
+Paulding,2014,Public sector,190006808,4890,38856.0,False
+Paulding,2014,"Trade, transportation and utilities",132399170,4681,28284.0,False
 Paulding,2015,Construction,87640791,1950,44944.0,False
 Paulding,2015,Education and health services,88232671,2300,38362.0,False
 Paulding,2015,Financial activities,30559649,552,55362.0,False
@@ -1706,6 +2860,7 @@ Paulding,2015,Manufacturing,45130850,913,49431.0,False
 Paulding,2015,Natural resources and mining,1289163,42,30694.0,False
 Paulding,2015,Other services,23370667,648,36066.0,False
 Paulding,2015,Professional and business services,65974541,1876,35168.0,False
+Paulding,2015,Public sector,199269940,4952,40240.0,False
 Paulding,2015,"Trade, transportation and utilities",141473284,4809,29418.0,False
 Paulding,2016,Construction,101547684,2153,47166.0,False
 Paulding,2016,Education and health services,102996434,2642,38984.0,False
@@ -1716,6 +2871,7 @@ Paulding,2016,Manufacturing,46726293,927,50406.0,False
 Paulding,2016,Natural resources and mining,1208382,39,30984.0,False
 Paulding,2016,Other services,24543272,696,35263.0,False
 Paulding,2016,Professional and business services,67066523,1848,36291.0,False
+Paulding,2016,Public sector,208412493,5029,41442.0,False
 Paulding,2016,"Trade, transportation and utilities",151510700,4996,30326.0,False
 Paulding,2017,Construction,103518088,2224,46546.0,False
 Paulding,2017,Education and health services,121635774,3022,40250.0,False
@@ -1726,6 +2882,7 @@ Paulding,2017,Manufacturing,52191367,983,53094.0,False
 Paulding,2017,Natural resources and mining,1315060,41,32075.0,False
 Paulding,2017,Other services,21588447,662,32611.0,False
 Paulding,2017,Professional and business services,70008373,1832,38214.0,False
+Paulding,2017,Public sector,218132625,5081,42931.0,False
 Paulding,2017,"Trade, transportation and utilities",156341533,5143,30399.0,False
 Paulding,2018,Construction,99799097,2125,46964.0,False
 Paulding,2018,Education and health services,135204203,3183,42477.0,False
@@ -1736,6 +2893,7 @@ Paulding,2018,Manufacturing,57104550,1062,53771.0,False
 Paulding,2018,Natural resources and mining,1702083,33,51578.0,False
 Paulding,2018,Other services,24009434,751,31970.0,False
 Paulding,2018,Professional and business services,71227944,1842,38669.0,False
+Paulding,2018,Public sector,229482988,5197,44157.0,False
 Paulding,2018,"Trade, transportation and utilities",163993301,5391,30420.0,False
 Paulding,2019,Construction,99666732,2019,49364.0,False
 Paulding,2019,Education and health services,154575284,3553,43506.0,False
@@ -1746,6 +2904,7 @@ Paulding,2019,Manufacturing,63155961,1146,55110.0,False
 Paulding,2019,Natural resources and mining,2116405,33,64133.0,False
 Paulding,2019,Other services,34800965,814,42753.0,False
 Paulding,2019,Professional and business services,78847668,1949,40455.0,False
+Paulding,2019,Public sector,239891315,5289,45357.0,False
 Paulding,2019,"Trade, transportation and utilities",170132482,5530,30765.0,False
 Paulding,2020,Construction,98992914,1941,51001.0,False
 Paulding,2020,Education and health services,165969967,3562,46595.0,False
@@ -1756,6 +2915,7 @@ Paulding,2020,Manufacturing,69373813,1227,56539.0,False
 Paulding,2020,Natural resources and mining,2413134,33,73125.0,False
 Paulding,2020,Other services,29225034,779,37516.0,False
 Paulding,2020,Professional and business services,81474864,1817,44840.0,False
+Paulding,2020,Public sector,258522332,5310,48686.0,False
 Paulding,2020,"Trade, transportation and utilities",181014771,5533,32715.0,False
 Paulding,2021,Construction,108839157,2021,53854.0,False
 Paulding,2021,Education and health services,203578617,4147,49091.0,False
@@ -1766,6 +2926,7 @@ Paulding,2021,Manufacturing,74899455,1249,59968.0,False
 Paulding,2021,Natural resources and mining,2410720,33,73052.0,False
 Paulding,2021,Other services,37132665,825,45009.0,False
 Paulding,2021,Professional and business services,94944474,1975,48073.0,False
+Paulding,2021,Public sector,272088710,5349,50867.0,False
 Paulding,2021,"Trade, transportation and utilities",210317187,5905,35617.0,False
 Paulding,2022,Construction,126742339,2150,58950.0,False
 Paulding,2022,Education and health services,251041747,4643,54069.0,False
@@ -1776,6 +2937,7 @@ Paulding,2022,Manufacturing,83862860,1396,60074.0,False
 Paulding,2022,Natural resources and mining,3059556,38,80515.0,False
 Paulding,2022,Other services,44571182,1028,43357.0,False
 Paulding,2022,Professional and business services,107737808,2142,50298.0,False
+Paulding,2022,Public sector,304662345,5713,53328.0,False
 Paulding,2022,"Trade, transportation and utilities",223052534,5952,37475.0,False
 Paulding,2023,Construction,144664520,2310,62625.0,False
 Paulding,2023,Education and health services,261149711,4668,55945.0,False
@@ -1786,6 +2948,7 @@ Paulding,2023,Manufacturing,85144462,1372,62059.0,False
 Paulding,2023,Natural resources and mining,3301478,39,84653.0,False
 Paulding,2023,Other services,50178814,1143,43901.0,False
 Paulding,2023,Professional and business services,119330284,2253,52965.0,False
+Paulding,2023,Public sector,331149168,6049,54744.0,False
 Paulding,2023,"Trade, transportation and utilities",232346079,6147,37798.0,False
 Paulding,2024,Construction,161950895,2512,64471.0,False
 Paulding,2024,Education and health services,276676025,4664,59322.0,False
@@ -1796,7 +2959,63 @@ Paulding,2024,Manufacturing,88991702,1380,64487.0,False
 Paulding,2024,Natural resources and mining,3462969,40,86574.0,False
 Paulding,2024,Other services,48869143,1139,42905.0,False
 Paulding,2024,Professional and business services,128750981,2450,52551.0,False
+Paulding,2024,Public sector,365713838,6361,57493.0,False
 Paulding,2024,"Trade, transportation and utilities",237406792,6170,38478.0,False
+Rockdale,2010,Construction,107736378,2257,47734.0,True
+Rockdale,2010,Education and health services,144901422,3826,37873.0,True
+Rockdale,2010,Financial activities,44748394,969,46180.0,True
+Rockdale,2010,Information,38360830,650,59017.0,True
+Rockdale,2010,Leisure and hospitality,46016524,3360,13695.0,True
+Rockdale,2010,Manufacturing,180050888,3641,49451.0,True
+Rockdale,2010,Natural resources and mining,6390776,104,61450.0,True
+Rockdale,2010,Other services,18991592,671,28303.0,True
+Rockdale,2010,Professional and business services,133256986,3013,44227.0,True
+Rockdale,2010,Public sector,161147642,4373,36851.0,True
+Rockdale,2010,"Trade, transportation and utilities",271578247,6289,43183.0,True
+Rockdale,2011,Construction,105733524,2246,47076.0,True
+Rockdale,2011,Education and health services,150156706,3930,38208.0,True
+Rockdale,2011,Financial activities,47786707,973,49113.0,True
+Rockdale,2011,Information,78521998,1035,75867.0,True
+Rockdale,2011,Leisure and hospitality,44958889,3247,13846.0,True
+Rockdale,2011,Manufacturing,189613098,3728,50862.0,True
+Rockdale,2011,Natural resources and mining,6566840,107,61372.0,True
+Rockdale,2011,Other services,19322278,674,28668.0,True
+Rockdale,2011,Professional and business services,104728708,2743,38180.0,True
+Rockdale,2011,Public sector,163235870,4342,37595.0,True
+Rockdale,2011,"Trade, transportation and utilities",275872521,6308,43734.0,True
+Rockdale,2012,Construction,119840019,2377,50416.0,True
+Rockdale,2012,Education and health services,158113899,4083,38725.0,True
+Rockdale,2012,Financial activities,53291107,967,55110.0,True
+Rockdale,2012,Information,81664825,1122,72785.0,True
+Rockdale,2012,Leisure and hospitality,44310074,3187,13903.0,True
+Rockdale,2012,Manufacturing,196905583,3708,53103.0,True
+Rockdale,2012,Natural resources and mining,6924985,111,62387.0,True
+Rockdale,2012,Other services,22121401,710,31157.0,True
+Rockdale,2012,Professional and business services,105862420,2723,38877.0,True
+Rockdale,2012,Public sector,161910619,4256,38043.0,True
+Rockdale,2012,"Trade, transportation and utilities",297666170,6320,47099.0,True
+Rockdale,2013,Construction,137421089,2567,53534.0,True
+Rockdale,2013,Education and health services,160292872,4115,38953.0,True
+Rockdale,2013,Financial activities,64510325,1137,56737.0,True
+Rockdale,2013,Information,84439857,1131,74659.0,True
+Rockdale,2013,Leisure and hospitality,43653307,3095,14104.0,True
+Rockdale,2013,Manufacturing,303721238,4768,63700.0,True
+Rockdale,2013,Natural resources and mining,2963374,64,46303.0,True
+Rockdale,2013,Other services,22641638,742,30514.0,True
+Rockdale,2013,Professional and business services,115334896,2644,43621.0,True
+Rockdale,2013,Public sector,157067789,4212,37291.0,True
+Rockdale,2013,"Trade, transportation and utilities",210540872,5936,35468.0,True
+Rockdale,2014,Construction,136888972,2620,52248.0,True
+Rockdale,2014,Education and health services,163670899,4035,40563.0,True
+Rockdale,2014,Financial activities,67003727,1216,55102.0,True
+Rockdale,2014,Information,85754409,1166,73546.0,True
+Rockdale,2014,Leisure and hospitality,49548329,3285,15083.0,True
+Rockdale,2014,Manufacturing,330344905,4887,67597.0,True
+Rockdale,2014,Natural resources and mining,2686379,43,62474.0,True
+Rockdale,2014,Other services,25112876,756,33218.0,True
+Rockdale,2014,Professional and business services,119159143,2547,46784.0,True
+Rockdale,2014,Public sector,161355693,4227,38173.0,True
+Rockdale,2014,"Trade, transportation and utilities",217699937,5955,36558.0,True
 Rockdale,2015,Construction,155658177,2924,53235.0,True
 Rockdale,2015,Education and health services,176325899,4054,43494.0,True
 Rockdale,2015,Financial activities,75013051,1289,58195.0,True
@@ -1806,6 +3025,7 @@ Rockdale,2015,Manufacturing,390385096,5291,73783.0,True
 Rockdale,2015,Natural resources and mining,3466303,43,80612.0,True
 Rockdale,2015,Other services,24051249,728,33037.0,True
 Rockdale,2015,Professional and business services,140215187,2977,47099.0,True
+Rockdale,2015,Public sector,171542756,4421,38802.0,True
 Rockdale,2015,"Trade, transportation and utilities",224639244,6053,37112.0,True
 Rockdale,2016,Construction,168370831,3073,54790.0,True
 Rockdale,2016,Education and health services,188213355,4314,43629.0,True
@@ -1816,6 +3036,7 @@ Rockdale,2016,Manufacturing,245140241,4325,56680.0,True
 Rockdale,2016,Natural resources and mining,2606787,39,66841.0,True
 Rockdale,2016,Other services,24653288,734,33588.0,True
 Rockdale,2016,Professional and business services,138600524,2914,47564.0,True
+Rockdale,2016,Public sector,179492954,4562,39345.0,True
 Rockdale,2016,"Trade, transportation and utilities",232865412,6207,37517.0,True
 Rockdale,2017,Education and health services,192058946,4336,44294.0,True
 Rockdale,2017,Financial activities,96535237,1417,68126.0,True
@@ -1824,6 +3045,7 @@ Rockdale,2017,Leisure and hospitality,54260870,3582,15148.0,True
 Rockdale,2017,Manufacturing,275060715,4181,65788.0,True
 Rockdale,2017,Other services,26532438,747,35519.0,True
 Rockdale,2017,Professional and business services,143008492,2718,52615.0,True
+Rockdale,2017,Public sector,187316065,4573,40961.0,True
 Rockdale,2017,"Trade, transportation and utilities",237769590,6255,38013.0,True
 Rockdale,2018,Education and health services,209447466,4587,45661.0,True
 Rockdale,2018,Financial activities,108282198,1556,69590.0,True
@@ -1832,6 +3054,7 @@ Rockdale,2018,Leisure and hospitality,55366665,3536,15658.0,True
 Rockdale,2018,Manufacturing,258826329,4287,60375.0,True
 Rockdale,2018,Other services,26777985,804,33306.0,True
 Rockdale,2018,Professional and business services,148068634,2704,54759.0,True
+Rockdale,2018,Public sector,191079003,4583,41693.0,True
 Rockdale,2018,"Trade, transportation and utilities",250092751,6466,38678.0,True
 Rockdale,2019,Education and health services,207880927,4270,48684.0,True
 Rockdale,2019,Financial activities,113518606,1601,70905.0,True
@@ -1840,6 +3063,7 @@ Rockdale,2019,Leisure and hospitality,57186133,3624,15780.0,True
 Rockdale,2019,Manufacturing,268894481,4366,61588.0,True
 Rockdale,2019,Other services,29362382,835,35165.0,True
 Rockdale,2019,Professional and business services,161347372,2859,56435.0,True
+Rockdale,2019,Public sector,196193586,4535,43262.0,True
 Rockdale,2019,"Trade, transportation and utilities",268310630,6579,40783.0,True
 Rockdale,2020,Education and health services,214858157,3900,55092.0,True
 Rockdale,2020,Financial activities,140529308,1588,88495.0,True
@@ -1848,6 +3072,7 @@ Rockdale,2020,Leisure and hospitality,50934757,3119,16330.0,True
 Rockdale,2020,Manufacturing,268436839,4288,62602.0,True
 Rockdale,2020,Other services,27916070,761,36683.0,True
 Rockdale,2020,Professional and business services,173241104,3043,56931.0,True
+Rockdale,2020,Public sector,205275884,4369,46985.0,True
 Rockdale,2020,"Trade, transportation and utilities",298976916,6987,42790.0,True
 Rockdale,2021,Construction,243333967,3469,70145.0,True
 Rockdale,2021,Education and health services,242873780,3873,62709.0,True
@@ -1858,6 +3083,7 @@ Rockdale,2021,Manufacturing,332336523,4457,74565.0,True
 Rockdale,2021,Natural resources and mining,1772830,18,98491.0,True
 Rockdale,2021,Other services,34744943,854,40685.0,True
 Rockdale,2021,Professional and business services,188232074,3143,59889.0,True
+Rockdale,2021,Public sector,216625641,4335,49971.0,True
 Rockdale,2021,"Trade, transportation and utilities",325227823,7218,45058.0,True
 Rockdale,2022,Construction,251063006,3454,72688.0,True
 Rockdale,2022,Education and health services,261119565,3878,67334.0,True
@@ -1868,6 +3094,7 @@ Rockdale,2022,Manufacturing,414310645,5533,74880.0,True
 Rockdale,2022,Natural resources and mining,1980144,20,99007.0,True
 Rockdale,2022,Other services,41491562,946,43860.0,True
 Rockdale,2022,Professional and business services,211699180,3351,63175.0,True
+Rockdale,2022,Public sector,245362356,4520,54284.0,True
 Rockdale,2022,"Trade, transportation and utilities",353619154,7449,47472.0,True
 Rockdale,2023,Education and health services,292202992,5295,55185.0,True
 Rockdale,2023,Financial activities,133236132,1663,80118.0,True
@@ -1876,6 +3103,7 @@ Rockdale,2023,Leisure and hospitality,72339077,3514,20586.0,True
 Rockdale,2023,Manufacturing,401140862,5464,73415.0,True
 Rockdale,2023,Other services,46834949,1032,45383.0,True
 Rockdale,2023,Professional and business services,223519335,3339,66942.0,True
+Rockdale,2023,Public sector,258740134,4693,55133.0,True
 Rockdale,2023,"Trade, transportation and utilities",365813308,7531,48574.0,True
 Rockdale,2024,Construction,298132668,3485,85547.0,True
 Rockdale,2024,Education and health services,290518203,4849,59913.0,True
@@ -1886,7 +3114,63 @@ Rockdale,2024,Manufacturing,446576377,5538,80639.0,True
 Rockdale,2024,Natural resources and mining,2407593,27,89170.0,True
 Rockdale,2024,Other services,42773822,976,43826.0,True
 Rockdale,2024,Professional and business services,243692227,3420,71255.0,True
+Rockdale,2024,Public sector,273835178,4766,57456.0,True
 Rockdale,2024,"Trade, transportation and utilities",358771986,7276,49309.0,True
+Spalding,2010,Construction,12836653,398,32253.0,False
+Spalding,2010,Education and health services,107692996,3961,27188.0,False
+Spalding,2010,Financial activities,23120971,630,36700.0,False
+Spalding,2010,Information,6245929,143,43678.0,False
+Spalding,2010,Leisure and hospitality,27995341,2132,13131.0,False
+Spalding,2010,Manufacturing,111251621,2482,44823.0,False
+Spalding,2010,Natural resources and mining,670164,28,23934.0,False
+Spalding,2010,Other services,16618204,584,28456.0,False
+Spalding,2010,Professional and business services,59739839,1781,33543.0,False
+Spalding,2010,Public sector,156514484,4746,32978.0,False
+Spalding,2010,"Trade, transportation and utilities",116515429,3765,30947.0,False
+Spalding,2011,Construction,12962505,396,32734.0,False
+Spalding,2011,Education and health services,112036857,4040,27732.0,False
+Spalding,2011,Financial activities,23475860,654,35896.0,False
+Spalding,2011,Information,5895224,124,47542.0,False
+Spalding,2011,Leisure and hospitality,28128725,2052,13708.0,False
+Spalding,2011,Manufacturing,137422180,2501,54947.0,False
+Spalding,2011,Natural resources and mining,830346,33,25162.0,False
+Spalding,2011,Other services,15896874,511,31109.0,False
+Spalding,2011,Professional and business services,64394684,2177,29580.0,False
+Spalding,2011,Public sector,152525169,4532,33655.0,False
+Spalding,2011,"Trade, transportation and utilities",121345856,3847,31543.0,False
+Spalding,2012,Construction,14276295,409,34905.0,False
+Spalding,2012,Education and health services,117197624,4242,27628.0,False
+Spalding,2012,Financial activities,24718969,657,37624.0,False
+Spalding,2012,Information,4919955,108,45555.0,False
+Spalding,2012,Leisure and hospitality,28085199,2014,13945.0,False
+Spalding,2012,Manufacturing,144448994,2566,56293.0,False
+Spalding,2012,Natural resources and mining,991505,34,29162.0,False
+Spalding,2012,Other services,16267113,493,32996.0,False
+Spalding,2012,Professional and business services,68640572,2179,31501.0,False
+Spalding,2012,Public sector,150020362,4415,33980.0,False
+Spalding,2012,"Trade, transportation and utilities",111614055,3438,32465.0,False
+Spalding,2013,Construction,13312150,392,33960.0,False
+Spalding,2013,Education and health services,117971460,4166,28318.0,False
+Spalding,2013,Financial activities,24654404,633,38949.0,False
+Spalding,2013,Information,5474902,124,44152.0,False
+Spalding,2013,Leisure and hospitality,29704518,1915,15511.0,False
+Spalding,2013,Manufacturing,139343790,2590,53801.0,False
+Spalding,2013,Natural resources and mining,893598,31,28826.0,False
+Spalding,2013,Other services,17322349,497,34854.0,False
+Spalding,2013,Professional and business services,62995015,1971,31961.0,False
+Spalding,2013,Public sector,159411267,4730,33702.0,False
+Spalding,2013,"Trade, transportation and utilities",103334274,3419,30224.0,False
+Spalding,2014,Construction,15576566,423,36824.0,False
+Spalding,2014,Education and health services,119160507,4030,29568.0,False
+Spalding,2014,Financial activities,24949810,604,41308.0,False
+Spalding,2014,Information,5241415,121,43317.0,False
+Spalding,2014,Leisure and hospitality,29795982,1975,15087.0,False
+Spalding,2014,Manufacturing,142092819,2556,55592.0,False
+Spalding,2014,Natural resources and mining,910153,31,29360.0,False
+Spalding,2014,Other services,20237917,541,37408.0,False
+Spalding,2014,Professional and business services,64707346,2178,29710.0,False
+Spalding,2014,Public sector,163358029,4688,34846.0,False
+Spalding,2014,"Trade, transportation and utilities",109918350,3488,31513.0,False
 Spalding,2015,Construction,18270044,469,38955.0,False
 Spalding,2015,Education and health services,129134663,4076,31682.0,False
 Spalding,2015,Financial activities,25429026,592,42954.0,False
@@ -1896,6 +3180,7 @@ Spalding,2015,Manufacturing,152075772,2607,58334.0,False
 Spalding,2015,Natural resources and mining,953972,36,26499.0,False
 Spalding,2015,Other services,17741260,484,36655.0,False
 Spalding,2015,Professional and business services,80311031,3045,26375.0,False
+Spalding,2015,Public sector,167348537,4735,35343.0,False
 Spalding,2015,"Trade, transportation and utilities",117717637,3607,32636.0,False
 Spalding,2016,Construction,20197321,512,39448.0,False
 Spalding,2016,Education and health services,132124296,4125,32030.0,False
@@ -1906,6 +3191,7 @@ Spalding,2016,Manufacturing,143578560,2542,56483.0,False
 Spalding,2016,Natural resources and mining,1164726,42,27732.0,False
 Spalding,2016,Other services,17579012,475,37008.0,False
 Spalding,2016,Professional and business services,82908421,3509,23627.0,False
+Spalding,2016,Public sector,172793287,4777,36172.0,False
 Spalding,2016,"Trade, transportation and utilities",121563132,3665,33169.0,False
 Spalding,2017,Construction,22402632,543,41257.0,False
 Spalding,2017,Education and health services,134956838,4085,33037.0,False
@@ -1916,6 +3202,7 @@ Spalding,2017,Manufacturing,143437036,2518,56965.0,False
 Spalding,2017,Natural resources and mining,959348,37,25928.0,False
 Spalding,2017,Other services,18025005,485,37165.0,False
 Spalding,2017,Professional and business services,93199049,3066,30398.0,False
+Spalding,2017,Public sector,186923957,4938,37854.0,False
 Spalding,2017,"Trade, transportation and utilities",122531141,3722,32921.0,False
 Spalding,2018,Construction,23179428,520,44576.0,False
 Spalding,2018,Education and health services,143925475,4009,35901.0,False
@@ -1926,6 +3213,7 @@ Spalding,2018,Manufacturing,152905667,2523,60605.0,False
 Spalding,2018,Natural resources and mining,746875,32,23340.0,False
 Spalding,2018,Other services,19744733,594,33240.0,False
 Spalding,2018,Professional and business services,98507668,3171,31065.0,False
+Spalding,2018,Public sector,190644037,4913,38804.0,False
 Spalding,2018,"Trade, transportation and utilities",129694954,3797,34157.0,False
 Spalding,2019,Construction,24812487,535,46378.0,False
 Spalding,2019,Education and health services,151219434,4054,37301.0,False
@@ -1936,6 +3224,7 @@ Spalding,2019,Manufacturing,157851012,2561,61636.0,False
 Spalding,2019,Natural resources and mining,676837,33,20510.0,False
 Spalding,2019,Other services,21805825,643,33913.0,False
 Spalding,2019,Professional and business services,102917765,3138,32797.0,False
+Spalding,2019,Public sector,199295751,4904,40639.0,False
 Spalding,2019,"Trade, transportation and utilities",136650957,3821,35763.0,False
 Spalding,2020,Construction,26538220,546,48605.0,False
 Spalding,2020,Education and health services,157986079,3916,40344.0,False
@@ -1946,6 +3235,7 @@ Spalding,2020,Manufacturing,139109858,2365,58820.0,False
 Spalding,2020,Natural resources and mining,906859,36,25191.0,False
 Spalding,2020,Other services,22450740,666,33710.0,False
 Spalding,2020,Professional and business services,109616217,2984,36735.0,False
+Spalding,2020,Public sector,202117872,4770,42373.0,False
 Spalding,2020,"Trade, transportation and utilities",148377070,3909,37958.0,False
 Spalding,2021,Construction,31376176,591,53090.0,False
 Spalding,2021,Education and health services,160677958,3584,44832.0,False
@@ -1956,6 +3246,7 @@ Spalding,2021,Manufacturing,146966255,2476,59356.0,False
 Spalding,2021,Natural resources and mining,1330881,44,30247.0,False
 Spalding,2021,Other services,26088313,715,36487.0,False
 Spalding,2021,Professional and business services,122011339,3059,39886.0,False
+Spalding,2021,Public sector,223338616,5101,43783.0,False
 Spalding,2021,"Trade, transportation and utilities",162346328,4136,39252.0,False
 Spalding,2022,Construction,35407014,647,54725.0,False
 Spalding,2022,Education and health services,195887102,3503,55920.0,False
@@ -1966,6 +3257,7 @@ Spalding,2022,Manufacturing,187735933,2951,63618.0,False
 Spalding,2022,Natural resources and mining,886583,22,40299.0,False
 Spalding,2022,Other services,27907192,709,39361.0,False
 Spalding,2022,Professional and business services,141620911,3413,41495.0,False
+Spalding,2022,Public sector,242141465,5123,47266.0,False
 Spalding,2022,"Trade, transportation and utilities",168508494,4165,40458.0,False
 Spalding,2023,Construction,39482029,656,60186.0,False
 Spalding,2023,Education and health services,212979170,3981,53499.0,False
@@ -1976,6 +3268,7 @@ Spalding,2023,Manufacturing,222644256,3300,67468.0,False
 Spalding,2023,Natural resources and mining,1124117,26,43235.0,False
 Spalding,2023,Other services,29565132,596,49606.0,False
 Spalding,2023,Professional and business services,127037942,3025,41996.0,False
+Spalding,2023,Public sector,247247023,5081,48661.0,False
 Spalding,2023,"Trade, transportation and utilities",163096763,4024,40531.0,False
 Spalding,2024,Construction,43392004,717,60519.0,False
 Spalding,2024,Education and health services,222321712,4292,51799.0,False
@@ -1986,7 +3279,63 @@ Spalding,2024,Manufacturing,217710684,3104,70139.0,False
 Spalding,2024,Natural resources and mining,1404866,30,46829.0,False
 Spalding,2024,Other services,26072909,503,51835.0,False
 Spalding,2024,Professional and business services,124630544,2731,45635.0,False
+Spalding,2024,Public sector,265214753,5085,52156.0,False
 Spalding,2024,"Trade, transportation and utilities",190609936,4356,43758.0,False
+Walton,2010,Construction,76043567,1918,39647.0,False
+Walton,2010,Education and health services,60442686,1807,33449.0,False
+Walton,2010,Financial activities,16363237,457,35806.0,False
+Walton,2010,Information,6941785,147,47223.0,False
+Walton,2010,Leisure and hospitality,21945503,1741,12605.0,False
+Walton,2010,Manufacturing,85873876,1867,45996.0,False
+Walton,2010,Natural resources and mining,2603153,104,25030.0,False
+Walton,2010,Other services,11163228,392,28478.0,False
+Walton,2010,Professional and business services,39385202,1277,30842.0,False
+Walton,2010,Public sector,137174043,3715,36924.0,False
+Walton,2010,"Trade, transportation and utilities",143636942,4397,32667.0,False
+Walton,2011,Construction,79929595,1862,42927.0,False
+Walton,2011,Education and health services,62186101,1908,32592.0,False
+Walton,2011,Financial activities,15163664,424,35763.0,False
+Walton,2011,Information,5754528,117,49184.0,False
+Walton,2011,Leisure and hospitality,22898537,1761,13003.0,False
+Walton,2011,Manufacturing,94036287,2033,46255.0,False
+Walton,2011,Natural resources and mining,2512794,100,25128.0,False
+Walton,2011,Other services,11847798,441,26866.0,False
+Walton,2011,Professional and business services,48347240,1562,30952.0,False
+Walton,2011,Public sector,137784144,3703,37209.0,False
+Walton,2011,"Trade, transportation and utilities",146156161,4366,33476.0,False
+Walton,2012,Construction,76367450,1728,44194.0,False
+Walton,2012,Education and health services,66090705,1920,34422.0,False
+Walton,2012,Financial activities,16076240,436,36872.0,False
+Walton,2012,Information,4897256,95,51550.0,False
+Walton,2012,Leisure and hospitality,24359074,1782,13670.0,False
+Walton,2012,Manufacturing,101707495,2170,46870.0,False
+Walton,2012,Natural resources and mining,2566659,100,25667.0,False
+Walton,2012,Other services,12625447,483,26140.0,False
+Walton,2012,Professional and business services,57252429,1887,30340.0,False
+Walton,2012,Public sector,136682700,3659,37355.0,False
+Walton,2012,"Trade, transportation and utilities",135670102,4075,33293.0,False
+Walton,2013,Construction,81234437,1838,44197.0,False
+Walton,2013,Education and health services,69068262,1979,34901.0,False
+Walton,2013,Financial activities,18104419,506,35779.0,False
+Walton,2013,Information,5036437,101,49866.0,False
+Walton,2013,Leisure and hospitality,26364284,1909,13811.0,False
+Walton,2013,Manufacturing,110101403,2255,48825.0,False
+Walton,2013,Natural resources and mining,3187131,107,29786.0,False
+Walton,2013,Other services,12755643,459,27790.0,False
+Walton,2013,Professional and business services,63787524,2011,31719.0,False
+Walton,2013,Public sector,135630582,3624,37426.0,False
+Walton,2013,"Trade, transportation and utilities",137097991,4114,33325.0,False
+Walton,2014,Construction,98582591,2138,46110.0,False
+Walton,2014,Education and health services,71390233,2057,34706.0,False
+Walton,2014,Financial activities,18891920,514,36755.0,False
+Walton,2014,Information,5291784,101,52394.0,False
+Walton,2014,Leisure and hospitality,27304269,1965,13895.0,False
+Walton,2014,Manufacturing,111271288,2258,49279.0,False
+Walton,2014,Natural resources and mining,3727108,111,33578.0,False
+Walton,2014,Other services,14857928,511,29076.0,False
+Walton,2014,Professional and business services,65896560,2107,31275.0,False
+Walton,2014,Public sector,137669722,3637,37853.0,False
+Walton,2014,"Trade, transportation and utilities",142399708,4055,35117.0,False
 Walton,2015,Construction,114188334,2393,47718.0,False
 Walton,2015,Education and health services,75394379,2203,34224.0,False
 Walton,2015,Financial activities,20628791,526,39218.0,False
@@ -1996,6 +3345,7 @@ Walton,2015,Manufacturing,126032745,2496,50494.0,False
 Walton,2015,Natural resources and mining,3817786,120,31815.0,False
 Walton,2015,Other services,13140678,435,30208.0,False
 Walton,2015,Professional and business services,71850323,2026,35464.0,False
+Walton,2015,Public sector,145268445,3602,40330.0,False
 Walton,2015,"Trade, transportation and utilities",155173946,4377,35452.0,False
 Walton,2016,Construction,123801179,2447,50593.0,False
 Walton,2016,Education and health services,82734756,2287,36176.0,False
@@ -2006,6 +3356,7 @@ Walton,2016,Manufacturing,144364568,2722,53036.0,False
 Walton,2016,Natural resources and mining,4015146,120,33460.0,False
 Walton,2016,Other services,15435770,475,32496.0,False
 Walton,2016,Professional and business services,70275358,1967,35727.0,False
+Walton,2016,Public sector,149456478,3597,41550.0,False
 Walton,2016,"Trade, transportation and utilities",229648366,5307,43273.0,False
 Walton,2017,Construction,125561142,2439,51481.0,False
 Walton,2017,Education and health services,97056695,2638,36792.0,False
@@ -2016,6 +3367,7 @@ Walton,2017,Manufacturing,164026213,3030,54134.0,False
 Walton,2017,Natural resources and mining,4147320,116,35753.0,False
 Walton,2017,Other services,13353730,431,30983.0,False
 Walton,2017,Professional and business services,71924764,1895,37955.0,False
+Walton,2017,Public sector,156642484,3635,43093.0,False
 Walton,2017,"Trade, transportation and utilities",245066775,5492,44623.0,False
 Walton,2018,Construction,136351511,2490,54760.0,False
 Walton,2018,Education and health services,106637703,2778,38387.0,False
@@ -2026,6 +3378,7 @@ Walton,2018,Manufacturing,171877713,3116,55160.0,False
 Walton,2018,Natural resources and mining,4640963,123,37731.0,False
 Walton,2018,Other services,15381054,458,33583.0,False
 Walton,2018,Professional and business services,67410843,1629,41382.0,False
+Walton,2018,Public sector,166196915,3749,44331.0,False
 Walton,2018,"Trade, transportation and utilities",257625221,5736,44914.0,False
 Walton,2019,Construction,149954154,2716,55211.0,False
 Walton,2019,Education and health services,115200386,2842,40535.0,False
@@ -2036,6 +3389,7 @@ Walton,2019,Manufacturing,159366900,2868,55567.0,False
 Walton,2019,Natural resources and mining,4789455,124,38625.0,False
 Walton,2019,Other services,20442647,555,36834.0,False
 Walton,2019,Professional and business services,64774384,1535,42198.0,False
+Walton,2019,Public sector,170824450,3756,45480.0,False
 Walton,2019,"Trade, transportation and utilities",265818725,5724,46439.0,False
 Walton,2020,Construction,177587265,2843,62465.0,False
 Walton,2020,Education and health services,121519108,2701,44990.0,False
@@ -2046,6 +3400,7 @@ Walton,2020,Manufacturing,148700917,2825,52637.0,False
 Walton,2020,Natural resources and mining,5845259,133,43949.0,False
 Walton,2020,Other services,19292271,492,39212.0,False
 Walton,2020,Professional and business services,70381624,1495,47078.0,False
+Walton,2020,Public sector,174564525,3700,47180.0,False
 Walton,2020,"Trade, transportation and utilities",283174884,5764,49128.0,False
 Walton,2021,Construction,190064529,3094,61430.0,False
 Walton,2021,Education and health services,134195977,2711,49501.0,False
@@ -2056,6 +3411,7 @@ Walton,2021,Manufacturing,176928762,3223,54896.0,False
 Walton,2021,Natural resources and mining,6547391,143,45786.0,False
 Walton,2021,Other services,24391848,576,42347.0,False
 Walton,2021,Professional and business services,79644090,1636,48682.0,False
+Walton,2021,Public sector,189290851,3714,50967.0,False
 Walton,2021,"Trade, transportation and utilities",304897597,5859,52039.0,False
 Walton,2022,Construction,215564119,3107,69380.0,False
 Walton,2022,Education and health services,154347453,2846,54233.0,False
@@ -2066,6 +3422,7 @@ Walton,2022,Manufacturing,181629488,3038,59786.0,False
 Walton,2022,Natural resources and mining,7166252,145,49422.0,False
 Walton,2022,Other services,31489207,681,46240.0,False
 Walton,2022,Professional and business services,92089614,1813,50794.0,False
+Walton,2022,Public sector,200463706,3826,52395.0,False
 Walton,2022,"Trade, transportation and utilities",338448167,6332,53450.0,False
 Walton,2023,Construction,255874918,3519,72712.0,False
 Walton,2023,Education and health services,172097265,3295,52230.0,False
@@ -2076,6 +3433,7 @@ Walton,2023,Manufacturing,184303025,2814,65495.0,False
 Walton,2023,Natural resources and mining,7041270,147,47900.0,False
 Walton,2023,Other services,35627035,726,49073.0,False
 Walton,2023,Professional and business services,108709480,2035,53420.0,False
+Walton,2023,Public sector,219907412,3990,55115.0,False
 Walton,2023,"Trade, transportation and utilities",349555046,6447,54220.0,False
 Walton,2024,Construction,259520277,3429,75684.0,False
 Walton,2024,Education and health services,190305275,3585,53084.0,False
@@ -2086,4 +3444,5 @@ Walton,2024,Manufacturing,203241171,3019,67321.0,False
 Walton,2024,Natural resources and mining,6639024,127,52276.0,False
 Walton,2024,Other services,35413954,699,50664.0,False
 Walton,2024,Professional and business services,104903704,1882,55741.0,False
+Walton,2024,Public sector,237216991,4044,58659.0,False
 Walton,2024,"Trade, transportation and utilities",270909939,5656,47898.0,False

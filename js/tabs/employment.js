@@ -222,9 +222,11 @@ export function render(selectedCounties) {
 
   const vintages = Data.getVintages();
   const yearLabel = vintages.employment_latest_year ?? 'Latest year';
+  const empQ      = vintages.employment_latest_quarter;
+  const partial   = empQ && empQ < 4 ? ` (Q1–Q${empQ} avg)` : '';
   const aggNote   = showIndividual ? '' : ' · regional aggregate';
   document.getElementById('emp-industry-sub').textContent =
-    `${yearLabel} · share of total employment by sector${aggNote}`;
+    `${yearLabel}${partial} · share of total employment by sector${aggNote}`;
 }
 
 // ── Chart option factories ────────────────────────────────────────────────
@@ -270,6 +272,15 @@ function buildTrendOptions() {
       shadow: false,
       formatter() {
         const fmtVal = v => Math.round(v).toLocaleString();
+        // If this year is the partial latest year, note the quarter range.
+        // Vintages are read per-render so the tooltip stays in sync with data.
+        const vint      = Data.getVintages();
+        const partialY  = (vint.employment_latest_quarter && vint.employment_latest_quarter < 4)
+                          ? vint.employment_latest_year : null;
+        const partialQ  = vint.employment_latest_quarter;
+        const partialNote = this.x === partialY
+          ? `<br/><span style="opacity:0.75; font-size:0.85em">Q1–Q${partialQ} avg · partial year</span>`
+          : '';
         if (this.points?.length) {
           const points = this.points
             .filter(p => p.y !== null && p.y !== undefined)
@@ -283,9 +294,9 @@ function buildTrendOptions() {
               `${isPresetRegionalSelection([...getSelected()]) ? 'Regional Total' : 'Selected total'}: <b>${fmtVal(total)}</b>`
             );
           }
-          return `<b>${this.x}</b><br/>${lines.join('<br/>')}`;
+          return `<b>${this.x}</b><br/>${lines.join('<br/>')}${partialNote}`;
         }
-        return `<b>${this.series.name}</b><br/>${this.x}: <b>${Math.round(this.y).toLocaleString()}</b>`;
+        return `<b>${this.series.name}</b><br/>${this.x}: <b>${Math.round(this.y).toLocaleString()}</b>${partialNote}`;
       },
     },
     series: [],

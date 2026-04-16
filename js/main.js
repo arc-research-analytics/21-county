@@ -4,10 +4,11 @@
 import { loadAll, getVintages } from './data.js';
 import { initFilter, getSelected } from './filter.js';
 import { applyTheme } from './charts/theme.js';
-import * as PopTab    from './tabs/population.js';
-import * as EmpTab    from './tabs/employment.js';
-import * as IncomeTab from './tabs/income.js';
-import * as MapMod from './map.js';
+import * as PopTab     from './tabs/population.js';
+import * as EmpTab     from './tabs/employment.js';
+import * as EconTab    from './tabs/economy.js';
+import * as IncomeTab  from './tabs/income.js';
+import * as MapMod     from './map.js';
 
 // ── Tab registry ──────────────────────────────────────────────────────────
 const TAB_TITLES = {
@@ -26,6 +27,7 @@ const TAB_TITLES = {
 const TAB_MODULES = {
   population: PopTab,
   employment: EmpTab,
+  economy:    EconTab,
   income:     IncomeTab,
 };
 
@@ -105,14 +107,19 @@ function renderVintageBadge(tabId = _activeTab) {
   const acs   = v.acs_vintage;
   const pop   = v.population_latest_year;
   const emp   = v.employment_latest_year;
+  const empQ  = v.employment_latest_quarter;
   const wages = v.wages_latest_year;
   const gdp   = v.gdp_latest_year;
   const prm   = v.permits_latest_year;
   const gosa  = v.gosa_latest_year;
 
+  // QWI lags ~2 quarters; flag the latest year when fewer than 4 quarters
+  // fed the average (e.g. "Emp 2025 (Q1–Q2)"). Bare "Emp 2025" means full year.
+  const empLabel = emp && (empQ && empQ < 4 ? `Emp ${emp} (Q1–Q${empQ})` : `Emp ${emp}`);
+
   const BADGE = {
     population: [pop   && `Pop ${pop}`],
-    employment: [emp   && `Emp ${emp}`],
+    employment: [empLabel],
     economy:    [gdp   && `GDP ${gdp}`,   wages && `Wages ${wages}`],
     housing:    [acs   && `ACS ${acs}`,   prm   && `Permits ${prm}`],
     education:  [acs   && `ACS ${acs}`,   gosa  && `GOSA ${gosa}`],
