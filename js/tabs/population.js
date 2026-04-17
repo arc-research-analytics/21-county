@@ -74,7 +74,7 @@ export function render(selectedCounties) {
                     selected.length <= 3            ? ` · ${selected.join(', ')}` :
                     isPresetRegionalSelection(selected) && selected.length === COUNTIES_21.length
                                                     ? ' · 21-county region' :
-                    isPresetRegionalSelection(selected) ? ' · 11-county core' :
+                    isPresetRegionalSelection(selected) ? ' · 11-county region' :
                                                       ` · ${selected.length} counties`;
   const acsLabel  = acsPrefix + scopeTag;
   document.getElementById('race-vintage-label').textContent = acsLabel;
@@ -116,7 +116,7 @@ export function render(selectedCounties) {
     : selected.length <= 3                ? selected.join(', ')
     : selected.length === COUNTIES_21.length && isPresetRegionalSelection(selected)
                                           ? '21-county region'
-    : isPresetRegionalSelection(selected) ? '11-county core'
+    : isPresetRegionalSelection(selected) ? '11-county region'
     :                                       `${selected.length} counties`;
 
   document.getElementById('kpi-1-value').textContent = fmtPop(totalPop);

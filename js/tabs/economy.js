@@ -53,7 +53,7 @@ function countySub(selected) {
   if (selected.length === 1) return `${selected[0]} County`;
   if (selected.length <= 3)  return selected.join(', ');
   if (selected.length === COUNTIES_21.length && isPresetRegionalSelection(selected)) return '21-county region';
-  if (isPresetRegionalSelection(selected)) return '11-county core';
+  if (isPresetRegionalSelection(selected)) return '11-county region';
   return `${selected.length} counties`;
 }
 
