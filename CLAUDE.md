@@ -60,14 +60,18 @@ data/
 |---|---|---|
 | `population` | Census PEP API | 3 vintages stitched: intercensal 2000–09, PEP 2010–19, PEP `charv` 2020+. Auto-retries prior vintage on 404. |
 | `acs` | Census ACS API | 1-year estimates with automatic 5-year fallback for counties under ~65K (currently Dawson). ~120 variables chunked into 45-var API calls. |
-| `employment` | Census QWI `/sa` endpoint | END_YEAR = `current_year - 1` (independent of ARC_VINTAGE). Time range uses literal `+` in URL string (not `params=`) to avoid `%2B` encoding. NAICS codes `31-33`, `44-45`, `48-49` are hyphenated. Auto-retries `END_YEAR-1` on 204. |
+| `employment` | Census QWI `/sa` endpoint | END_YEAR = `current_year - 1` (independent of ARC_VINTAGE). Time range uses literal `+` in URL string (not `params=`) to avoid `%2B` encoding. NAICS codes `31-33`, `44-45`, `48-49` are hyphenated. Auto-retries `END_YEAR-1` on 204. **Partial-year handling**: latest year is averaged across whatever quarters QWI has released; if only 1 quarter is available the year is dropped entirely (min 2 quarters to publish). Quarter count written to `data/processed/employment_quarters.json` → surfaces to the frontend via `employment_latest_quarter` in `vintages.json`. |
 | `hud_permits` | Census BPS monthly TXT files | Fetches all years 2000–latest complete calendar year. Monthly TXT files cached in `data/raw/bps/` (~300 files; ~instant after first run). |
 | `gosa` | `download.gosa.ga.gov` | Scrapes open directory listing for `Graduation_Rate_*.csv`; tries `current_year-1` then `current_year-2`. Caches locally. |
 | `forecast` | `atlantaregional.org` | Tries S18 URLs first, falls back to S17. Sheet names and decade columns detected dynamically. Caches locally. |
-| `qcew` | BLS QCEW annual singlefile ZIPs | 10-year rolling window ending at the **latest available year** (auto-discovered via HEAD request, independent of ARC_VINTAGE). Files from `data.bls.gov` (not `www.bls.gov` — CDN blocks scripts). ZIPs cached in `data/raw/qcew/`. agglvl_code 70 = county total; agglvl_code 73 + own_code 5 = private sector wages by supersector. |
+| `qcew` | BLS QCEW annual singlefile ZIPs | **15-year rolling window** (`SERIES_YEARS` in `fetch_qcew.py`) ending at the **latest available year** (auto-discovered via HEAD request, independent of ARC_VINTAGE). Files from `data.bls.gov` (not `www.bls.gov` — CDN blocks scripts). ZIPs cached in `data/raw/qcew/` (~100 MB each). Rows kept: agglvl_code 70 (county total, all ownerships), 71 (county by ownership — used to aggregate public sector), 73 (county by supersector within ownership — private sector only via `own_code=5`). A synthetic **"Public sector"** supersector row is produced per county-year by summing `own_code` 1+2+3 at agglvl 71 (avg pay recomputed as `Σ wages / Σ emplvl`, not a mean of means). |
 | `bea_gdp` | BEA Regional API (CAGDP9) | Real GDP by county, all years in one call. Requires `BEA_API_KEY` in `.env`. Returns 2001–present. |
 | `ga_dph` | Manual download | No API. Files go in `data/raw/ga_dph/`. Pipeline continues with empty health indicators if absent. |
 | `process` | `data/processed/` | Combines all intermediates into 10 output CSVs + `vintages.json`. Adds `in_core_11` boolean flag to every file. Snapshot CSVs (housing, income, education, health) carry `acs_vintage`; `housing.csv` also carries `permits_vintage` for the latest permit year merged in. |
+
+### Network retry
+
+Fetchers that make many sub-requests (where a single silent drop would produce partial data) wrap their HTTP calls in a 3-attempt exponential-backoff retry for transient network errors (`ConnectionError`, `Timeout`, `ChunkedEncodingError`). HTTP status errors (404, 500, etc.) still propagate. Applies to: `fetch_employment.py` (QWI, ~20 NAICS codes), `fetch_qcew.py` (10+ annual ZIPs), `fetch_hud_permits.py` (~300 monthly files), `fetch_acs.py` (chunked variable calls), `fetch_gosa.py` (directory listing + CSV download). `fetch_bea_gdp.py`, `fetch_population.py`, and `fetch_forecast.py` either make single requests or have their own fallback logic and are intentionally not retried.
 
 ### Region definitions
 
@@ -93,12 +97,36 @@ Seven CSVs in `data/output/`, one per dashboard tab:
 | `income.csv` | `median_hh_income`, `poverty_rate_pct`, `hhinc_*` bracket counts |
 | `forecast.csv` | `pop_2020`, `pop_2050`, `emp_2020`, `emp_2050`, `*_net_increase`, `*_pct_increase` |
 | `forecast_sectors.csv` | Long format: `county_name`, `year`, `supersector`, `employment` |
-| `wages.csv` | `year`, `total_annual_wages`, `annual_avg_emplvl`, `avg_annual_pay`, `annual_avg_estabs` — QCEW 10-year series, all industries total; regional avg = `sum(total_annual_wages) / sum(annual_avg_emplvl)` |
-| `wages_by_industry.csv` | Long format: `year`, `supersector`, `total_annual_wages`, `annual_avg_emplvl`, `avg_annual_pay` — private sector wages by industry |
+| `wages.csv` | `year`, `total_annual_wages`, `annual_avg_emplvl`, `avg_annual_pay`, `annual_avg_estabs` — QCEW 15-year series, all ownerships/all industries (agglvl 70, which is published as `own_code=0`); regional avg = `sum(total_annual_wages) / sum(annual_avg_emplvl)` |
+| `wages_by_industry.csv` | Long format: `year`, `supersector`, `total_annual_wages`, `annual_avg_emplvl`, `avg_annual_pay` — 11 private supersectors (own_code=5) + one synthetic **"Public sector"** row per county-year aggregating federal+state+local (own_codes 1+2+3) |
 | `gdp.csv` | `year`, `gdp_thousands` — BEA real GDP (chained 2017 dollars), 2001–present |
 | `permits.csv` | Long format: `county_name`, `year`, `sf_permits`, `mf_total_permits`, `total_permits` — annual totals 2000–present |
-| `vintages.json` | Metadata: `generated`, `acs_vintage`, `population_latest_year`, `employment_latest_year`, `wages_latest_year`, `gdp_latest_year`, `permits_latest_year`, `gosa_latest_year` |
+| `vintages.json` | Metadata: `generated`, `acs_vintage`, `population_latest_year`, `employment_latest_year`, `employment_latest_quarter` (1–4; when <4 the frontend labels the latest year as partial), `wages_latest_year`, `gdp_latest_year`, `permits_latest_year`, `gosa_latest_year` |
 
 ### GA DPH (manual)
 
 Download three files from https://oasis.state.ga.us, save to `data/raw/ga_dph/` using the naming convention in that folder's `README.md`. The fetcher handles flexible column naming via regex and will partially populate `health.csv` from whichever files are present.
+
+## Frontend
+
+Static site served from `frontend/`. No build step — plain ES modules, loaded via CDN: Tailwind (layout), Web Awesome (UI components — `wa-select`, `wa-button`, etc.), Highcharts (charts), Mapbox GL (county map), Papa Parse (CSV).
+
+### Tab modules
+
+Each tab is an ES module in `frontend/js/tabs/` exposing `init()` (creates charts) and `render(selectedCounties)` (updates data). Registered in `main.js::TAB_MODULES`. Currently built out: **Population, Employment, Economy, Income**. Housing/Education/Health/Forecast are placeholder panels.
+
+Shared layout: every tab panel uses the same two KPI cards (`#kpi-1-*`, `#kpi-2-*`) and shared county map at the top; the tab module re-labels them on render. The per-tab panel below holds the charts.
+
+### Aggregation rules (important for consistency)
+
+- **Sums** (employment, population, wages, GDP): frontend sums pre-averaged county values across the selection.
+- **Avg-of-avgs** (avg pay, median income): frontend recomputes as `Σ numerator / Σ denominator` (e.g. `Σ total_annual_wages / Σ annual_avg_emplvl`) — NOT a mean of per-county averages. Documented inline in `economy.js` and `income.js`.
+- **11-county region** is displayed as the string `"11-county region"` in KPI sublabels (previously `"11-county core"` — the core-vs-non label only appears now in `filter.js`).
+
+### Vintage badge
+
+`main.js::renderVintageBadge` assembles per-tab badges from `vintages.json`. Employment shows `Emp 2025 (Q1–Qn)` format when `employment_latest_quarter < 4` (partial QWI year), else bare `Emp 2025`. The Employment trend tooltip and industry-mix subtitle also surface the quarter range when the hovered point is the partial year.
+
+### County multi-select width
+
+`#county-select` width is controlled in `css/theme.css` (not inline style) — the CSS rule wins via specificity. Adjust there if you need more/fewer county pills visible before overflow.
