@@ -2,15 +2,15 @@ name: Update dashboard data
 
 on:
   schedule:
-    - cron: '0 8 1 * *'  # 8am UTC on the 1st of each month
-  workflow_dispatch:       # manual trigger for testing
+    - cron: "0 8 1 * *" # 8am UTC on the 1st of each month
+  workflow_dispatch: # manual trigger for testing
 
 jobs:
   update:
     runs-on: ubuntu-latest
     permissions:
-      contents: write      # needed to push data/output back to repo
-      actions: write       # needed to trigger the deploy workflow
+      contents: write # needed to push data/output back to repo
+      actions: write # needed to trigger the deploy workflow
 
     steps:
       - uses: actions/checkout@v5
@@ -24,10 +24,6 @@ jobs:
           environment-file: environment.yml
           activate-environment: research
           auto-activate: false
-
-      - name: Install Playwright browsers
-        shell: bash -el {0}
-        run: playwright install chromium --with-deps
 
       - name: Run pipeline
         shell: bash -el {0}
