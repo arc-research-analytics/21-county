@@ -23,7 +23,7 @@ Barrow,2020,847,108,955,False
 Barrow,2021,969,150,1119,False
 Barrow,2022,882,122,1004,False
 Barrow,2023,818,308,1126,False
-Barrow,2024,1117,311,1428,False
+Barrow,2024,1066,311,1377,False
 Barrow,2025,1300,284,1584,False
 Bartow,2000,1243,133,1376,False
 Bartow,2001,1026,387,1413,False
@@ -49,7 +49,7 @@ Bartow,2020,769,102,871,False
 Bartow,2021,741,400,1141,False
 Bartow,2022,800,1607,2407,False
 Bartow,2023,841,774,1615,False
-Bartow,2024,1113,483,1596,False
+Bartow,2024,1030,470,1500,False
 Bartow,2025,783,235,1018,False
 Carroll,2000,1487,208,1695,False
 Carroll,2001,1684,630,2314,False
@@ -75,7 +75,7 @@ Carroll,2020,789,4,793,False
 Carroll,2021,1049,192,1241,False
 Carroll,2022,746,0,746,False
 Carroll,2023,602,280,882,False
-Carroll,2024,714,145,859,False
+Carroll,2024,665,2,667,False
 Carroll,2025,834,260,1094,False
 Cherokee,2000,2858,894,3752,True
 Cherokee,2001,2895,842,3737,True
@@ -101,7 +101,7 @@ Cherokee,2020,2383,9,2392,True
 Cherokee,2021,2500,169,2669,True
 Cherokee,2022,2498,526,3024,True
 Cherokee,2023,2198,30,2228,True
-Cherokee,2024,1799,869,2668,True
+Cherokee,2024,1640,869,2509,True
 Cherokee,2025,1483,33,1516,True
 Clayton,2000,2323,392,2715,True
 Clayton,2001,2398,664,3062,True
@@ -127,7 +127,7 @@ Clayton,2020,784,10,794,True
 Clayton,2021,557,570,1127,True
 Clayton,2022,388,0,388,True
 Clayton,2023,312,25,337,True
-Clayton,2024,433,31,464,True
+Clayton,2024,410,12,422,True
 Clayton,2025,403,371,774,True
 Cobb,2000,5531,1166,6697,True
 Cobb,2001,4469,936,5405,True
@@ -153,7 +153,7 @@ Cobb,2020,1701,787,2488,True
 Cobb,2021,2048,1139,3187,True
 Cobb,2022,1554,1353,2907,True
 Cobb,2023,1361,1425,2786,True
-Cobb,2024,1255,183,1438,True
+Cobb,2024,1155,160,1315,True
 Cobb,2025,1035,302,1337,True
 Coweta,2000,1249,59,1308,False
 Coweta,2001,1605,499,2104,False
@@ -179,7 +179,7 @@ Coweta,2020,986,137,1123,False
 Coweta,2021,1281,372,1653,False
 Coweta,2022,717,0,717,False
 Coweta,2023,960,2,962,False
-Coweta,2024,951,12,963,False
+Coweta,2024,872,12,884,False
 Coweta,2025,750,0,750,False
 Dawson,2000,213,0,213,False
 Dawson,2001,348,0,348,False
@@ -205,7 +205,7 @@ Dawson,2020,353,99,452,False
 Dawson,2021,581,0,581,False
 Dawson,2022,541,10,551,False
 Dawson,2023,461,22,483,False
-Dawson,2024,878,9,887,False
+Dawson,2024,794,9,803,False
 Dawson,2025,1069,0,1069,False
 DeKalb,2000,4266,1881,6147,True
 DeKalb,2001,4634,2929,7563,True
@@ -224,7 +224,7 @@ DeKalb,2013,332,713,1045,True
 DeKalb,2014,454,988,1442,True
 DeKalb,2022,1093,998,2091,True
 DeKalb,2023,746,2343,3089,True
-DeKalb,2024,859,410,1269,True
+DeKalb,2024,784,35,819,True
 DeKalb,2025,806,521,1327,True
 Douglas,2000,890,11,901,True
 Douglas,2001,1102,240,1342,True
@@ -250,7 +250,7 @@ Douglas,2020,500,240,740,True
 Douglas,2021,624,1048,1672,True
 Douglas,2022,393,195,588,True
 Douglas,2023,540,484,1024,True
-Douglas,2024,494,123,617,True
+Douglas,2024,423,123,546,True
 Douglas,2025,503,373,876,True
 Fayette,2000,935,0,935,True
 Fayette,2001,900,85,985,True
@@ -276,7 +276,7 @@ Fayette,2020,558,10,568,True
 Fayette,2021,748,22,770,True
 Fayette,2022,634,8,642,True
 Fayette,2023,424,5,429,True
-Fayette,2024,323,0,323,True
+Fayette,2024,291,0,291,True
 Fayette,2025,471,0,471,True
 Forsyth,2000,3181,208,3389,True
 Forsyth,2001,2539,0,2539,True
@@ -302,7 +302,7 @@ Forsyth,2020,2412,95,2507,True
 Forsyth,2021,2305,54,2359,True
 Forsyth,2022,1354,1247,2601,True
 Forsyth,2023,1121,250,1371,True
-Forsyth,2024,1692,833,2525,True
+Forsyth,2024,1542,804,2346,True
 Forsyth,2025,1413,312,1725,True
 Fulton,2000,3673,6229,9902,True
 Fulton,2001,4065,6853,10918,True
@@ -328,7 +328,7 @@ Fulton,2020,2508,1459,3967,True
 Fulton,2021,3555,1654,5209,True
 Fulton,2022,3963,10410,14373,True
 Fulton,2023,2924,6908,9832,True
-Fulton,2024,2909,8041,10950,True
+Fulton,2024,2696,7515,10211,True
 Fulton,2025,2264,6649,8913,True
 Gwinnett,2000,8840,3520,12360,True
 Gwinnett,2001,9651,1634,11285,True
@@ -354,11 +354,11 @@ Gwinnett,2020,4118,596,4714,True
 Gwinnett,2021,4344,469,4813,True
 Gwinnett,2022,3695,656,4351,True
 Gwinnett,2023,4119,1294,5413,True
-Gwinnett,2024,4307,671,4978,True
+Gwinnett,2024,3905,671,4576,True
 Gwinnett,2025,3016,1037,4053,True
 Hall,2022,1185,738,1923,False
 Hall,2023,1227,105,1332,False
-Hall,2024,1243,556,1799,False
+Hall,2024,1100,556,1656,False
 Hall,2025,1417,165,1582,False
 Henry,2000,3418,729,4147,True
 Henry,2001,3525,260,3785,True
@@ -384,7 +384,7 @@ Henry,2020,1816,0,1816,True
 Henry,2021,2387,344,2731,True
 Henry,2022,1659,942,2601,True
 Henry,2023,1693,230,1923,True
-Henry,2024,1828,307,2135,True
+Henry,2024,1708,278,1986,True
 Henry,2025,1729,30,1759,True
 Newton,2000,1523,403,1926,False
 Newton,2001,1578,203,1781,False
@@ -410,7 +410,7 @@ Newton,2020,848,4,852,False
 Newton,2021,746,402,1148,False
 Newton,2022,416,250,666,False
 Newton,2023,715,60,775,False
-Newton,2024,704,776,1480,False
+Newton,2024,651,766,1417,False
 Newton,2025,573,49,622,False
 Paulding,2000,1961,292,2253,False
 Paulding,2001,2290,233,2523,False
@@ -429,7 +429,7 @@ Paulding,2013,533,55,588,False
 Paulding,2014,938,0,938,False
 Paulding,2022,1519,18,1537,False
 Paulding,2023,1383,0,1383,False
-Paulding,2024,1458,0,1458,False
+Paulding,2024,1367,0,1367,False
 Paulding,2025,1288,36,1324,False
 Rockdale,2000,454,312,766,True
 Rockdale,2001,566,4,570,True
@@ -455,7 +455,7 @@ Rockdale,2020,269,0,269,True
 Rockdale,2021,218,0,218,True
 Rockdale,2022,460,564,1024,True
 Rockdale,2023,377,33,410,True
-Rockdale,2024,483,0,483,True
+Rockdale,2024,464,0,464,True
 Rockdale,2025,343,0,343,True
 Spalding,2000,424,21,445,False
 Spalding,2001,543,6,549,False
@@ -481,7 +481,7 @@ Spalding,2020,257,0,257,False
 Spalding,2021,504,0,504,False
 Spalding,2022,374,150,524,False
 Spalding,2023,343,0,343,False
-Spalding,2024,342,0,342,False
+Spalding,2024,311,0,311,False
 Spalding,2025,317,0,317,False
 Walton,2000,1186,48,1234,False
 Walton,2001,1218,268,1486,False
@@ -499,5 +499,5 @@ Walton,2013,204,0,204,False
 Walton,2014,271,0,271,False
 Walton,2022,773,0,773,False
 Walton,2023,849,51,900,False
-Walton,2024,657,20,677,False
+Walton,2024,544,8,552,False
 Walton,2025,554,20,574,False
