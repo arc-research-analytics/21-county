@@ -50,7 +50,8 @@ def _fetch_month(month_dt: datetime) -> pd.DataFrame | None:
     yymm = month_dt.strftime("%y%m")
     cache_path = BPS_CACHE / f"co{yymm}c.txt"
 
-    if cache_path.exists():
+    from_cache = cache_path.exists()
+    if from_cache:
         raw = cache_path.read_text()
     else:
         url = f"{BPS_BASE}/co{yymm}c.txt"
@@ -74,10 +75,23 @@ def _fetch_month(month_dt: datetime) -> pd.DataFrame | None:
                 return None
         if raw is None:
             return None
+
+    # Census's WAF occasionally returns a 200 with a "Request Rejected" HTML
+    # stub instead of CSV (currently consistent for co2402c.txt). Detect and
+    # skip without poisoning the cache.
+    if not raw.strip() or raw.lstrip().startswith("<"):
+        print(f"  WARNING: co{yymm}c.txt returned non-CSV content — skipping month.")
+        return None
+
+    try:
+        df = pd.read_csv(io.StringIO(raw), skiprows=1)
+    except (pd.errors.EmptyDataError, pd.errors.ParserError) as e:
+        print(f"  WARNING: co{yymm}c.txt failed to parse ({e}) — skipping month.")
+        return None
+
+    if not from_cache:
         BPS_CACHE.mkdir(parents=True, exist_ok=True)
         cache_path.write_text(raw)
-
-    df = pd.read_csv(io.StringIO(raw), skiprows=1)
     df = df.rename(columns={
         "Date":    "year_month",
         "Units":   "SF_permits",
