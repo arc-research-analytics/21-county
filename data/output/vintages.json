@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-01",
+  "generated": "2026-05-29",
   "acs_vintage": 2024,
   "population_latest_year": 2025,
   "employment_latest_year": 2025,
   "wages_latest_year": 2024,
   "gdp_latest_year": 2024,
   "permits_latest_year": 2025,
-  "employment_latest_quarter": 2,
+  "employment_latest_quarter": 3,
   "gosa_latest_year": "2024-25"
 }
